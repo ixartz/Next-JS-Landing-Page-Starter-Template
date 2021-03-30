@@ -12,20 +12,20 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "dependencies": {
-    "@tailwindcss/jit": "^0.1.8",
-    "next": "^10.0.9",
+    "@tailwindcss/jit": "^0.1.17",
+    "next": "^10.1.2",
     "next-seo": "^4.23.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.0.9",
-    "@types/node": "^14.14.35",
+    "@next/bundle-analyzer": "^10.1.2",
+    "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
     "autoprefixer": "^10.2.5",
-    "eslint": "^7.22.0",
+    "eslint": "^7.23.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
