@@ -12,6 +12,8 @@ Clone this project and use it to create your own [Next.js](https://nextjs.org) p
 
 [![Nextjs Landing Page Template Screenshot](public/assets/images/nextjs-landing-page-screenshot.png?raw=true)](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/)
 
+Check out our [live demo]().
+
 ### Features
 
 Developer experience first:
