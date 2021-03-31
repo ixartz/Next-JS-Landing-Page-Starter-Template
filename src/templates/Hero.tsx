@@ -15,7 +15,7 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="/">
-            <a>Docs</a>
+            <a>GitHub</a>
           </Link>
         </li>
         <li>
@@ -38,7 +38,7 @@ const Hero = () => (
         button={(
           <Link href="/">
             <a>
-              <Button xl>Start your 14-day Free Trial</Button>
+              <Button xl>Download Your Free Version</Button>
             </a>
           </Link>
         )}

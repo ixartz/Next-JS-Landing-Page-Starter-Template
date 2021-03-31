@@ -8,6 +8,10 @@
 
 Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/).
 
+### DEMO
+
+[![Nextjs Landing Page Template Screenshot](public/assets/images/nextjs-landing-page-screenshot.png?raw=true)](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/)
+
 ### Features
 
 Developer experience first:
@@ -36,6 +40,8 @@ Built-in feature from Next.js:
 - Features
 - CTA banner
 - Footer
+
+Find more components in our [premium NextJS themes](https://creativedesignsguru.com/category/nextjs/)
 
 ### Philosophy
 

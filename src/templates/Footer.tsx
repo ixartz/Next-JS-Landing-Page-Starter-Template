@@ -89,7 +89,7 @@ const Footer = () => (
         </li>
         <li>
           <Link href="/">
-            <a>Blog</a>
+            <a>GitHub</a>
           </Link>
         </li>
       </CenteredFooter>
