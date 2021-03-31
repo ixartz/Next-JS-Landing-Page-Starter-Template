@@ -1,10 +1,10 @@
-# Boilerplate and Starter for Next JS 10+, Tailwind CSS 2.0 and TypeScript
+# Landing Page Template built with Next JS 10+, Tailwind CSS 2.0 and TypeScript
 
 <p align="center">
   <a href="https://creativedesignsguru.com/demo/Nextjs-Boilerplate/"><img src="public/assets/images/nextjs-landing-page-banner.png?raw=true" alt="Next js starter banner"></a>
 </p>
 
-🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
+🚀 Landing Page theme written in Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
 
 Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/).
 
@@ -20,7 +20,7 @@ Developer experience first:
 - 🛠 Code Formatter with [Prettier](https://prettier.io)
 - 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🌈 Include a FREE minimalist theme
+- 🌈 Include a FREE theme
 - 💯 Maximize lighthouse score
 
 Built-in feature from Next.js:
@@ -28,6 +28,14 @@ Built-in feature from Next.js:
 - ☕ Minify HTML & CSS
 - 💨 Live reload
 - ✅ Cache busting
+
+### Included Components
+
+- Navbar
+- Hero
+- Features
+- CTA banner
+- Footer
 
 ### Philosophy
 
@@ -54,7 +62,7 @@ Built-in feature from Next.js:
 Run the following command on your local environment:
 
 ```
-git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name
+git clone --depth=1 https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template.git my-project-name
 cd my-project-name
 npm install
 ```
