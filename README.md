@@ -41,7 +41,7 @@ Built-in feature from Next.js:
 - CTA banner
 - Footer
 
-Find more components in our [premium NextJS themes](https://creativedesignsguru.com/category/nextjs/)
+Find more components in our [premium NextJS themes](https://creativedesignsguru.com/category/nextjs/).
 
 ### Philosophy
 

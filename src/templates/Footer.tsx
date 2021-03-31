@@ -88,7 +88,7 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
             <a>GitHub</a>
           </Link>
         </li>
