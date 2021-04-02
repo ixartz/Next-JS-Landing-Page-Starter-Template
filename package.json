@@ -12,7 +12,6 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "dependencies": {
-    "@tailwindcss/jit": "^0.1.18",
     "classnames": "^2.2.6",
     "next": "^10.1.2",
     "next-seo": "^4.23.0",
@@ -22,6 +21,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.1.2",
+    "@tailwindcss/jit": "^0.1.18",
     "@types/classnames": "^2.2.11",
     "@types/node": "^14.14.37",
     "@types/react": "^17.0.3",
