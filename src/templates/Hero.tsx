@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
@@ -28,20 +26,20 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
-        title={(
+        title={
           <>
             {'The modern landing page for\n'}
             <span className="text-primary-500">React developer</span>
           </>
-        )}
+        }
         description="The easiest way to build React landing page in seconds."
-        button={(
+        button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
               <Button xl>Download Your Free Theme</Button>
             </a>
           </Link>
-        )}
+        }
       />
     </Section>
   </Background>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Meta } from '../layout/Meta';
 import { Config } from '../utils/Config';
 import { Banner } from './Banner';

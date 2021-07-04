@@ -1,6 +1,5 @@
-import React from 'react';
-
 import className from 'classnames';
+import { useRouter } from 'next/router';
 
 type IVerticalFeatureRowProps = {
   title: string;
@@ -11,9 +10,17 @@ type IVerticalFeatureRowProps = {
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
-  const verticalFeatureClass = className('mt-20', 'flex', 'flex-wrap', 'items-center', {
-    'flex-row-reverse': props.reverse,
-  });
+  const verticalFeatureClass = className(
+    'mt-20',
+    'flex',
+    'flex-wrap',
+    'items-center',
+    {
+      'flex-row-reverse': props.reverse,
+    }
+  );
+
+  const router = useRouter();
 
   return (
     <div className={verticalFeatureClass}>
@@ -23,7 +30,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <img src={`${process.env.baseUrl}${props.image}`} alt={props.imageAlt} />
+        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
       </div>
     </div>
   );

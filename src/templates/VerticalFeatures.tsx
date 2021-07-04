@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 

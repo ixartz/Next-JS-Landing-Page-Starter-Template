@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
@@ -12,7 +10,7 @@ const Footer = () => (
     <Section>
       <CenteredFooter
         logo={<Logo />}
-        iconList={(
+        iconList={
           <>
             <Link href="/">
               <a>
@@ -70,7 +68,7 @@ const Footer = () => (
               </a>
             </Link>
           </>
-        )}
+        }
       >
         <li>
           <Link href="/">
