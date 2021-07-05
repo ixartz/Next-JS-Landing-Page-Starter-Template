@@ -1,10 +1,10 @@
-# Landing Page Template built with Next JS 10+, Tailwind CSS 2.0 and TypeScript
+# Landing Page Template built with Next JS 11+, Tailwind CSS 2.0 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 <p align="center">
   <a href="https://creativedesignsguru.com/demo/nextjs-landing-page/"><img src="public/assets/images/nextjs-landing-page-banner.png?raw=true" alt="Next js starter banner"></a>
 </p>
 
-🚀 Landing Page theme written in Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
+🚀 Landing Page theme written in Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, VSCode, Netlify, PostCSS, Tailwind CSS.
 
 Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/nextjs-landing-page/).
 
@@ -19,13 +19,18 @@ Check out our [live demo](https://creativedesignsguru.com/demo/nextjs-landing-pa
 Developer experience first:
 
 - 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
+- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
 - 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-- ✏️ Linter with [ESLint](https://eslint.org)
+- ✅ Strict Mode for TypeScript and React 17
+- ✏️ Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and Airbnb configuration)
 - 🛠 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
+- 🦊 Husky for Git Hooks
+- 🚫 Lint-staged for running linters on Git staged files
+- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
+- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
 - 🌈 Include a FREE theme
 - 💯 Maximize lighthouse score
 
@@ -86,9 +91,10 @@ Open http://localhost:8080 with your favorite browser to see your project. For y
 ```
 .
 ├── README.md            # README file
-├── public
+├── next.config.js       # Next JS configuration
+├── public               # Public folder
 │   └── assets
-│       └── images       # Image used by the template, it can be replaced by your own images
+│       └── images       # Image used by default template
 ├── src
 │   ├── background       # Atomic background component
 │   ├── button           # Atomic button component
@@ -98,12 +104,12 @@ Open http://localhost:8080 with your favorite browser to see your project. For y
 │   ├── hero             # Atomic hero component
 │   ├── layout           # Atomic layout component
 │   ├── navigation       # Atomic navigation component
-│   ├── pages            # Next JS pages includes index page
-│   ├── styles           # Atomic styles component
-│   ├── templates        # List of blocks components
-│   └── utils            # Atomic utils component
-├── tailwind.config.js   # Tailwind CSS configuration file
-└── tsconfig.json        # TypeScript file
+│   ├── pages            # Next JS pages
+│   ├── styles           # PostCSS style folder with Tailwind
+│   ├── templates        # Default template
+│   └── utils            # Utility folder
+├── tailwind.config.js   # Tailwind CSS configuration
+└── tsconfig.json        # TypeScript configuration
 ```
 
 ### Customization
@@ -112,8 +118,8 @@ You can easily configure the theme. Please change the following file:
 
 - `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your favicon, you can generate from https://favicon.io/favicon-converter/
 - `src/styles/main.css`: your CSS file using Tailwind CSS
-- `utils/Config.ts`: website configuration file
-- `src/pages/index.tsx`: the index page of the theme use the `Base` component
+- `utils/AppConfig.ts`: configuration file
+- `src/pages/index.tsx`: the index page of the theme that uses the `Base` component
 - `src/template/Base.tsx`: the `Base` component using component blocks
 - `src/templates/*`: the list of component blocks
 - `src/*`: other folders in src are the atomic components used by components blocks
@@ -150,6 +156,18 @@ Clone this repository on own GitHub account and deploy to Netlify:
 
 [![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template)
 
+### Deploy to Vercel
+
+Deploy this Next JS Boilerplate on Vercel in one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fixartz%2FNext-JS-Landing-Page-Starter-Template)
+
+### VSCode information (optional)
+
+If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.
+
+Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
+
 ### Contributions
 
 Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
@@ -162,6 +180,6 @@ See [LICENSE](LICENSE) for more information.
 
 ---
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com)
+Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 [![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://www.buymeacoffee.com/ixartz)
