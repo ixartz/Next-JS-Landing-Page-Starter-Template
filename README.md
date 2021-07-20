@@ -148,7 +148,7 @@ You can create an optimized production build with:
 npm run build-prod
 ```
 
-Now, your theme is ready to be deployed. All generated files are located at `dist` folder, which you can deploy with any hosting service.
+Now, your theme is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
 
 ### Deploy to Netlify
 
