@@ -29,10 +29,10 @@ const Hero = () => (
         title={
           <>
             {'The modern landing page for\n'}
-            <span className="text-primary-500">React developer</span>
+            <span className="text-primary-500">React developers</span>
           </>
         }
-        description="The easiest way to build React landing page in seconds."
+        description="The easiest way to build a React landing page in seconds."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
