@@ -90,7 +90,7 @@ Then, you can run locally in development mode with live reload:
 npm run dev
 ```
 
-Open http://localhost:4000 with your favorite browser to see your project. For your information, Next JS need to take some time to compile the project for your first time.
+Open http://localhost:3000 with your favorite browser to see your project. For your information, Next JS need to take some time to compile the project for your first time.
 
 ```
 .
