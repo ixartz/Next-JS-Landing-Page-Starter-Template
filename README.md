@@ -1,4 +1,4 @@
-# Landing Page Template built with Next JS 12+, Tailwind CSS 2.0 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+# Landing Page Template built with Next JS 12+, Tailwind CSS 3 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 <p align="center">
   <a href="https://creativedesignsguru.com/demo/nextjs-landing-page/"><img src="public/assets/images/nextjs-landing-page-banner.png?raw=true" alt="Next js starter banner"></a>
@@ -19,7 +19,7 @@ Check out our [live demo](https://creativedesignsguru.com/demo/nextjs-landing-pa
 Developer experience first:
 
 - 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
+- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
 - 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
 - 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
 - ✅ Strict Mode for TypeScript and React 17
@@ -121,7 +121,7 @@ Open http://localhost:3000 with your favorite browser to see your project. For y
 You can easily configure the theme. Please change the following file:
 
 - `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/main.css`: your CSS file using Tailwind CSS
+- `src/styles/global.css`: your CSS file using Tailwind CSS
 - `utils/AppConfig.ts`: configuration file
 - `src/pages/index.tsx`: the index page of the theme that uses the `Base` component
 - `src/template/Base.tsx`: the `Base` component using component blocks
