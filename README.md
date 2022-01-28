@@ -58,9 +58,9 @@ Find more components in our [premium NextJS themes](https://creativedesignsguru.
 
 ### Nextless.js SaaS Boilerplate
 
-Building your SaaS product faster with [Nextless JS SaaS Boilerplate](https://nextlessjs.com).
+Build your SaaS product faster with [React SaaS Boilerplate](https://nextlessjs.com).
 
-[![Nextless React SaaS Boilerplate](https://nextlessjs.com/assets/images/hero-image.png)](https://nextlessjs.com)
+[![React SaaS Boilerplate Next.js](https://creativedesignsguru.com/assets/images/themes/next-js-saas-starter-kit.jpg)](https://nextlessjs.com)
 
 ### Premium Themes
 
@@ -68,7 +68,7 @@ Building your SaaS product faster with [Nextless JS SaaS Boilerplate](https://ne
 | --- | --- |
 | [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
 
-Find more [Nextjs Themes](https://creativedesignsguru.com/category/nextjs/).
+Find more [Nextjs Templates](https://creativedesignsguru.com/category/nextjs/).
 
 ### Requirements
 
@@ -178,7 +178,7 @@ Everyone is welcome to contribute to this project. Feel free to open an issue if
 
 ### License
 
-Licensed under the MIT License, Copyright © 2020
+Licensed under the MIT License, Copyright © 2022
 
 See [LICENSE](LICENSE) for more information.
 
