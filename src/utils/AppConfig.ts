@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  site_name: 'EZ Photos',
+  title: 'EZ Photos',
+  description: 'EZ Photos specializes in Photobooth Rentals in the Austin Area',
   locale: 'en',
 };
