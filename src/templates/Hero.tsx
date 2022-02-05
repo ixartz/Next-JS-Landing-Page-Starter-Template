@@ -26,7 +26,7 @@ export const Header = () => (
 
 const Hero = () => (
   <Background color="bg-gray-100">
-    <Header />
+    {/* <Header /> */}
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={

@@ -9,14 +9,13 @@ const Index = () => (
         justifyContent: 'center',
         alignItems: 'center',
         height: '60vmin',
-        background: '#444',
+        background: '#458bca',
         fontFamily: 'sans-serif',
         color: '#eee',
       }}
     >
       <h1 style={{ fontSize: '5rem' }}>Coming Soon!</h1>
       <hr />
-      {/* <h4 style={{ fontSize: '5rem' }}></h4> */}
     </div>
   </Base>
 );
