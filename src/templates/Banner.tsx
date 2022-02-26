@@ -7,12 +7,12 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="February Special!!"
-      subtitle="Mention GRAND OPENING for 15% off your next order"
+      title="Check Availability"
+      subtitle="Get in touch to confirm availability for your next event"
       button={
         <Link href="/contact">
           <a>
-            <Button>Book Today</Button>
+            <Button>Reserve Today</Button>
           </a>
         </Link>
       }
