@@ -22,6 +22,7 @@
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.2.7",
     "@next/bundle-analyzer": "^12.0.9",
     "@types/node": "^17.0.13",
     "@types/react": "^17.0.38",
