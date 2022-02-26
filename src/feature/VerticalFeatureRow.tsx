@@ -4,9 +4,12 @@ import { useRouter } from 'next/router';
 type IVerticalFeatureRowProps = {
   title: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   imageAlt: string;
   reverse?: boolean;
+  height?: number;
+  width?: number;
+  useUrl?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -30,7 +33,17 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+        <img
+          src={`${
+            props.useUrl ? props.image : `${router.basePath}${props.image}`
+          }`}
+          style={{
+            border: '5rem solid white',
+          }}
+          alt={props.imageAlt}
+          height={props.height || 420}
+          width={props.width || 320}
+        />
       </div>
     </div>
   );
