@@ -1,3 +1,4 @@
+import ContactForm from '../Components/ContactForm';
 import { Base } from '../templates/Base';
 
 const Index = () => (
@@ -14,7 +15,7 @@ const Index = () => (
         color: '#eee',
       }}
     >
-      <h1 style={{ fontSize: '5rem' }}>Coming Soon!</h1>
+      <ContactForm />
       <hr />
     </div>
   </Base>
