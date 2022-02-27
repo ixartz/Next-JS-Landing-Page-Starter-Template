@@ -34,3 +34,26 @@
   min-height: 100% !important;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  justify-content: center;
+  padding: 3rem;
+  align-items: center;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  position: relative;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+.contentTube {
+  max-width: 808px;
+}
+
+section > p {
+  margin: 1rem 0;
+}

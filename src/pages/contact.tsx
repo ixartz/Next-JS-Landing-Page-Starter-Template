@@ -23,10 +23,9 @@ const Index = (props: IContactForm) => (
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        background: '#458bca',
         padding: '3rem',
         fontFamily: 'sans-serif',
-        color: '#eee',
+        color: '#111',
       }}
     >
       <ContactForm {...props} />
