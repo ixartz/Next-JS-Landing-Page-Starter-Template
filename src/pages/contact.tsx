@@ -9,9 +9,8 @@ const Index = () => (
         justifyContent: 'center',
         alignItems: 'center',
         height: '60vmin',
-        background: '#458bca',
         fontFamily: 'sans-serif',
-        color: '#eee',
+        color: '#111',
       }}
     >
       <h1 style={{ fontSize: '5rem' }}>Coming Soon!</h1>

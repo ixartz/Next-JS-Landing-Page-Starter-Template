@@ -12,23 +12,8 @@ const Logo = (props: ILogoProps) => {
 
   return (
     <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
-      <svg
-        className="text-primary-500 stroke-current mr-1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M0 0h24v24H0z" stroke="none" />
-        <rect x="3" y="12" width="6" height="8" rx="1" />
-        <rect x="9" y="8" width="6" height="12" rx="1" />
-        <rect x="15" y="4" width="6" height="16" rx="1" />
-        <path d="M4 20h14" />
-      </svg>
+
+<img style={{margin: '0 1rem 0 0'}} src='https://imagedelivery.net/DkWRuOXLqG7yv3ocO1mt8w/3e83c2ad-3c15-4f2c-315d-c835f9e61b00/public' alt='logo' height={size} width={size}/>
 
       {AppConfig.site_name}
     </span>
