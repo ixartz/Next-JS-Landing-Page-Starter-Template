@@ -1,7 +1,21 @@
 import ContactForm from '../Components/ContactForm';
 import { Base } from '../templates/Base';
 
-const Index = () => (
+export async function getStaticProps(){
+  return {props: {
+    templateID: process.env.TEMPLATE_ID,
+    serviceID: process.env.SERVICE_ID,
+    userID: process.env.USER_ID,
+  }}
+}
+
+export interface IContactForm {
+   templateID: string;
+   serviceID: string;
+   userID: string;
+ }
+
+const Index = (props: IContactForm) => (
   <Base>
     <div
       style={{
@@ -9,13 +23,13 @@ const Index = () => (
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '60vmin',
         background: '#458bca',
+        padding: '3rem',
         fontFamily: 'sans-serif',
         color: '#eee',
       }}
     >
-      <ContactForm />
+      <ContactForm {...props} />
       <hr />
     </div>
   </Base>

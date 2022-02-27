@@ -4,15 +4,28 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
 import { init } from '@emailjs/browser'
+import { IContactForm } from '../pages/contact'
 init('XGfVtQ6Q9tWVL-FP1')
 
-console.log( process.env.SERVICE_ID);
-console.log( process.env.NEXT_PUBLIC_SERVICE_ID);
- console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID)
- console.log(process.env.NEXT_PUBLIC_USER_ID)
- 
+interface IFormData {
+  [x: string]: any
+}
 
-const ContactForm = () => {
+// Function that displays a success toast on bottom right of the page when form submission is successful
+const toastifySuccess = () => {
+  toast('Form sent! We will get back to you as soon as we can.', {
+    position: 'bottom-right',
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: false,
+    className: 'submit-feedback success',
+    toastId: 'notifyToast',
+  })
+}
+
+const ContactForm = (props: IContactForm) => {
   const {
     register,
     handleSubmit,
@@ -20,25 +33,10 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm()
 
-  // Function that displays a success toast on bottom right of the page when form submission is successful
-  const toastifySuccess = () => {
-    toast('Form sent! Thanks for contacting us', {
-      position: 'bottom-right',
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-      className: 'submit-feedback success',
-      toastId: 'notifyToast',
-    })
-  }
-
   // Function called on submit that uses emailjs to send email of valid contact form
-  const onSubmit = async (data) => {
+
+  const onSubmit = async (data: IFormData) => {
     // Destrcture data object
-    console.log('data', data);
-    
     const { name, email, subject, message } = data
     try {
       const templateParams = {
@@ -47,17 +45,13 @@ const ContactForm = () => {
         subject,
         message,
       }
-      console.log('sending', templateParams);
 
-      
       await emailjs.send(
-        process.env.NEXT_PUBLIC_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+        props.serviceID,
+        props.templateID,
         templateParams,
-        process.env.NEXT_PUBLIC_USER_ID,
+        props.userID,
       )
-      console.log('sent');
-      
 
       reset()
       toastifySuccess()
@@ -68,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <div className="container">
-      <div className="">
+      <div>
         <h1 className="font-medium leading-tight text-5xl mt-0 mb-2">
           Contact us
         </h1>
@@ -76,8 +70,6 @@ const ContactForm = () => {
           {/* Row 1 of form */}
           <div className="col">
             <input
-              type="text"
-              name="name"
               {...register('name', {
                 required: {
                   value: true,
@@ -88,6 +80,8 @@ const ContactForm = () => {
                   message: 'Please use 30 characters or less',
                 },
               })}
+              type="text"
+              name="name"
               className=" form-control
               block
               w-full
@@ -111,12 +105,12 @@ const ContactForm = () => {
           </div>
           <div>
             <input
-              type="email"
-              name="email"
               {...register('email', {
                 required: true,
                 pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
               })}
+              type="email"
+              name="email"
               className="form-control 
                        block
               w-full
@@ -143,8 +137,6 @@ const ContactForm = () => {
 
           <div className="col">
             <input
-              type="text"
-              name="subject"
               {...register('subject', {
                 required: {
                   value: true,
@@ -155,6 +147,8 @@ const ContactForm = () => {
                   message: 'Subject cannot exceed 75 characters',
                 },
               })}
+              type="text"
+              name="subject"
               className="form-control 
                        block
               w-full
@@ -179,11 +173,11 @@ const ContactForm = () => {
 
           <div className="col">
             <textarea
-              rows={3}
-              name="message"
               {...register('message', {
                 required: true,
               })}
+              rows={3}
+              name="message"
               className="form-control 
                        block
               w-full
@@ -219,4 +213,3 @@ const ContactForm = () => {
 }
 
 export default ContactForm
-
