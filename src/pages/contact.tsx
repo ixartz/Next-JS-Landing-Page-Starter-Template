@@ -1,21 +1,6 @@
-import ContactForm from '../Components/ContactForm';
 import { Base } from '../templates/Base';
 
-export async function getStaticProps(){
-  return {props: {
-    templateID: process.env.TEMPLATE_ID,
-    serviceID: process.env.SERVICE_ID,
-    userID: process.env.USER_ID,
-  }}
-}
-
-export interface IContactForm {
-   templateID: string;
-   serviceID: string;
-   userID: string;
- }
-
-const Index = (props: IContactForm) => (
+const Index = () => (
   <Base>
     <div
       style={{
@@ -23,12 +8,22 @@ const Index = (props: IContactForm) => (
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '3rem',
+        width: '100%',
+        minHeight: '60vh',
         fontFamily: 'sans-serif',
         color: '#111',
+        padding: '8rem 3rem'
       }}
     >
-      <ContactForm {...props} />
+      <div className="text-center">
+
+        <h1 className="font-medium leading-tight text-5xl mt-0 mb-2">
+          Contact
+        </h1>
+      </div>
+        <p className='text-center'>The best way to reach us is via email. Feel free to ask us any questions or request a callback. Looking forward to hearing from you.</p> 
+        <br />
+        <strong>info@ez.photos</strong>
       <hr />
     </div>
   </Base>
