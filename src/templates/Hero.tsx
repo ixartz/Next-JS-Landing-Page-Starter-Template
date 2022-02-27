@@ -25,17 +25,16 @@ export const Header = () => (
 );
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-gray-900">
     {/* <Header /> */}
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={
           <>
-            {'Photobooth Rentals\n'}
-            <span className="text-primary-500">Austin, Texas</span>
+            <span className="text-primary-500">{'Photobooth Rentals\n'}</span>
           </>
         }
-        description="The EZ way to get pictures of your friends"
+        description="Austin based, serving Central Texas"
         button={
           <Link href="/contact">
             <a>

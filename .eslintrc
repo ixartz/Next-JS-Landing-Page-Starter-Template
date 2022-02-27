@@ -1,5 +1,6 @@
 {
   // Configuration for JavaScript files
+  "root": true,
   "extends": [
     "airbnb-base",
     "next/core-web-vitals",
