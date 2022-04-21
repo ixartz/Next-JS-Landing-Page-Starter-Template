@@ -7,12 +7,12 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title="Invest Now"
+      subtitle="Powered by Proteksi 8"
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
+        <Link href="https://wa.me/6287888596616?text=Saya%20tertarik%20dengan%20produk%20Proteksi%208">
           <a>
-            <Button>Get Started</Button>
+            <Button>Contact Now</Button>
           </a>
         </Link>
       }

@@ -10,33 +10,22 @@ import { Logo } from './Logo';
 const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Sign in</a>
-          </Link>
-        </li>
-      </NavbarTwoColumns>
+      <NavbarTwoColumns logo={<Logo xl />}></NavbarTwoColumns>
     </Section>
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'The modern way of\n'}
+            <span className="text-primary-500">Life Insurance Business</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="We create our own Network."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="https://www.zurich.co.id/id-id">
             <a>
-              <Button xl>Download Your Free Theme</Button>
+              <Button xl>Powered by Zurich</Button>
             </a>
           </Link>
         }
@@ -44,5 +33,4 @@ const Hero = () => (
     </Section>
   </Background>
 );
-
 export { Hero };
