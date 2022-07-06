@@ -1,5 +1,5 @@
-import { Base } from '../templates/Base';
-
-const Index = () => <Base />;
+const Index = () => {
+  return <p>hello from the Advisory tool</p>;
+};
 
 export default Index;
