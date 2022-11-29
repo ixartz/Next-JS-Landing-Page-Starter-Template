@@ -43,6 +43,5 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [],
 };
