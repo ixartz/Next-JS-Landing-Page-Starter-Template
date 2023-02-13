@@ -30,6 +30,7 @@ const VerticalFeatures = () => (
       description="Des pizzas à tomber par terre ! Le secret ? La pâte à pizza maison."
       image="/assets/images/jpg/pizza.jpg"
       imageAlt="Photo d'une pizza au feu de bois dont la pâte est faite maison."
+      reverse
     />
     <VerticalFeatureRow
       title="Un rôti bien farci"
@@ -42,6 +43,7 @@ const VerticalFeatures = () => (
       description="Vous n'aimez pas les pâtes ? Vous n'aimez pas la vie !"
       image="/assets/images/jpg/pasta.jpg"
       imageAlt="Photo d'une assiette de macaronade de pâtes."
+      reverse
     />
   </Section>
 );
