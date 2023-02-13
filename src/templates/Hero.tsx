@@ -24,13 +24,13 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="sm:pt-10 md:pt-20 pb-32">
       <HeroOneButton
         title={
           <>
             {'Le '}
             <span className="text-primary-500">food truck</span>
-            {' ultime\n pour les amateurs de cuisine\n'}
+            {' ultime pour les amateurs de cuisine '}
             <span className="text-primary-500">française</span>
             {' et '}
             <span className="text-primary-500">italienne</span>
