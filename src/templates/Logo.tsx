@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import SvgLogo from '../../public/assets/images/svg/logoChezLulu.svg';
 import { AppConfig } from '../utils/AppConfig';
 
 type ILogoProps = {
@@ -15,12 +16,7 @@ const Logo = (props: ILogoProps) => {
   return (
     <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
       <div className="pr-2 pb-2 inline-flex">
-        <Image
-          src="/assets/images/svg/logoChezLulu.svg"
-          alt="Logo Chez Lulu"
-          width={size}
-          height={size}
-        />
+        <Image src={SvgLogo} alt="Logo Chez Lulu" width={size} height={size} />
       </div>
 
       {AppConfig.site_name}
