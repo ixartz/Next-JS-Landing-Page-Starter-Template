@@ -28,7 +28,12 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       </div>
 
       <div className="w-full sm:w-1/2 p-6">
-        <Image src={props.image} alt={props.imageAlt} className="rounded-md" />
+        <Image
+          src={props.image}
+          alt={props.imageAlt}
+          className="rounded-md"
+          placeholder="blur"
+        />
       </div>
     </div>
   );
