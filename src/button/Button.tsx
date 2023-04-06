@@ -15,16 +15,16 @@ const Button = (props: IButtonProps) => {
 
   return (
     <div className={btnClass}>
-      {props.children}
+      <p className="px-10 py-3"> {props.children}</p>
 
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply inline-block  text-center rounded-full font-sans;
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply text-lg font-semibold;
           }
 
           .btn-xl {
@@ -32,11 +32,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-white bg-primary-500;
+            @apply text-white bg-heliotrope-500;
           }
 
           .btn-primary:hover {
-            @apply bg-primary-600;
+            @apply bg-heliotrope-600;
           }
         `}
       </style>
