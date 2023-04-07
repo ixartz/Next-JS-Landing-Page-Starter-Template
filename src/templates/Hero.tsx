@@ -9,7 +9,7 @@ const Logo = () => (
   <img src="/logo.png" alt="logo" className="pl-5 w-auto h-7" />
 );
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-[#FFFF]">
     <Section yPadding="py-3">
       <NavbarTwoColumns logo={<Logo />}>
         <li>

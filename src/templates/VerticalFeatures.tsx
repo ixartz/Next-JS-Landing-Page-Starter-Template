@@ -3,8 +3,9 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Why you should choose playard"
+    description="
+    adalah platform untuk menghubungkan pencari dan penggemar olahraga untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
   >
     <VerticalFeatureRow
       title="Your title here"

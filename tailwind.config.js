@@ -43,6 +43,7 @@ module.exports = {
         },
         heliotrope: {
           50: '#f4f2ff',
+          70: '#F4F5FC',
           100: '#ebe8ff',
           200: '#dad4ff',
           300: '#beb2ff',
