@@ -9,8 +9,8 @@ const Logo = () => (
   <img src="/logo.png" alt="logo" className="pl-5 w-auto h-7" />
 );
 const Hero = () => (
-  <Background color="bg-[#FFFF]">
-    <Section yPadding="py-3">
+  <Background color="bg-[#FFFF] ">
+    <Section>
       <NavbarTwoColumns logo={<Logo />}>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
@@ -20,7 +20,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding=" pb-32">
+    <Section yPadding="pb-14 md:py-20">
       <HeroOneButton
         title={
           <>

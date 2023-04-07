@@ -9,28 +9,36 @@ type ISectionProps = {
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`max-w-screen-lg mx-auto ${
-      props.yPadding ? props.yPadding : 'py-16'
-    }`}
+    className={`max-w-screen-lg mx-auto
+
+    ${props.yPadding ? props.yPadding : 'py-3'}`}
   >
-    {(props.title || props.description) && (
-      <div className="px-10 text-center bg-heliotrope-70 py-20 ">
-        <h1 className="pb-6 leading-normal font-sans font-bold text-lg text-heliotrope-400">
-          About us
-        </h1>
-        {props.title && (
-          <h2 className="text-2xl leading-normal font-sans text-gray-900 font-bold pb-4">
-            {props.title}
-          </h2>
-        )}
-        {props.description && (
-          <div className="mt-4 text-base md:px-20 font-lato leading-[183%]">
-            <span className="text-heliotrope-400">Playard</span>
-            {props.description}
+    <div
+      className="
+    bg-heliotrope-70
+    "
+    >
+      {(props.title || props.description) && (
+        <div className="px-12 md:px-0	 text-center  py-20 grid md:grid-cols-12 gap-8">
+          <div className="md:col-span-4">
+            <h1 className="pb-6 leading-normal font-sans font-bold text-lg text-heliotrope-400 md:text-left">
+              About us
+            </h1>
+            {props.title && (
+              <h2 className="text-2xl leading-normal font-sans text-gray-900 font-bold pb-4 md:text-left">
+                {props.title}
+              </h2>
+            )}
           </div>
-        )}
-      </div>
-    )}
+          {props.description && (
+            <div className="mt-4 text-base md:px-20 font-lato leading-[183%] md:col-span-8 md:text-left">
+              <span className="text-heliotrope-400">Playard</span>
+              {props.description}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
 
     {props.children}
   </div>
