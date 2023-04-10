@@ -21,7 +21,9 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       <div className="pt-3 font-lato text-base  mb-8 leading-normal md:text-left		">
         {props.description}
       </div>
-      <Button>Daftar Sekarang</Button>
+      <div className="text-center">
+        <Button>Daftar Sekarang</Button>
+      </div>
     </div>
   </header>
 );

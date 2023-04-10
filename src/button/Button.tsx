@@ -15,7 +15,7 @@ const Button = (props: IButtonProps) => {
 
   return (
     <div className={btnClass}>
-      <p className="px-10 py-3"> {props.children}</p>
+      <p className="px-10 py-2 "> {props.children}</p>
 
       <style jsx>
         {`
@@ -24,11 +24,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-base {
-            @apply text-lg font-semibold;
+            @apply text-[16px] font-semibold;
           }
 
           .btn-xl {
-            @apply font-extrabold text-xl py-4 px-6;
+            @apply font-extrabold text-xl py-4 px-6 leading-none;
           }
 
           .btn-primary {

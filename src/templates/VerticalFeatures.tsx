@@ -3,6 +3,8 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
+    grey
+    max
     title="Why you should choose playard"
     description="
     adalah platform untuk menghubungkan pencari dan penggemar olahraga untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
