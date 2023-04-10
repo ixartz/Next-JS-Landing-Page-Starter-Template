@@ -12,18 +12,6 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title={
         <>
-          {`Platform `}
-          <span className="text-heliotrope-400">Terbaik</span>
-          {` Untuk Mencari Lobi Olahraga\n`}
-        </>
-      }
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/landing1.png"
-      imageAlt="First feature alt text"
-    />
-    <VerticalFeatureRow
-      title={
-        <>
           {`Perbaharui Lifestyle Menjadi `}
           <span className="text-heliotrope-400">Lebih Sehat</span>
           {` Untuk Mencari Lobi Olahraga\n`}
@@ -31,7 +19,7 @@ const VerticalFeatures = () => (
       }
       description="
       Olahraga jadi lebih mudah, mau sendiri ataupun dengan teman sekarang bisa bermain olahraga kapanpun dan bersama orang lain."
-      image="/assets/images/landing2.png"
+      image="/assets/images/landing1.png"
       imageAlt="Second feature alt text"
       reverse
     />
@@ -44,7 +32,7 @@ const VerticalFeatures = () => (
       }
       description="
       Dengan klasifikasi level bermain yang beragam, kamu bisa bertemu kawan bermain yang pas atau tantang diri kamu di level yang lebih tinggi."
-      image="/assets/images/landing3.png"
+      image="/assets/images/landing2.png"
       imageAlt="Third feature alt text"
     />
     <VerticalFeatureRow
@@ -57,8 +45,19 @@ const VerticalFeatures = () => (
         </>
       }
       description="Dengan proses membuat lobi yang mudah, kamu bisa buat dan ramaikan lobi agar bisa dapat untung dari uang yang terkumpulkan."
-      image="/assets/images/landing4.png"
+      image="/assets/images/landing3.png"
       imageAlt="Third feature alt text"
+    />
+    <VerticalFeatureRow
+      title={
+        <>
+          {`Kumpulkan Poin dan `}
+          <span className="text-heliotrope-400"> Dapatkan Reward</span>
+        </>
+      }
+      description="Olahraga jadi lebih mudah, mau sendiri ataupun dengan teman sekarang bisa bermain olahraga kapanpun dan bersama orang lain. "
+      image="/assets/images/landing4.png"
+      imageAlt="Fourth feature alt text"
     />
   </Section>
 );
