@@ -31,7 +31,11 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         alt={props.imageAlt}
         className="w-full mx-auto md:col-span-4 "
       />
-      <div className="order-last md:order-first md:col-span-8 grid">
+      <div
+        className={`${
+          props.reverse ? 'order-last md:order-first' : ''
+        } md:col-span-8 grid`}
+      >
         <h1
           className=" font-sans  text-gray-900 font-bold md:text-left leading-[148%]
         text-[24px] md:text-[40px]

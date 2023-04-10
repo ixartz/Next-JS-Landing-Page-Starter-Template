@@ -10,7 +10,7 @@ const Logo = () => (
 );
 const Hero = () => (
   <Background color="bg-[#FFFF] ">
-    <Section max>
+    <Section max top>
       <NavbarTwoColumns logo={<Logo />}>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
@@ -20,7 +20,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pb-14 md:py-20" max>
+    <Section yPadding="pb-14 md:py-20" max top>
       <HeroOneButton
         title={
           <>

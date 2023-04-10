@@ -5,6 +5,7 @@ type ISectionProps = {
   description?: string;
   yPadding?: string;
   max?: boolean;
+  top?: boolean;
   grey?: boolean;
   children: ReactNode;
 };
@@ -47,7 +48,7 @@ const Section = (props: ISectionProps) => (
     </div>
     <div
       className={` mx-auto
-pt-20 md:pt-44
+ ${props.top ? 'pt-3' : 'pt-20 md:pt-44'}
  ${props.max ? `max-w-screen-lg` : ''}
     `}
     >
