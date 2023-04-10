@@ -32,17 +32,22 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         className="w-full mx-auto md:col-span-4 "
       />
       <div className="order-last md:order-first md:col-span-8 grid">
-        <h1 className=" font-sans text-2xl text-gray-900 font-bold md:text-left	md:text-[56px] leading-[148%]">
+        <h1
+          className=" font-sans  text-gray-900 font-bold md:text-left leading-[148%]
+        text-[24px] md:text-[40px]
+        "
+        >
           {props.title}
         </h1>
-        <div className="pt-3 md:pt-4 font-lato text-base  mb-8 leading-normal md:text-left	md:text-[24px]	">
+        <div
+          className="pt-3 md:pt-4 font-lato   mb-8 leading-normal md:text-left
+           text-[16px]
+           md:text-2xl
+        "
+        >
           {props.description}
         </div>
       </div>
-      {/* <div className="w-full sm:w-1/2 text-center sm:px-6">
-        <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
-      </div> */}
     </div>
   );
 };

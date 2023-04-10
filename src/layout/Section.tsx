@@ -18,10 +18,8 @@ const Section = (props: ISectionProps) => (
     >
       {(props.title || props.description) && (
         <div
-          className="px-12 text-center md:px-0 py-20 grid md:grid-cols-12 gap-8 mx-auto
- max-w-screen-lg
-      pb-14
-      "
+          className={`px-12 text-center md:px-0 py-20 grid md:grid-cols-12 gap-8 mx-auto
+ max-w-screen-lg ${props.yPadding ? props.yPadding : 'py-3'}      `}
         >
           <div className="md:col-span-5">
             <h1 className="pb-3 leading-normal font-sans font-bold md:text-[24px] text-lg text-heliotrope-400 md:text-left">
@@ -49,8 +47,9 @@ const Section = (props: ISectionProps) => (
     </div>
     <div
       className={` mx-auto
+pt-20 md:pt-44
  ${props.max ? `max-w-screen-lg` : ''}
-    ${props.yPadding ? props.yPadding : 'py-3'}`}
+    `}
     >
       {props.children}
     </div>
