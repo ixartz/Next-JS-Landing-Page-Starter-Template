@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import className from 'classnames';
-import { useRouter } from 'next/router';
+import className from "classnames";
+import { useRouter } from "next/router";
 
 type IVerticalFeatureRowProps = {
   title: string | ReactNode;
@@ -13,12 +13,12 @@ type IVerticalFeatureRowProps = {
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'flex',
-    'flex-wrap',
-    'items-center',
-    'text-center px-6 md:px-12  grid md:grid-cols-12 gap-8',
+    "flex",
+    "flex-wrap",
+    "items-center",
+    "text-center px-6 md:px-12  grid md:grid-cols-12 gap-8",
     {
-      'flex-row-reverse': props.reverse,
+      "flex-row-reverse": props.reverse,
     }
   );
 
@@ -33,7 +33,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       />
       <div
         className={`${
-          props.reverse ? 'order-last md:order-first' : ''
+          props.reverse ? "order-last md:order-first" : ""
         } md:col-span-8 grid`}
       >
         <h1

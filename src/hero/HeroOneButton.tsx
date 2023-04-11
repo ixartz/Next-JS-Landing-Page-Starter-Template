@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import { Button } from '../button/Button';
+import { Button } from "../button/Button";
 
 type IHeroOneButtonProps = {
   title: ReactNode;

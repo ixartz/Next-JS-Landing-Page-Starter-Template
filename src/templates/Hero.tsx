@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { Background } from '../background/Background';
-import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Background } from "../background/Background";
+import { HeroOneButton } from "../hero/HeroOneButton";
+import { Section } from "../layout/Section";
+import { NavbarTwoColumns } from "../navigation/NavbarTwoColumns";
 
 const Logo = () => (
   <img src="/logo.png" alt="logo" className="pl-5 w-auto h-7" />

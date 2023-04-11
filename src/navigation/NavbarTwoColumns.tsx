@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 type INavbarProps = {
   logo: ReactNode;
