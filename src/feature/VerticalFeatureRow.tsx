@@ -13,6 +13,7 @@ type IVerticalFeatureRowProps = {
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
+    "md:pb-20",
     "flex",
     "flex-wrap",
     "items-center",

@@ -6,10 +6,14 @@ type ICTABannerProps = {
 };
 
 const CTABanner = (props: ICTABannerProps) => (
-  <div className="text-center flex items-center  bg-primary-100 rounded-md mx-auto">
-    <div className="text-2xl font-semibold text-center items-center mx-auto">
-      <div className="text-gray-900">{props.title}</div>
-      <div className="text-primary-500">{props.subtitle}</div>
+  <div className="text-center flex items-center  bg-heliotrope-70 rounded-md mx-auto">
+    <div className="px-6 text-center items-center mx-auto">
+      <div className="text-[#2A2A2A] pt-20 font-bold text-[24px] leading-[148%]">
+        {props.title}
+      </div>
+      <div className="text-[16px] leading-[140%] font-lato pt-2 md:pt-4 pb-8 md:pb-12">
+        {props.subtitle}
+      </div>
       <ContactForm />
     </div>
   </div>

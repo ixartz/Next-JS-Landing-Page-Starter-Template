@@ -8,7 +8,7 @@ type IHeroOneButtonProps = {
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
-  <header className="text-center px-12 md:px-0  grid md:grid-cols-12 gap-8">
+  <header className="text-center px-12 md:px-0  grid md:grid-cols-12 gap-8 pb-14 md:pb-20">
     <img
       src="/mainLanding.png"
       alt="logo"
