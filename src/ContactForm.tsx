@@ -30,19 +30,36 @@ export const ContactForm = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />{" "}
-        <input
-          className="bg-[#F3F4F5]"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <textarea
-          className="bg-[#F3F4F5]"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button type="submit" disabled={submitting}>
+        <button
+          type="submit"
+          disabled={submitting || !message}
+          className="mx-auto btn-primary btn btn-xl "
+        >
           Send
         </button>
+        <style jsx>
+          {`
+            .btn {
+              @apply inline-block  text-center rounded-full font-sans;
+            }
+
+            .btn-base {
+              @apply text-[16px] md:text-[20px] font-semibold;
+            }
+
+            .btn-xl {
+              @apply font-extrabold text-xl py-4 px-6;
+            }
+
+            .btn-primary {
+              @apply text-white bg-heliotrope-400;
+            }
+
+            .btn-primary:hover {
+              @apply bg-heliotrope-500;
+            }
+          `}
+        </style>
       </form>
     </Background>
   );
