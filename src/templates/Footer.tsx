@@ -1,15 +1,20 @@
 import Link from "next/link";
 
-import { Logo } from "./Logo";
 import { Background } from "../background/Background";
 import { CenteredFooter } from "../footer/CenteredFooter";
 import { Section } from "../layout/Section";
 
 const Footer = () => (
-  <Background color="bg-[#404040]">
-    <Section>
+  <Background color="bg-[#2A2A2A]">
+    <Section top>
       <CenteredFooter
-        logo={<Logo />}
+        logo={
+          <img
+            src="/lightIcon.png"
+            alt="logo"
+            className="w-[80px] order-first md:order-last mx-auto md:col-span-4 "
+          />
+        }
         iconList={
           <>
             <Link href="/">
@@ -70,26 +75,21 @@ const Footer = () => (
           </>
         }
       >
-        <li>
+        {/* <li className="px-10 text-white">
           <Link href="/">
             <a>Home</a>
           </Link>
         </li>
-        <li>
+        <li className="px-10  text-white">
           <Link href="/">
-            <a>About</a>
+            <a>Blog</a>
           </Link>
         </li>
-        <li>
+        <li className="px-10  text-white">
           <Link href="/">
-            <a>Docs</a>
+            <a>Product</a>
           </Link>
-        </li>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
-          </Link>
-        </li>
+        </li> */}
       </CenteredFooter>
     </Section>
   </Background>

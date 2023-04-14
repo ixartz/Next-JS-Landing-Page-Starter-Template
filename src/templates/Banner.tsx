@@ -2,7 +2,7 @@ import { CTABanner } from "../cta/CTABanner";
 import { Section } from "../layout/Section";
 
 const Banner = () => (
-  <Section>
+  <Section top>
     <CTABanner
       title="
       Tingkatkan Gaya Hidup Aktifmu Bersama Kami! "

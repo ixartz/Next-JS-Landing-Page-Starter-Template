@@ -48,7 +48,7 @@ const Section = (props: ISectionProps) => (
     </div>
     <div
       className={` mx-auto
- ${props.top ? "pt-3" : "pt-20 md:pt-44"}
+ ${props.top ? "pt-3" : "pt-28 pb-8 "}
  ${props.max ? `max-w-screen-lg` : ""}
     `}
     >

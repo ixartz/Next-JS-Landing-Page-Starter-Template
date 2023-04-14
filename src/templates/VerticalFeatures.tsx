@@ -5,7 +5,7 @@ const VerticalFeatures = () => (
   <Section
     grey
     max
-    yPadding="pb-20 md:pb-44"
+    yPadding="pb-20 "
     title="Why you should choose playard"
     description="
     adalah platform untuk menghubungkan pencari dan penggemar olahraga untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
