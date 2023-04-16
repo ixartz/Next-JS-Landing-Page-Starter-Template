@@ -15,7 +15,6 @@ const VerticalFeatures = () => (
         <>
           {`Perbaharui Lifestyle Menjadi `}
           <span className="text-heliotrope-400">Lebih Sehat</span>
-          {` Untuk Mencari Lobi Olahraga\n`}
         </>
       }
       description="
@@ -39,7 +38,7 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title={
         <>
-          {`Buka dan Dapatkan Untung Platform `}
+          {`Buka Lobi `}
           <span className="text-heliotrope-400">Lobi</span>
           {` dan Dapatkan `}
           <span className="text-heliotrope-400">Untung</span>
