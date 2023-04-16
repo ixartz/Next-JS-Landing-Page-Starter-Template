@@ -24,7 +24,7 @@ const Section = (props: ISectionProps) => (
         >
           <div className="md:col-span-5">
             <h1 className="pb-3 leading-normal font-sans font-bold md:text-[24px] text-lg text-heliotrope-400 md:text-left">
-              About us
+              Tentang Kami
             </h1>
             {props.title && (
               <h2 className=" text-[24px] md:text-[40px] leading-normal font-sans text-gray-900 font-bold  md:text-left">
