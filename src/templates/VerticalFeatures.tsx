@@ -38,7 +38,7 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title={
         <>
-          {`Buka Lobi `}
+          {`Buka `}
           <span className="text-heliotrope-400">Lobi</span>
           {` dan Dapatkan `}
           <span className="text-heliotrope-400">Untung</span>
