@@ -31,6 +31,8 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         src={`${router.basePath}${props.image}`}
         alt={props.imageAlt}
         className="w-full mx-auto md:col-span-4 "
+        unoptimized={true}
+        priority
       />
       <div
         className={`${
