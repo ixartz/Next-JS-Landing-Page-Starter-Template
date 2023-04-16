@@ -1,20 +1,11 @@
 import { ReactNode } from "react";
 
-import { React } from "react";
-
 import { Button } from "../button/Button";
 
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
 };
-
-function scrollToBottom() {
-  window.scrollTo({
-    top: document.documentElement.scrollHeight,
-    behavior: 'smooth'
-  });
-}
 
 const HeroOneButton = (props: IHeroOneButtonProps) => {
   return (
@@ -32,7 +23,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
           {props.description}
         </div>
         <div className="text-center md:text-left">
-          <Button onClick={scrollToBottom}> Daftar Sekarang</Button>
+          <Button> Daftar Sekarang</Button>
         </div>
       </div>
     </header>
