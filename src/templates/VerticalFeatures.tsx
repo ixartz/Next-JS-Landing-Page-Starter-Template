@@ -8,7 +8,7 @@ const VerticalFeatures = () => (
     yPadding="pb-20 "
     title="Kenapa Harus Playard"
     description="
-    adalah platform untuk menghubungkan pencari dan penggemar olahraga untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
+    adalah platform untuk menghubungkan pencari dan penggemar bola basket untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
   >
     <VerticalFeatureRow
       title={
@@ -18,7 +18,7 @@ const VerticalFeatures = () => (
         </>
       }
       description="
-      Olahraga jadi lebih mudah, mau sendiri ataupun dengan teman sekarang bisa bermain olahraga kapanpun dan bersama orang lain."
+      Olahraga jadi lebih mudah, mau sendiri ataupun dengan teman sekarang bisa bermain basket kapanpun dan bersama orang lain."
       image="/assets/images/landing1.png"
       imageAlt="Second feature alt text"
       reverse
@@ -56,7 +56,7 @@ const VerticalFeatures = () => (
           <span className="text-heliotrope-400"> Dapatkan Reward</span>
         </>
       }
-      description="Olahraga jadi lebih mudah, mau sendiri ataupun dengan teman sekarang bisa bermain olahraga kapanpun dan bersama orang lain. "
+      description="Dapatkan poin dari setiap aktivitas kamu di playard dan tukarkan poin dengan reward-reward yang menarik."
       image="/assets/images/landing4.png"
       imageAlt="Fourth feature alt text"
     />

@@ -26,10 +26,10 @@ const Hero = () => (
           <>
             {`Platform `}
             <span className="text-heliotrope-400">Terbaik</span>
-            {` Untuk Mencari Lobi Olahraga\n`}
+            {` Untuk Mencari Lobi Bola Basket\n`}
           </>
         }
-        description="Bergabung dalam lobi untuk bermain bersama dan bertemu teman olahraga baru di kota kamu."
+        description="Bergabung dalam lobi untuk bermain bersama dan bertemu teman basket baru di kota kamu."
       />
     </Section>
   </Background>
