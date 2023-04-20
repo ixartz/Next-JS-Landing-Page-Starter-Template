@@ -18,6 +18,7 @@
     "classnames": "^2.3.1",
     "next": "^12.0.9",
     "next-seo": "^4.29.0",
+    "nextjs-google-analytics": "^2.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-jsx-plugin-postcss": "^4.0.1"
