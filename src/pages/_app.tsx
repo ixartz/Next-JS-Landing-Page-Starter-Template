@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { AppProps } from "next/app";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
@@ -10,6 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       gaMeasurementId={"G-QD8ZTM7F1V"}
     />
 
+    <Analytics />
     <Component {...pageProps} />
   </>
 );
