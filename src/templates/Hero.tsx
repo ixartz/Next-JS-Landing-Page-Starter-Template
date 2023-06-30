@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
+import { Logo } from './Logo';
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
@@ -13,13 +13,11 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            <a>GitHub</a>
+            GitHub
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <a>Sign in</a>
-          </Link>
+          <Link href="/">Sign in</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -35,9 +33,7 @@ const Hero = () => (
         description="The easiest way to build a React landing page in seconds."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <a>
-              <Button xl>Download Your Free Theme</Button>
-            </a>
+            <Button xl>Download Your Free Theme</Button>
           </Link>
         }
       />
