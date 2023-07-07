@@ -24,9 +24,9 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {`Platform `}
-            <span className="text-heliotrope-400">Terbaik</span>
-            {` Untuk Mencari Lobi Bola Basket\n`}
+            {`Kami Mulai `}
+            <span className="text-heliotrope-400">Bergerak</span>
+            {`, Bergerak Bersama Kami\n`}
           </>
         }
         description="Bergabung dalam lobi untuk bermain bersama dan bertemu teman basket baru di kota kamu."
