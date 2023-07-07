@@ -8,7 +8,7 @@ const VerticalFeatures = () => (
     yPadding="pb-20 "
     title="Kenapa Harus Playard"
     description="
-    adalah platform untuk menghubungkan pencari dan penggemar bola basket untuk bermain bersama dengan mudah. Jadikan olahraga sebagai bagian dari gaya hidup kamu dan temukan teman baru dengan minat yang sama!"
+    adalah platform katalis pertumbuhan olahraga. Kami ada untuk menyatukan dan menggerakkan semua melalui olahraga. Bergerak bersama kami dan bergabung dengan satu sama lain dalam lobi untuk bertemu dan berolahraga bersama teman baru."
   >
     <VerticalFeatureRow
       title={
