@@ -10,7 +10,8 @@
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next .swc out",
     "lint": "next lint",
-    "build-types": "tsc --noEmit --pretty",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "check-types": "tsc --noEmit --pretty",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -40,6 +41,8 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
