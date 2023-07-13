@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import { Logo } from './Logo';
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
