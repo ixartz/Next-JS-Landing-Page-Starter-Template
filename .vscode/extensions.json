@@ -6,6 +6,7 @@
     "csstools.postcss",
     "blanu.vscode-styled-jsx",
     "msjsdiag.debugger-for-chrome",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+    "yoavbls.pretty-ts-errors"
   ]
 }
