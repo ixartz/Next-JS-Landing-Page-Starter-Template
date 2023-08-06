@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import Link from "next/link";
+
 import { Button } from "../button/Button";
 
 type IHeroOneButtonProps = {
@@ -8,13 +10,6 @@ type IHeroOneButtonProps = {
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => {
-  function handleScroll() {
-    window.scroll({
-      top: document.body.offsetHeight,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
   return (
     <header className="text-center px-12 md:px-0  grid md:grid-cols-12 gap-8 pb-14 md:pb-20">
       <img
@@ -30,7 +25,9 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
           {props.description}
         </div>
         <div className="text-center md:text-left">
-          <Button onClick={handleScroll}> Daftar Sekarang</Button>
+          <Link href="https://app.playard.id" target="_blank">
+            <Button> Daftar Sekarang</Button>
+          </Link>
         </div>
       </div>
     </header>
