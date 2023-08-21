@@ -57,19 +57,13 @@ const Footer = () => (
         }
       >
         <li>
-          <Link href="/">Doğum</Link>
+          <Link href="/">İyiki</Link>
         </li>
         <li>
-          <Link href="/">Günün</Link>
+          <Link href="/">Doğdun! 🥳</Link>
         </li>
         <li>
-          <Link href="/">Kutlu</Link>
-        </li>
-        <li>
-          <Link href="/">Olsun</Link>
-        </li>
-        <li>
-          <Link href="/">Abdullah 🥳</Link>
+          <Link href="/">Abdullah</Link>
         </li>
       </CenteredFooter>
     </Section>
