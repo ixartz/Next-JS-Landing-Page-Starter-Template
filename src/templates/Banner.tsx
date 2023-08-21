@@ -10,7 +10,7 @@ const Banner = () => (
       title="Aklındaki bir çok soru için,"
       subtitle="bizimle iletişime geç!"
       button={
-        <Link href="https://linktr.ee/yazilimcukurova">
+        <Link href="https://linktr.ee/yazilimcukurova" target="_blank">
           <Button>İletişim İçin Tıkla</Button>
         </Link>
       }
