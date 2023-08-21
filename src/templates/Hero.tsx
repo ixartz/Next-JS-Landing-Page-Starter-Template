@@ -11,7 +11,7 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
+        <li className="hidden md:block">
           <Link href="https://linktr.ee/yazilimcukurova" target="_blank">
             Üyelik İçin Tıkla
           </Link>
