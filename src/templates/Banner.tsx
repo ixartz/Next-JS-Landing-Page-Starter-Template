@@ -10,7 +10,7 @@ const Banner = () => (
       title="Aklındaki bir çok soru için,"
       subtitle="bizimle iletişime geç!"
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
+        <Link href="https://linktr.ee/yazilimcukurova">
           <Button>İletişim İçin Tıkla</Button>
         </Link>
       }
