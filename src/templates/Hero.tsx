@@ -12,12 +12,9 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
+          <Link href="https://linktr.ee/yazilimcukurova" target="_blank">
+            Üyelik İçin Tıkla
           </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -26,14 +23,14 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Yazılıma İlgi Duyuyorsan,\n'}
+            <span className="text-primary-800">Doğru Yerdesin! 🚀</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="Geleceği kodlayan, inovasyona yön veren bir topluluk..."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href="https://linktr.ee/yazilimcukurova" target="_blank">
+            <Button xl>Aramıza Katıl 🤩</Button>
           </Link>
         }
       />

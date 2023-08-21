@@ -2,8 +2,7 @@ import { AppConfig } from '../utils/AppConfig';
 
 const FooterCopyright = () => (
   <div className="footer-copyright">
-    © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
-    <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>.
+    © Copyright {new Date().getFullYear()} {AppConfig.title}
     {/*
      * PLEASE READ THIS SECTION
      * I'm an indie maker with limited resources and funds, I'll really appreciate if you could have a link to my website.
@@ -13,7 +12,7 @@ const FooterCopyright = () => (
     <style jsx>
       {`
         .footer-copyright :global(a) {
-          @apply text-primary-500;
+          @apply text-primary-800;
         }
 
         .footer-copyright :global(a:hover) {
