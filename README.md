@@ -1,179 +1,101 @@
-# Landing Page Template built with Next JS 13+, Tailwind CSS 3 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
-
 <p align="center">
-  <a href="https://creativedesignsguru.com/demo/nextjs-landing-page/"><img src="public/assets/images/nextjs-landing-page-banner.png?raw=true" alt="Next js starter banner"></a>
+  <img src="https://avatars.githubusercontent.com/u/142937115?s=200&v=4" alt="Yazilim Çukurova Logo">
 </p>
 
-🚀 Landing Page theme written in Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, VSCode, Netlify, PostCSS, Tailwind CSS.
+# Yazilim Çukurova Web App 🚀
 
-Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/nextjs-landing-page/).
+Welcome to the Yazilim Çukurova School Society's web application repository. This web app serves as a platform to showcase our society's activities, projects, and resources related to software development.
 
-### DEMO
+Visit the live application: [🔗 Yazilim Çukurova Web App](https://www.example.com)
 
-[![Nextjs Landing Page Template Screenshot](public/assets/images/nextjs-landing-page-screenshot.png?raw=true)](https://creativedesignsguru.com/demo/nextjs-landing-page/)
+## 📚 Table of Contents
+- [Yazilim Çukurova Web App 🚀](#yazilim-çukurova-web-app-)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [ℹ️ About](#ℹ️-about)
+  - [✨ Features](#-features)
+  - [🛠️ Getting Started](#️-getting-started)
+  - [🤝 Contributing](#-contributing)
+  - [🚀 Roadmap](#-roadmap)
+  - [📄 License](#-license)
+  - [📧 Contact](#-contact)
+  - [📄 License](#-license-1)
 
-Check out our [live demo](https://creativedesignsguru.com/demo/nextjs-landing-page/).
+## ℹ️ About
 
-### Features
+The Yazilim Çukurova School Society is a group of enthusiastic students committed to advancing their skills in software development and computer science. This web app is designed to provide a dynamic and interactive way for us to share our knowledge and accomplishments with the community.
 
-Developer experience first:
+## ✨ Features
 
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-- ✅ Strict Mode for TypeScript and React 18
-- ✏️ Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and Airbnb configuration)
-- 🛠 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 Husky for Git Hooks
-- 🚫 Lint-staged for running linters on Git staged files
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
-- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
-- ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-- 🌈 Include a FREE theme
-- 💯 Maximize lighthouse score
+- **Project Showcase:** Explore our diverse portfolio of software projects, complete with descriptions and images.
 
-Built-in feature from Next.js:
+- **Blog:** Stay updated with our latest articles, tutorials, and insights on software development and technology trends.
 
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
+- **Events:** Find information about upcoming events, workshops, and meetups hosted by our society.
 
-### Included Components
+- **Member Profiles:** Get to know our talented members who are driving our society's success.
 
-- Navbar
-- Hero
-- Features
-- CTA banner
-- Footer
+- **Contact:** Reach out to us for inquiries, collaboration opportunities, or to join our community.
 
-Find more components in our [premium NextJS themes](https://creativedesignsguru.com/category/nextjs/).
+## 🛠️ Getting Started
 
-### Philosophy
+To run this web app locally for development or contribute to its improvement, follow these steps:
 
-- Minimal code
-- SEO-friendly
-- 🚀 Production-ready
+1. **Clone the repository:**
+   
+   ```git clone https://github.com/yazilimcukurova/yazilimcukurova-web-app.git```
 
-## Sponsors
+2. **Navigate to the project directory:**
 
-[![React SaaS Boilerplate Next.js](https://creativedesignsguru.com/assets/images/themes/nextlessjs-github-banner.png)](https://nextlessjs.com)
+    `cd yazilimcukurova-web-app`
 
-### Requirements
 
-- Node.js and npm
 
-### Getting started
+3. **Install dependencies:**
 
-Run the following command on your local environment:
+    `npm install`
 
-```
-git clone --depth=1 https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template.git my-project-name
-cd my-project-name
-npm install
-```
 
-Then, you can run locally in development mode with live reload:
+4. **Start the development server:**
+     
+      `npm start` 
 
-```
-npm run dev
-```
 
-Open http://localhost:3000 with your favorite browser to see your project. For your information, Next JS need to take some time to compile the project for your first time.
 
-```
-.
-├── README.md            # README file
-├── next.config.js       # Next JS configuration
-├── public               # Public folder
-│   └── assets
-│       └── images       # Image used by default template
-├── src
-│   ├── background       # Atomic background component
-│   ├── button           # Atomic button component
-│   ├── cta              # Atomic cta component
-│   ├── feature          # Atomic feature component
-│   ├── footer           # Atomic footer component
-│   ├── hero             # Atomic hero component
-│   ├── layout           # Atomic layout component
-│   ├── navigation       # Atomic navigation component
-│   ├── pages            # Next JS pages
-│   ├── styles           # PostCSS style folder with Tailwind
-│   ├── templates        # Default template
-│   └── utils            # Utility folder
-├── tailwind.config.js   # Tailwind CSS configuration
-└── tsconfig.json        # TypeScript configuration
-```
+5. **Open the app in your web browser:** The app should be running at [http://localhost:3000](http://localhost:3000) by default.
 
-### Customization
+6. **Make changes or improvements:** Create a new branch, make your changes, and submit a pull request if you'd like to contribute.
+7. 
+## 🤝 Contributing
 
-You can easily configure the theme. Please change the following file:
+We welcome contributions from the community! If you'd like to contribute to the Yazilim Çukurova Web App, please follow our [Contributing Guidelines](CONTRIBUTING.md).
 
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/global.css`: your CSS file using Tailwind CSS
-- `utils/AppConfig.ts`: configuration file
-- `src/pages/index.tsx`: the index page of the theme that uses the `Base` component
-- `src/template/Base.tsx`: the `Base` component using component blocks
-- `src/templates/*`: the list of component blocks
-- `src/*`: other folders in src are the atomic components used by components blocks
+## 🚀 Roadmap
 
-Here is the layer:
+Our plans for the future of the Yazilim Çukurova Web App:
 
-- the entry point: `index.tsx` in `src/pages`
-- the `Base` template: `Base.tsx` in `src/templates`
-- use component blocks from `src/templates/*`
-- use atomic components from `src/*`
+1. [List any future features, improvements, or goals here]
 
-### Deploy to production
+## 📄 License
 
-You can see the results locally in production mode with:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-$ npm run build
-$ npm run start
-```
+## 📧 Contact
 
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
+If you have any questions or want to get in touch with us, you can reach us at [your-email@example.com](mailto:your-email@example.com) or visit our [website](https://www.example.com/contact).
 
-You can create an optimized production build with:
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/142937115?s=200&v=4" alt="Yazilim Çukurova Logo">
+</p>
 
-```
-npm run build-prod
-```
-
-Now, your theme is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
-
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template)
-
-### Deploy to Vercel
-
-Deploy this Next JS Boilerplate on Vercel in one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fixartz%2FNext-JS-Landing-Page-Starter-Template)
-
-### VSCode information (optional)
-
-If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.
-
-Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
-
-### Contributions
-
-Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
-
-### License
-
-Licensed under the MIT License, Copyright © 2023
-
-See [LICENSE](LICENSE) for more information.
 
 ---
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+Feel free to further customize this README to match your web app's branding and content. Good luck with your web app development!
 
-[![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://www.buymeacoffee.com/ixartz)
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to further customize this README with emojis and any other elements that represent the spirit and personality of your web app and society. Good luck with your web app development!
