@@ -13,7 +13,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     </h1>
     <div className="mb-16 mt-4 text-2xl">{props.description}</div>
 
-    {props.button}
+    {/* {props.button} */}
   </header>
 );
 

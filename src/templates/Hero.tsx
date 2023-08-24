@@ -12,10 +12,12 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/">About us</Link>
+          <a target="_blank" href="https://transcribe.kiyanaw.net">
+            Transcribe
+          </a>
         </li>
         <li>
-          <Link href="/">Transcribe</Link>
+          <Link href="/">About</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -24,17 +26,18 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Language learning resources for\n'}
+            <span className="text-primary-500">Indigenous Languages</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="We are a grass-roots group of dedicated language learners, and we've compiled some of our projects and resources here in the hopes they might help you learn too."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <Button xl>Download Your Free Theme</Button>
           </Link>
         }
       />
+      <img src={'/assets/images/paddling.png'}></img>
     </Section>
   </Background>
 );
