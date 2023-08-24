@@ -17,7 +17,15 @@ const Hero = () => (
           </a>
         </li>
         <li>
-          <Link href="/">About</Link>
+          <Link href="#">Library</Link>
+        </li>
+        <li>
+          <a target="_blank" href="https://bloomfield.kiyanaw.net">
+            Bloomfield
+          </a>
+        </li>
+        <li>
+          <Link href="#about">About</Link>
         </li>
       </NavbarTwoColumns>
     </Section>

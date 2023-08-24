@@ -12,6 +12,7 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
   target?: string;
   targetText?: string;
+  comingSoon?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -41,10 +42,15 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
             <Button>{`${buttonText} →`}</Button>
           </Link>
         )}
+        {props.comingSoon && <Button>Coming soon...</Button>}
       </div>
 
       <div className="w-full p-6 sm:w-1/2">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+        <img
+          className="rounded-xl"
+          src={`${router.basePath}${props.image}`}
+          alt={props.imageAlt}
+        />
       </div>
     </div>
   );

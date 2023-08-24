@@ -15,7 +15,7 @@ const Logo = (props: ILogoProps) => {
       <img
         width={size}
         height={size}
-        style={{ ['padding-right' as any]: 10 }}
+        style={{ ['paddingRight' as any]: 10 }}
         src="/apple-touch-icon.png"
       ></img>
 

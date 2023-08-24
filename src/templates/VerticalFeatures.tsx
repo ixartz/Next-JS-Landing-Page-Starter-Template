@@ -1,31 +1,76 @@
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
+/**
+ * Sections:
+ *  * tools
+ *    - transcribe
+ *    - bengodden.com
+ *    - stats site
+ *    - paradigm driller
+ * 
+ *  * resources
+ *    - PDFs
+ *    - videos
+ *    - podcasts
+ *    - websites
+ *      - CLN
+ *      - Facebook groups?
+ *    - apps
+ *      - syllabics keyboards
+ *      - conjugation app?
+ *      - other apps
+ * 
+ *  * books (and where to get them)
+ * 
+ *  * stories
+ *    - collect stories from fluent speakers
+ * 
+ *  * bloomfield
+ *  * elderspeak 
+ * 
+ * Links
+ *  - github
+ *  - facebook
+ *  - YouTube
+
+ */
+
 const VerticalFeatures = () => (
   <Section
-    title="Projects"
+    title="Language resources"
     description="Just some stuff we've been working on..."
   >
     <VerticalFeatureRow
+      title="Learner library"
+      description="A curated list of language and cultural resources including PDFs, videos and audio, categorized by learning level an application. Also a few hard-to-find items, for safe keeping."
+      image="/assets/images/library.png"
+      imageAlt="Resources for Indigenous language learners"
+      comingSoon
+    />
+    <VerticalFeatureRow
       title="Transcriptions"
       description="As learners we find it valuable to spend time transcribing the language. It's not possible (or polite 😂) to 'pause' a fluent speaker while they're speaking, so we work on transcribing recordings to learn new vocab and train our ears. "
-      image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
-      target="/some-target"
-      targetText="View transcriptions"
-    />
-    <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
-      imageAlt="Second feature alt text"
+      image="/assets/images/transcription.png"
+      imageAlt="Transcriptions in progress"
       reverse
+      comingSoon
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
-      imageAlt="Third feature alt text"
+      title="Bloomfield online"
+      description="Leonard Bloomfield was a linguist who, in the 1920s and 30s recorded three volumes of texts from several reserves in Saskatchewan, two of which were published. Here we offer two of the publications online, Sacred Stories of the Sweetgrass Cree and Plains Cree Texts (in SRO)."
+      image="/assets/images/bloomfield.png"
+      imageAlt="Bloomfield's texts online"
+      target="https://bloomfield.kiyanaw.net"
+      targetText="Visit the Bloomfield texts"
+    />
+    <VerticalFeatureRow
+      title="Technology projects"
+      description="If you're into technology, and interested in Indigenous language learning, you might find these interesting."
+      image="/assets/images/tech.png"
+      imageAlt="Indigenous language technology"
+      reverse
+      comingSoon
     />
   </Section>
 );
