@@ -1,0 +1,14 @@
+name: "Hit Netlify webhook"
+ 
+on:
+  push:
+    branches:
+      - stable
+ 
+jobs:
+  run-updater:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Netlify production webhook
+      run: |
+        curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
