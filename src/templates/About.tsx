@@ -5,7 +5,7 @@ import { AboutBanner } from '../about/AboutBanner';
 import { Section } from '../layout/Section';
 
 const description: string = `
-Aaron nitisiyihkâson, asinîwâciy wâskahikan ohci niya. 👋
+Aaron nitisiyihkâson, asinîwâciy-wâskahikan ohci niya. 👋
 `;
 
 const subDescription = `
