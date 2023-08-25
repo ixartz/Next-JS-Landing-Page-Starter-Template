@@ -20,6 +20,10 @@ import { Section } from '../layout/Section';
  *      - syllabics keyboards
  *      - conjugation app?
  *      - other apps
+ *    - books
+ *      - mâci-nêhiyawêwin
+ *      - etc
+ *    - events?
  * 
  *  * books (and where to get them)
  * 
@@ -28,6 +32,8 @@ import { Section } from '../layout/Section';
  * 
  *  * bloomfield
  *  * elderspeak 
+ *  * Online classes
+ *  * Places you should go (eg: camps, NLE, kaniyasihk)
  * 
  * Links
  *  - github
