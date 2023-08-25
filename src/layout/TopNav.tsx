@@ -13,7 +13,7 @@ const TopNav = () => (
         </a>
       </li>
       <li>
-        <Link href="#">Library</Link>
+        <Link href="/library">Library</Link>
       </li>
       <li>
         <a target="_blank" href="https://bloomfield.kiyanaw.net">
@@ -21,7 +21,7 @@ const TopNav = () => (
         </a>
       </li>
       <li>
-        <Link href="#about">About</Link>
+        <Link href="/#about">About</Link>
       </li>
     </NavbarTwoColumns>
   </Section>

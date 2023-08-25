@@ -1,34 +1,15 @@
 import Link from 'next/link';
 
+import { TopNav } from '@/layout/TopNav';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <a target="_blank" href="https://transcribe.kiyanaw.net">
-            Transcribe
-          </a>
-        </li>
-        <li>
-          <Link href="#">Library</Link>
-        </li>
-        <li>
-          <a target="_blank" href="https://bloomfield.kiyanaw.net">
-            Bloomfield
-          </a>
-        </li>
-        <li>
-          <Link href="#about">About</Link>
-        </li>
-      </NavbarTwoColumns>
-    </Section>
+    <TopNav></TopNav>
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton

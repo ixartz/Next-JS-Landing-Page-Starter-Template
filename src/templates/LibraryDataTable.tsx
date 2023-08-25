@@ -1,32 +1,84 @@
-const LibraryDataTable = () => (
-  <div className="mx-auto w-full px-3">
-    <table className="w-full table-auto">
-      <thead>
-        <tr>
-          <th>Song</th>
-          <th>Artist</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-          <td>Malcolm Lockyer</td>
-          <td>1961</td>
-        </tr>
-        <tr>
-          <td>Witchy Woman</td>
-          <td>The Eagles</td>
-          <td>1972</td>
-        </tr>
-        <tr>
-          <td>Shining Star</td>
-          <td>Earth, Wind, and Fire</td>
-          <td>1975</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-);
+import {
+  Input,
+  Table,
+  TableBody,
+  TableCell,
+  TableColumn,
+  TableHeader,
+  TableRow,
+} from '@nextui-org/react';
+
+import { useQueryState } from '@/lib/useQueryState';
+
+import data from '../data/library-data.json';
+import { LibraryIcon } from './LibraryIcon';
+
+const LibraryDataTable = () => {
+  const [search, setSearch] = useQueryState('search');
+
+  const handleSearchChange = (event: any) => {
+    const { value } = event.target;
+    setSearch(value);
+  };
+
+  const filteredData: any = data.filter((item) => {
+    const searchValue = search || '';
+    return (
+      item.title.toLowerCase().includes(searchValue.toLowerCase()) ||
+      item.description.toLowerCase().includes(searchValue.toLowerCase()) ||
+      item.language.toLowerCase().includes(searchValue.toLowerCase()) ||
+      item.level.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  });
+
+  const renderDescription = (item: any) => {
+    return (
+      <div className="flex flex-col">
+        <p className="text-sm capitalize">
+          <span className="font-bold">{item.title}</span> - {item.author}
+        </p>
+        <p className="text-sm capitalize text-default-400">
+          {item.description}
+        </p>
+      </div>
+    );
+  };
+
+  return (
+    <div className="mx-auto w-full px-3 text-slate-700">
+      <div className="py-3">
+        <Input
+          width="100%"
+          placeholder="Search..."
+          value={search || ''}
+          onChange={handleSearchChange}
+        />
+      </div>
+
+      <Table hideHeader aria-label="Language resources">
+        <TableHeader>
+          <TableColumn>Type</TableColumn>
+          <TableColumn>Title</TableColumn>
+          <TableColumn>Language</TableColumn>
+          {/* <TableColumn>Author</TableColumn> */}
+          <TableColumn>Level</TableColumn>
+        </TableHeader>
+        <TableBody>
+          {filteredData.map((item: any, index: any) => (
+            <TableRow key={index}>
+              <TableCell>
+                <LibraryIcon type={item.type}></LibraryIcon>
+              </TableCell>
+              <TableCell>{renderDescription(item)}</TableCell>
+              <TableCell>{item.language}</TableCell>
+              {/* <TableCell>{item.author}</TableCell> */}
+              <TableCell>{item.level}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </div>
+  );
+};
 
 export { LibraryDataTable };

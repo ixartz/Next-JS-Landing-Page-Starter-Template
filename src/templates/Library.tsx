@@ -12,7 +12,6 @@ const Library = () => (
     <TopNav></TopNav>
     <Section title="Learner library">{}</Section>
     <LibraryDataTable></LibraryDataTable>
-    <p>Hello world</p>
     <Footer />
   </div>
 );

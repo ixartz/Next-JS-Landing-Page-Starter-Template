@@ -1,0 +1,38 @@
+[
+  {
+    "title": "React Basics",
+    "description": "Introduction to React",
+    "language": "JavaScript",
+    "level": "Beginner",
+    "author": "Some author",
+    "source": "https://youtube.com/2134",
+    "type": "video"
+  },
+  {
+    "title": "Advanced Vue",
+    "description": "Diving deep into Vue",
+    "language": "JavaScript",
+    "level": "Advanced",
+    "author": "Some author",
+    "source": "https://youtube.com/2134",
+    "type": "podcast"
+  },
+  {
+    "title": "Some article",
+    "description": "Some PDF I just found",
+    "language": "nêhiyawêwin",
+    "level": "Advanced",
+    "author": "Some author",
+    "source": "https://youtube.com/2134",
+    "type": "doc"
+  },
+  {
+    "title": "Some website",
+    "description": "Something else here, this is going to be a bit of a longer description, in the hopes that it will wrap",
+    "language": "nêhiyawêwin",
+    "level": "Advanced",
+    "author": "Some other person",
+    "source": "https://youtube.com/2134",
+    "type": "website"
+  }
+]
