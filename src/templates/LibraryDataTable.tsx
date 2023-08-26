@@ -44,7 +44,7 @@ const levels = [
 const contents = [
   { label: 'English', value: 'eng' },
   { label: 'nêhiyawêwin', value: 'crk' },
-  { label: 'nîhithawîwin', value: 'cwk' },
+  { label: 'nîhithawîwin', value: 'cwd' },
 ];
 
 const LibraryDataTable = () => {
