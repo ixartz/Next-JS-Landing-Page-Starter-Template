@@ -19,15 +19,15 @@ jobs:
       run: npm install axios
     - name: Pull Library data
       working-directory: scripts
-      run: node pull-library.js > out.json
+      run: node pull-library.js > ../src/data/library-data.json
       env:
         NOTIONKEY: ${{ secrets.NOTIONKEY }}
-    - name: Verify Library data
-      working-directory: scripts
-      run: cat out.json
-    - name: Copy Library data for production
-      working-directory: scripts
-      run: cat out.json > ../src/data/library-data.json
+    - uses: EndBug/add-and-commit@v9
+      with:
+        add: 'src/data/library-data.json'
+        author_name: Aaron Fay
+        author_email: aaron.j.fay@gmail.com
+        message: 'Update library from Notion'
     - name: Netlify production webhook
       run: |
         curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
