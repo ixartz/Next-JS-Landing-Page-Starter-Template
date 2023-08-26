@@ -20,10 +20,9 @@ jobs:
     - name: Pull Library data
       working-directory: scripts
       run: node pull-library.js > out.json
-    - name: Verify data
+    - name: Copy Library data for production
       working-directory: scripts
-      run: cat out.json
-    
-    # - name: Netlify production webhook
-    #   run: |
-    #     curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
+      run: cat out.json > ../src/data/library-data.json
+    - name: Netlify production webhook
+      run: |
+        curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
