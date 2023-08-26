@@ -5,6 +5,9 @@ type ILibraryContentLanguageProps = {
 const LibraryContentLanguage = (props: ILibraryContentLanguageProps) => (
   <>
     {props.language.includes('crk') && <span className="p-1 font-bold">Y</span>}
+    {props.language.includes('cwk') && (
+      <span className="p-1 font-bold">TH</span>
+    )}
     {props.language.includes('eng') && <span className="p-1 font-bold">E</span>}
   </>
 );

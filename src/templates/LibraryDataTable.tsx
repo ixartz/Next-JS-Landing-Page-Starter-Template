@@ -26,11 +26,13 @@ const types = [
   { label: 'Website', value: 'website' },
   { label: 'App', value: 'app' },
   { label: 'Book', value: 'book' },
+  { label: 'Game', value: 'game' },
 ];
 const categories = [
   { label: 'Lessons', value: 'Lessons' },
   { label: 'Academic', value: 'Academic' },
   { label: 'Immersion', value: 'Immersion' },
+  { label: 'Kids', value: 'Kids' },
 ];
 
 const levels = [
@@ -42,6 +44,7 @@ const levels = [
 const contents = [
   { label: 'English', value: 'eng' },
   { label: 'nêhiyawêwin', value: 'crk' },
+  { label: 'nîhithawîwin', value: 'cwk' },
 ];
 
 const LibraryDataTable = () => {
@@ -98,6 +101,10 @@ const LibraryDataTable = () => {
     if (item.source.includes('youtube.com')) {
       youtube = true;
     }
+    let facebook = false;
+    if (item.source.includes('facebook.com')) {
+      facebook = true;
+    }
     let paid = false;
     if (item.type === 'book') {
       paid = true;
@@ -118,7 +125,8 @@ const LibraryDataTable = () => {
           <p className="text-sm text-default-400">{item.description}</p>
         </div>
         {youtube && <Tag color="red" text="YOUTUBE"></Tag>}
-        {paid && <Tag color="green" text="$$$"></Tag>}
+        {facebook && <Tag color="sky" text="FACEBOOK"></Tag>}
+        {paid && <Tag color="green" text="$"></Tag>}
         {pdf && <Tag color="pink" text="PDF"></Tag>}
       </div>
     );
