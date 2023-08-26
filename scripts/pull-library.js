@@ -63,7 +63,7 @@ async function main () {
     next_cursor = response.next_cursor
   }
 
-  console.log(items)
+  console.log(JSON.stringify(items))
 }
 
 main()
