@@ -15,13 +15,13 @@ jobs:
       with:
         node-version: 14
     - name: Install axios
-      working_directory: scripts
+      working-directory: scripts
       run: npm install axios
     - name: Pull Library data
-      working_directory: scripts
+      working-directory: scripts
       run: node pull-library.js > out.json
     - name: Verify data
-      working_directory: scripts
+      working-directory: scripts
       run: cat out.json
     
     # - name: Netlify production webhook
