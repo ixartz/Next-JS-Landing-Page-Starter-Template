@@ -1,13 +1,12 @@
 const axios = require('axios')
 
-const API_KEY = 'secret_VWiRLhmqRseBJTmUoUSrCjJ1j555xqeestshEfXEPVt'
 const URL = 'https://api.notion.com/v1/databases/d3b32e8316a9434e9c436620e66d18e8'
 
 const client = axios.create({
   baseURL: URL,
   timeout: 60000,
   headers: {
-    'Authorization': 'Bearer secret_VWiRLhmqRseBJTmUoUSrCjJ1j555xqeestshEfXEPVt',
+    'Authorization': `Bearer ${process.env.NOTIONKEY}`,
     'Notion-Version': '2022-06-28',
     'Content-Type': "application/json"
   }

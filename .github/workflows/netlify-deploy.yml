@@ -20,6 +20,11 @@ jobs:
     - name: Pull Library data
       working-directory: scripts
       run: node pull-library.js > out.json
+      env:
+        NOTIONKEY: ${{ secrets.NOTIONKEY }}
+    - name: Verify Library data
+      working-directory: scripts
+      run: cat out.json
     - name: Copy Library data for production
       working-directory: scripts
       run: cat out.json > ../src/data/library-data.json
