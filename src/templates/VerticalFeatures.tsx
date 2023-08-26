@@ -16,6 +16,8 @@ import { Section } from '../layout/Section';
  *    - websites
  *      - CLN
  *      - Facebook groups?
+ *    - music
+ *      - links to youtube music etc
  *    - apps
  *      - syllabics keyboards
  *      - conjugation app?
@@ -24,6 +26,7 @@ import { Section } from '../layout/Section';
  *      - mâci-nêhiyawêwin
  *      - etc
  *    - events?
+ * 
  * 
  *  * books (and where to get them)
  * 

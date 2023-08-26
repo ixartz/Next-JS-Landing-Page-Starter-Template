@@ -9,6 +9,21 @@ jobs:
   run-updater:
     runs-on: ubuntu-latest
     steps:
-    - name: Netlify production webhook
-      run: |
-        curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
+    - uses: actions/checkout@v3
+    - name: Use Node.js 14
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+    - name: Install axios
+      working_directory: scripts
+      run: npm install axios
+    - name: Pull Library data
+      working_directory: scripts
+      run: node pull-library.js > out.json
+    - name: Verify data
+      working_directory: scripts
+      run: cat out.json
+    
+    # - name: Netlify production webhook
+    #   run: |
+    #     curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"

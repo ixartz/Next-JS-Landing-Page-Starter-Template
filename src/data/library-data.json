@@ -1,38 +1,62 @@
 [
   {
-    "title": "React Basics",
-    "description": "Introduction to React",
-    "language": "JavaScript",
-    "level": "Beginner",
-    "author": "Some author",
-    "source": "https://youtube.com/2134",
-    "type": "video"
-  },
-  {
-    "title": "Advanced Vue",
-    "description": "Diving deep into Vue",
-    "language": "JavaScript",
-    "level": "Advanced",
-    "author": "Some author",
-    "source": "https://youtube.com/2134",
-    "type": "podcast"
-  },
-  {
-    "title": "Some article",
-    "description": "Some PDF I just found",
+    "title": "How to spell it in Cree",
+    "description": "Document discusses the details of how to use SRO (standard roman othography), the most commonly-used standard alphabet for the Cree language.",
     "language": "nêhiyawêwin",
-    "level": "Advanced",
-    "author": "Some author",
-    "source": "https://youtube.com/2134",
+    "level": "Beginner",
+    "author": "Jean Okimâsis & Arok Wolvengrey",
+    "content": ["eng", "crk"],
+    "tags": ["sro", "writing"],
+    "category": "Lessons",
+    "source": "https://resources.atlas-ling.ca/media/How_To_Spell_It_In_Cree-Standard_Orthography-Plains-Cree.pdf",
     "type": "doc"
   },
   {
-    "title": "Some website",
-    "description": "Something else here, this is going to be a bit of a longer description, in the hopes that it will wrap",
+    "title": "Plains Cree: A Grammatical Study",
+    "author": "H. Christoph Wolfart",
+    "content": ["eng", "crk"],
+    "tags": ["linguistics", "morphology", "grammar"],
+    "category": "Academic",
+    "description": "An in-depth look at the grammatical characteristics of Plains Cree. Explores everything from noun and verb paradigms to morphemes, to rare forms of words used in the language",
     "language": "nêhiyawêwin",
     "level": "Advanced",
-    "author": "Some other person",
-    "source": "https://youtube.com/2134",
-    "type": "website"
+    "source": "https://csclub.uwaterloo.ca/~rfburger/wolfart-plains-cree-grammar-1973.pdf",
+    "type": "doc"
+  },
+  {
+    "title": "Language & Connections to the Land - Wayne Jackson",
+    "description": "Some PDF I just found",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Centre for Race & Culture",
+    "content": ["eng", "crk"],
+    "tags": ["stories"],
+    "category": "Lessons",
+    "source": "https://www.youtube.com/watch?v=uIr_cRsVho8",
+    "type": "video"
+  },
+  {
+    "title": "Long & Short vowel sounds in nêhiyawêwin",
+    "description": "Cree Warrior gives us another kind lesson on the long and short vowels in the language.",
+    "language": "nêhiyawêwin",
+    "level": "Advanced",
+    "author": "Wayne Jackson",
+    "content": ["crk"],
+    "tags": ["syllabics"],
+    "category": "Lessons",
+    "source": "https://www.youtube.com/watch?v=3USlkd-5y-Y",
+    "type": "video"
+  },
+  {
+    "title": "Marjorie White ê-kî-pê-nêhiyawêmototâkoyâhk kâkikê",
+    "description": "Marjorie White discusses her upbringing with the nêhiyaw language, and her ongoing Lessons in a visit to Blue Quills University.",
+    "language": "nêhiyawêwin",
+    "level": "Intermediate",
+    "author": "Wayne Jackson",
+    "content": ["crk"],
+    "tags": ["stories"],
+    "category": "Immersion",
+    "source": "https://www.youtube.com/watch?v=mS8mQGJGOZc",
+    "type": "app"
   }
 ]
