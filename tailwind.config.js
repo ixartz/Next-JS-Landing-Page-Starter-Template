@@ -52,5 +52,12 @@ module.exports = {
   },
   darkMode: 'class',
   plugins: [nextui.nextui()],
-  safelist: ['bg-red-100', 'text-red-800'],
+  safelist: [
+    'bg-red-100',
+    'text-red-800',
+    'bg-green-100',
+    'text-green-800',
+    'bg-pink-100',
+    'text-pink-800',
+  ],
 };

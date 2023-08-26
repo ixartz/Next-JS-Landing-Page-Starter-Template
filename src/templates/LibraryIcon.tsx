@@ -19,7 +19,7 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'podcast' && (
+    {props.type === 'audio' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -80,6 +80,22 @@ const LibraryIcon = (props: ILibraryIconProps) => (
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+        />
+      </svg>
+    )}
+    {props.type === 'book' && (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
         />
       </svg>
     )}

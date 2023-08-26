@@ -97,6 +97,14 @@ const LibraryDataTable = () => {
     if (item.source.includes('youtube.com')) {
       youtube = true;
     }
+    let paid = false;
+    if (item.type === 'book') {
+      paid = true;
+    }
+    let pdf = false;
+    if (item.type === 'doc') {
+      pdf = true;
+    }
 
     return (
       <div>
@@ -109,6 +117,8 @@ const LibraryDataTable = () => {
           <p className="text-sm text-default-400">{item.description}</p>
         </div>
         {youtube && <Tag color="red" text="YOUTUBE"></Tag>}
+        {paid && <Tag color="green" text="$$$"></Tag>}
+        {pdf && <Tag color="pink" text="PDF"></Tag>}
       </div>
     );
   };

@@ -55,7 +55,7 @@ const VerticalFeatures = () => (
       description="A curated list of language and cultural resources including PDFs, videos and audio, categorized by learning level an application. Also a few hard-to-find items, for safe keeping."
       image="/assets/images/library.png"
       imageAlt="Resources for Indigenous language learners"
-      comingSoon
+      target="/library"
     />
     <VerticalFeatureRow
       title="Transcriptions"
