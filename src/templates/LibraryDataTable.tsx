@@ -122,7 +122,7 @@ const LibraryDataTable = () => {
               <span className="font-bold">{item.title}</span> | {item.author}
             </a>
           </p>
-          <p className="text-sm text-default-400">{item.description}</p>
+          <p className="text-sm text-default-500">{item.description}</p>
         </div>
         {youtube && <Tag color="red" text="YOUTUBE"></Tag>}
         {facebook && <Tag color="sky" text="FACEBOOK"></Tag>}
