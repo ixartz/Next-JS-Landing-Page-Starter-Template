@@ -27,6 +27,7 @@ const types = [
   { label: 'App', value: 'app' },
   { label: 'Book', value: 'book' },
   { label: 'Game', value: 'game' },
+  { label: 'Music', value: 'music' },
 ];
 const categories = [
   { label: 'Lessons', value: 'Lessons' },
