@@ -106,7 +106,7 @@ const LibraryDataTable = () => {
       facebook = true;
     }
     let paid = false;
-    if (item.type === 'book') {
+    if (item.tags.includes('paid')) {
       paid = true;
     }
     let pdf = false;
