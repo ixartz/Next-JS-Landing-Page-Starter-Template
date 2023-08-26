@@ -10,6 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from '@nextui-org/react';
+import { NextSeo } from 'next-seo';
 
 import { useQueryState } from '@/lib/useQueryState';
 
@@ -133,116 +134,149 @@ const LibraryDataTable = () => {
     );
   };
 
+  let inCategory = 'All Resources';
+  if (category) {
+    inCategory = ` ${category}`;
+  }
+
+  let inDetails = '';
+  if (type || level || content) {
+    const all = [type, level, content].filter((item) => item);
+    inDetails = ` (${all.join(', ')})`;
+  }
+  let inSearch = '';
+  if (search) {
+    inSearch = `"${search}" in ${inCategory}${inDetails}`;
+  } else {
+    inSearch = `${inCategory}${inDetails}`;
+  }
+
+  const meta = {
+    title: 'kiyânaw Learner Library',
+    description: 'Resources for language learners',
+    site_name: 'kiyânaw - all of us',
+  };
+
   return (
-    <div className="mx-auto w-full px-3 text-slate-700">
-      <div className="m-auto w-10/12 py-3">
-        <Input
-          placeholder="Search..."
-          color={search ? 'secondary' : 'default'}
-          size="lg"
-          value={search || ''}
-          onChange={handleSearchChange}
-        />
+    <>
+      <NextSeo
+        title={meta.title}
+        description={meta.description}
+        openGraph={{
+          title: meta.title,
+          description: inSearch,
+        }}
+      ></NextSeo>
+      <div className="mx-auto w-full px-3 text-slate-700">
+        <div className="m-auto w-10/12 py-3">
+          <Input
+            placeholder="Search..."
+            color={search ? 'secondary' : 'default'}
+            size="lg"
+            value={search || ''}
+            onChange={handleSearchChange}
+          />
+        </div>
+        <div className="m-auto flex w-10/12 flex-wrap py-3 ">
+          <Select
+            label="Resource type"
+            size="sm"
+            color={type ? 'secondary' : 'default'}
+            className="mr-2 mt-2 max-w-xs"
+            selectedKeys={[`${type}`]}
+            onChange={handleTypeChange}
+          >
+            {types.map((type) => (
+              <SelectItem key={type.value} value={type.value}>
+                {type.label}
+              </SelectItem>
+            ))}
+          </Select>
+
+          <Select
+            label="Category"
+            size="sm"
+            color={category ? 'secondary' : 'default'}
+            className="mr-2 mt-2 max-w-xs"
+            selectedKeys={[`${category}`]}
+            onChange={handleCategoryChange}
+          >
+            {categories.map((category) => (
+              <SelectItem key={category.value} value={category.value}>
+                {category.label}
+              </SelectItem>
+            ))}
+          </Select>
+
+          <Select
+            label="Level"
+            size="sm"
+            color={level ? 'secondary' : 'default'}
+            className="mr-2 mt-2 max-w-xs"
+            selectedKeys={[`${level}`]}
+            onChange={handleLevelChange}
+          >
+            {levels.map((level) => (
+              <SelectItem key={level.value} value={level.value}>
+                {level.label}
+              </SelectItem>
+            ))}
+          </Select>
+
+          <Select
+            label="Content Language"
+            size="sm"
+            color={content ? 'secondary' : 'default'}
+            className="mr-2 mt-2 max-w-xs"
+            selectedKeys={[`${content}`]}
+            onChange={handleContentChange}
+          >
+            {contents.map((content) => (
+              <SelectItem key={content.value} value={content.value}>
+                {content.label}
+              </SelectItem>
+            ))}
+          </Select>
+
+          <Link size="sm" href="/library">
+            Clear
+          </Link>
+        </div>
+
+        <Table aria-label="Language resources">
+          <TableHeader>
+            <TableColumn>Type</TableColumn>
+            <TableColumn>Title</TableColumn>
+            <TableColumn>Content</TableColumn>
+            {/* <TableColumn>Tags</TableColumn> */}
+            <TableColumn>Category</TableColumn>
+            <TableColumn>Level</TableColumn>
+          </TableHeader>
+          <TableBody>
+            {filteredData.map((item: any, index: any) => (
+              <TableRow key={index}>
+                <TableCell>
+                  <LibraryIcon type={item.type}></LibraryIcon>
+                </TableCell>
+                <TableCell>{renderDescription(item)}</TableCell>
+                <TableCell>
+                  <LibraryContentLanguage
+                    language={item.content}
+                  ></LibraryContentLanguage>
+                </TableCell>
+                {/* <TableCell>
+                  <div className="w-2/12">
+                    <Tags tags={item.tags}></Tags>
+                  </div>
+                </TableCell> */}
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.level}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
-      <div className="m-auto flex w-10/12 flex-wrap py-3 ">
-        <Select
-          label="Resource type"
-          size="sm"
-          color={type ? 'secondary' : 'default'}
-          className="mr-2 mt-2 max-w-xs"
-          selectedKeys={[`${type}`]}
-          onChange={handleTypeChange}
-        >
-          {types.map((type) => (
-            <SelectItem key={type.value} value={type.value}>
-              {type.label}
-            </SelectItem>
-          ))}
-        </Select>
-
-        <Select
-          label="Category"
-          size="sm"
-          color={category ? 'secondary' : 'default'}
-          className="mr-2 mt-2 max-w-xs"
-          selectedKeys={[`${category}`]}
-          onChange={handleCategoryChange}
-        >
-          {categories.map((category) => (
-            <SelectItem key={category.value} value={category.value}>
-              {category.label}
-            </SelectItem>
-          ))}
-        </Select>
-
-        <Select
-          label="Level"
-          size="sm"
-          color={level ? 'secondary' : 'default'}
-          className="mr-2 mt-2 max-w-xs"
-          selectedKeys={[`${level}`]}
-          onChange={handleLevelChange}
-        >
-          {levels.map((level) => (
-            <SelectItem key={level.value} value={level.value}>
-              {level.label}
-            </SelectItem>
-          ))}
-        </Select>
-
-        <Select
-          label="Content Language"
-          size="sm"
-          color={content ? 'secondary' : 'default'}
-          className="mr-2 mt-2 max-w-xs"
-          selectedKeys={[`${content}`]}
-          onChange={handleContentChange}
-        >
-          {contents.map((content) => (
-            <SelectItem key={content.value} value={content.value}>
-              {content.label}
-            </SelectItem>
-          ))}
-        </Select>
-
-        <Link size="sm" href="/library">
-          Clear
-        </Link>
-      </div>
-
-      <Table aria-label="Language resources">
-        <TableHeader>
-          <TableColumn>Type</TableColumn>
-          <TableColumn>Title</TableColumn>
-          <TableColumn>Content</TableColumn>
-          {/* <TableColumn>Tags</TableColumn> */}
-          <TableColumn>Category</TableColumn>
-          <TableColumn>Level</TableColumn>
-        </TableHeader>
-        <TableBody>
-          {filteredData.map((item: any, index: any) => (
-            <TableRow key={index}>
-              <TableCell>
-                <LibraryIcon type={item.type}></LibraryIcon>
-              </TableCell>
-              <TableCell>{renderDescription(item)}</TableCell>
-              <TableCell>
-                <LibraryContentLanguage
-                  language={item.content}
-                ></LibraryContentLanguage>
-              </TableCell>
-              {/* <TableCell>
-                <div className="w-2/12">
-                  <Tags tags={item.tags}></Tags>
-                </div>
-              </TableCell> */}
-              <TableCell>{item.category}</TableCell>
-              <TableCell>{item.level}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </div>
+    </>
   );
 };
 
