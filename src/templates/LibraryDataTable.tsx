@@ -98,7 +98,7 @@ const LibraryDataTable = () => {
 
   const renderDescription = (item: any) => {
     let youtube = false;
-    if (item.source.includes('youtube.com')) {
+    if (item.source.includes('www.youtube.com')) {
       youtube = true;
     }
     let facebook = false;
