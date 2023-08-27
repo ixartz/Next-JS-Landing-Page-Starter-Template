@@ -35,6 +35,8 @@ const categories = [
   { label: 'Academic', value: 'Academic' },
   { label: 'Immersion', value: 'Immersion' },
   { label: 'Kids', value: 'Kids' },
+  { label: 'Reference', value: 'Reference' },
+  { label: 'Commentary', value: 'Commentary' },
 ];
 
 const levels = [
@@ -47,6 +49,7 @@ const contents = [
   { label: 'English', value: 'eng' },
   { label: 'nêhiyawêwin', value: 'crk' },
   { label: 'nîhithawîwin', value: 'cwd' },
+  { label: 'ininìmowin', value: 'csw' },
 ];
 
 const LibraryDataTable = () => {
