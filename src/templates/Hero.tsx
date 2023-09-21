@@ -29,7 +29,7 @@ const Hero = () => (
     </Section>
     <Section>
       {' '}
-      <div className="flex justify-around">
+      <div className="flex justify-around md:hidden md:h-0">
         <Link href="/">
           <svg
             width="60"
