@@ -10,16 +10,21 @@ import { Logo } from './Logo';
 const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
-      </NavbarTwoColumns>
+      <NavbarTwoColumns
+        logo={<Logo xl />}
+        children={
+          <>
+            <li>
+              <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+                GitHub
+              </Link>
+            </li>
+            <li>
+              <Link href="/">Sign in</Link>
+            </li>
+          </>
+        }
+      ></NavbarTwoColumns>
     </Section>
 
     <Section yPadding="pt-20 pb-32">
