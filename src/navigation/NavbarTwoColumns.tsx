@@ -40,9 +40,9 @@ const NavbarTwoColumns = (props: INavbarProps) => (
         />
       </Link>
     </div>
-    <ul className="flex items-center space-x-4 text-xl font-medium text-gray-800 ">
+    {/* <ul className="flex items-center space-x-4 text-xl font-medium text-gray-800 ">
       {props.children}
-    </ul>
+    </ul> */}
   </div>
 );
 
