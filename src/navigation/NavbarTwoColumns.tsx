@@ -1,5 +1,8 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+
+import resume from './resume-icon-png-19027.png';
 
 type INavbarProps = {
   logo: ReactNode;
@@ -7,7 +10,7 @@ type INavbarProps = {
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
-  <div className="flex justify-between ">
+  <div className="flex justify-between " id="Navbar">
     <div className="">
       <Link href="/">{props.logo}</Link>
     </div>
@@ -25,11 +28,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       </Link>
 
       <Link href="/">
-        <img
-          className="w-8"
-          alt=""
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIElEQVR4nO2WMW7CQBBF3wE4AC1FQkONFNsox6CjSklDQ50iLcdIlRvkAlwAKXdIT4eYKJKLaCS8BssaL/lP2m521l9//q5B5IUNbN1M9IebhDiiHTA54vg3jhyAGTACNsB3rkJeXP02VyFLV79O1BctziwjhKxc/Wuivmpx5iJCyJurf891tI7AQ137BJxzFWL1bfXLrmcR1peQE/ABjOvaR+Az4crgwr4Hphf2zIGvXMI+Sex7zmm0LGDdTPSHm4Q4oh0wOeKIdsDkiKPLC9325S4iX/ayQ88q0avSaDUQHW5T2B1370hxZZ+mAGd1ay2u6FUpIw1EZ8J0azmiHbCh3Vp/0b8WPThyN6NlEoIcMY0W8Zkwhd0R7YDJEUEsP1ALr2Y1TsHVAAAAAElFTkSuQmCC"
-        />
+        <Image className="w-8" alt="asdf" src={resume} />
       </Link>
     </div>
   </div>
