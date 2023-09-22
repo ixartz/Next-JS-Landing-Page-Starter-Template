@@ -3,3 +3,59 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.markdown-content {
+  font-size: 18px;
+}
+
+.markdown-content h1 {
+  font-size: 2em;
+	font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-content h2 {
+  font-size: 1.5em;
+	font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-content h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.markdown-content p {
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+.markdown-content a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.markdown-content pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.markdown-content blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 3px solid #ddd;
+  color: #666;
+}
