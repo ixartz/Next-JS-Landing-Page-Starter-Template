@@ -29,6 +29,9 @@ const Hero = () => (
     </Section>
     <Section>
       {' '}
+      <div>
+        <img alt="Lucky's profile image" src="../LuckyProfile.jpeg" />
+      </div>
       <div className="flex justify-around md:hidden md:h-0">
         <Link href="/">
           <svg
@@ -71,7 +74,7 @@ const Hero = () => (
         }
         description="Hi! My name is Lucky and this is my frontend and android development portfolio."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="#ProjectWork">
             <Button xl>See My Portfolio</Button>
           </Link>
         }
