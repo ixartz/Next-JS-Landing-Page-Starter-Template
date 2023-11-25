@@ -10,6 +10,9 @@ export default function ContactComponent() {
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  const listId = 'landinghub';
+  const url = `https://us3.api.mailchimp.com/3.0/lists/${listId}/members`;
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneNumberRegex =
     /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})-?(\d{4}))$/;
@@ -45,7 +48,8 @@ export default function ContactComponent() {
       return;
     }
 
-    const res = await fetch('/api/subscribeUser', {
+    console.log(url);
+    const res = await fetch(url, {
       // Change this to mailchimp validation
       body: JSON.stringify({
         body: JSON.stringify({ data: { email } }),

@@ -17,7 +17,7 @@ const Hero = () => (
         }
         description="Páginas de vendas modernas e rápidas para o seu negócio."
         button={
-          <Link href="/contato">
+          <Link href="https://api.whatsapp.com/send/?phone=5531994308479">
             <Button xl>Entre em contato</Button>
           </Link>
         }

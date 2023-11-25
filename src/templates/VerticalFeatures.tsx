@@ -4,7 +4,7 @@ import { Section } from '../layout/Section';
 const VerticalFeatures = () => (
   <Section
     title="Aumente suas vendas."
-    description="Landing pages aumentam as vendas ao converter visitantes em clientes.."
+    description="Landing pages aumentam as vendas ao converter visitantes em clientes."
   >
     <VerticalFeatureRow
       title="Uma ferramenta poderosa para exibir produtos e serviços"
@@ -13,15 +13,15 @@ const VerticalFeatures = () => (
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Aumente seu faturamento"
-      description="Landing pages bem projetadas podem aumentar a taxa de conversão de uma campanha de marketing. Isso significa que mais visitantes estarão tomando a ação desejada, como comprar um produto ou assinar um serviço."
+      title="Faça seu faturamento crescer"
+      description="Landing pages bem projetadas podem aumentar a taxa de conversão de uma campanha de marketing. Isso significa que mais visitantes realizam a ação desejada, como comprar um produto ou assinar um serviço."
       image="/assets/images/feature2.svg"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      title="Lance Seu Negócio Rumo ao Sucesso com Nossos Serviços"
+      description="Como desenvolvedor freelancer, estou aqui para ajudar você a lançar seu negócio com confiança. Vamos começar sua jornada para o sucesso hoje."
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
     />
