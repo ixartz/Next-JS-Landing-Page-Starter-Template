@@ -6,16 +6,18 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
-    <Section yPadding="pt-20 pb-32">
+  <Background color="bg-gradient-to-r from-cyan-500 to-blue-5000">
+    <Section yPadding="pt-64 pb-64">
       <HeroOneButton
         title={
           <>
             {'LandingHub\n\n'}
-            <span className="text-primary-500">Landing pages</span>
+            <span className="text-primary-700">
+              Páginas de vendas modernas e rápidas para o seu negócio.
+            </span>
           </>
         }
-        description="Páginas de vendas modernas e rápidas para o seu negócio."
+        description=""
         button={
           <Link href="https://api.whatsapp.com/send/?phone=5531994308479">
             <Button xl>Entre em contato</Button>
