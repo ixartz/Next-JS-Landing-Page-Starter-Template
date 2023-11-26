@@ -20,7 +20,7 @@ const VerticalFeatures = () => (
       reverse
     />
     <VerticalFeatureRow
-      title="Lance Seu Negócio Rumo ao Sucesso com Nossos Serviços"
+      title="Lance seu negócio rumo ao sucesso com nossos serviços"
       description="Como desenvolvedor freelancer, estou aqui para ajudar você a lançar seu negócio com confiança. Vamos começar sua jornada para o sucesso hoje."
       image="/assets/images/feature3.svg"
       imageAlt="Third feature alt text"
