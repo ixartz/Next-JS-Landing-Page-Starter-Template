@@ -10,14 +10,12 @@ import { Logo } from './Logo';
 const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavbarTwoColumns logo={<Logo />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
+          <Link href="/get-started">Get Started</Link>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="/sign-in">Sign In</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -26,14 +24,23 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Supercharge Your Deal Team with\n'}
+            <span className="text-primary-500">AI-Powered Workflow</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description={
+          <>
+            <p className="mb-8">
+              SynCap AI enables faster, more consistent investment evaluations
+              <br />
+              and company tracking aligned with your strategic thesis.
+            </p>
+            <p>Reclaim 4 hours per deal, every week.</p>
+          </>
+        }
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href="" legacyBehavior>
+            <Button xl>Get Started Now</Button>
           </Link>
         }
       />
