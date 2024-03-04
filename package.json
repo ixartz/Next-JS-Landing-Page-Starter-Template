@@ -14,11 +14,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@types/react-transition-group": "^4.4.10",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.0",
     "next": "^14.1.0",
     "next-seo": "^6.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-transition-group": "^4.4.5",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {

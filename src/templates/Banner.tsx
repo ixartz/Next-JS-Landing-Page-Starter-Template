@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import { MeetingLink } from '@/utils/AppConfig';
 
 import { Button } from '../button/Button';
@@ -12,9 +10,9 @@ const Banner = () => (
       title="Ready to power up your investment workflow?"
       subtitle="Connect with us to get started"
       button={
-        <Link href={MeetingLink}>
+        <a target="_blank" rel="noopener noreferrer" href={MeetingLink}>
           <Button>Schedule Intro Call</Button>
-        </Link>
+        </a>
       }
     />
   </Section>
