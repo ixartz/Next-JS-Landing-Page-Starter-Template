@@ -4,3 +4,5 @@ export const AppConfig = {
   description: 'Supercharge Your Deal Team with AI-Powered Workflow',
   locale: 'en',
 };
+
+export const MeetingLink = 'https://cal.com/canny/30min';

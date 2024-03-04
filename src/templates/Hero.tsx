@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { MeetingLink } from '@/utils/AppConfig';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
@@ -12,7 +14,7 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
         <li>
-          <Link href="/get-started">Get Started</Link>
+          <Link href={MeetingLink}>Join Waitlist</Link>
         </li>
         <li>
           <Link href="/sign-in">Sign In</Link>
@@ -39,7 +41,7 @@ const Hero = () => (
           </>
         }
         button={
-          <Link href="" legacyBehavior>
+          <Link href="https://cal.com/canny/30min">
             <Button xl>Get Started Now</Button>
           </Link>
         }
