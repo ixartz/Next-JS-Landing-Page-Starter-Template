@@ -10,6 +10,11 @@ const IntegrationAndSecurity = () => (
       }
       description="SynCap AI seamlessly integrates with your current tools, amplifying your capabilities without disrupting your routine."
     >
+      <img
+        src="/assets/images/SyncapWorkflow.png"
+        alt="Syncap workflow"
+        className="aspect-ratio max-h-[284px]"
+      />
       <></>
     </Section>
     <Section
@@ -20,25 +25,25 @@ const IntegrationAndSecurity = () => (
       }
       description="SynCap AI seamlessly integrates with your current tools, amplifying your capabilities without disrupting your routine."
     >
-      <div className="flex justify-between">
-        <div className="flex w-1/4 flex-col items-center text-center">
+      <div className="flex flex-col justify-between space-y-8 md:flex-row md:items-center">
+        <div className="mb-4 flex w-full flex-col items-center text-center md:mb-0 md:w-1/4">
           <img
             src="/icons/encryption.svg"
             alt="End-to-end Encryption"
-            className="aspect-square w-1/3 pb-4"
+            className="mb-4 aspect-square w-[80px]"
           />
-          <p className="mb-2 text-xl font-semibold text-black">
+          <p className="mb-2 text-xl font-semibold text-black md:text-xl">
             End-to-end Encryption
           </p>
           <p>protects your data within a secure, private workplace</p>
         </div>
-        <div className="flex w-1/4 flex-col items-center text-center">
+        <div className="mb-4 flex w-full flex-col items-center text-center md:mb-0 md:w-1/4">
           <img
             src="/icons/compliance.svg"
             alt="SOC 2 Compliance"
-            className="aspect-square w-1/3 pb-4"
+            className="mb-4 aspect-square w-[80px]"
           />
-          <p className="mb-2 text-xl font-semibold text-black">
+          <p className="mb-2 text-xl font-semibold text-black md:text-xl">
             SOC 2 Compliance
           </p>
           <p>
@@ -46,13 +51,13 @@ const IntegrationAndSecurity = () => (
             interests
           </p>
         </div>
-        <div className="flex w-1/4 flex-col items-center text-center">
+        <div className="flex w-full flex-col items-center text-center md:w-1/4">
           <img
             src="/icons/access.svg"
             alt="Controlled Data Access"
-            className="aspect-square w-1/3 pb-4"
+            className="mb-4 aspect-square w-[80px]"
           />
-          <p className="mb-2 text-xl font-semibold text-black">
+          <p className="mb-2 text-xl font-semibold text-black md:text-xl">
             Controlled Data Access
           </p>
           <p>
@@ -61,6 +66,7 @@ const IntegrationAndSecurity = () => (
           </p>
         </div>
       </div>
+
       <></>
     </Section>
   </>

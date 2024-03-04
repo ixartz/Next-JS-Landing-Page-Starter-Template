@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { MeetingLink } from '@/utils/AppConfig';
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
@@ -11,16 +11,18 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        <li>
-          <Link href="/get-started">Get Started</Link>
-        </li>
-        <li>
-          <Link href="/sign-in">Sign In</Link>
-        </li>
+        <a
+          className="whitespace-nowrap"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={MeetingLink}
+        >
+          Book a Demo
+        </a>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-10 md:pt-20 pb-32">
       <HeroOneButton
         title={
           <>
@@ -29,19 +31,19 @@ const Hero = () => (
           </>
         }
         description={
-          <>
+          <div className="text-lg md:text-xl">
             <p className="mb-8">
               SynCap AI enables faster, more consistent investment evaluations
               <br />
               and company tracking aligned with your strategic thesis.
             </p>
             <p>Reclaim 4 hours per deal, every week.</p>
-          </>
+          </div>
         }
         button={
-          <Link href="" legacyBehavior>
-            <Button xl>Get Started Now</Button>
-          </Link>
+          <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
+            <Button xl>Schedule a Call</Button>
+          </a>
         }
       />
     </Section>
