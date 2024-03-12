@@ -16,19 +16,19 @@ const GenerateInfoFeatures = () => (
       title="Real-time Answers by AI"
       description="Access real-time, deal-based AI insights to keep your team in sync, bypassing the wait for updates in formal meetings"
       image="/assets/images/AIAnswers.png"
-      imageAlt="First feature alt text"
+      imageAlt="Real-time Answers by AI"
     />
     <VerticalFeatureRow
       title="Generate Deliverables under Time Crunch"
       description="Generate detailed deliverables within seconds, even during back-to-back meetings"
       image="/assets/images/GenerateDeliverables.png"
-      imageAlt="Second feature alt text"
+      imageAlt="Generate Deliverables under Time Crunch"
     />
     <VerticalFeatureRow
       title="Stay Ahead of Due Diligence across Deals"
       description="Navigate due diligence emails and checklists with efficiency and style, automating follow-ups and progress tracking"
       image="/assets/images/DDFollowups.png"
-      imageAlt="Third feature alt text"
+      imageAlt="Stay Ahead of Due Diligence across Deals"
     />
   </Section>
 );

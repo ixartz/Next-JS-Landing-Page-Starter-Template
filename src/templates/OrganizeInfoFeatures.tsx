@@ -16,19 +16,19 @@ const OrganizeInfoFeatures = () => (
       title="Synthesize Fragmented Data Into One Knowledge Base"
       description="Organize the latest from emails, files, and meeting notes into an AI-powered, deal knowledge base"
       image="/assets/images/SynthesizeKnowledge.png"
-      imageAlt="First feature alt text"
+      imageAlt="Synthesize Fragmented Data Into One Knowledge Base"
     />
     <VerticalFeatureRow
       title="Categorize Information Into Key Documents"
       description="Summarize information snippets into structured data categories within your key documents for immediately actionable insights"
       image="/assets/images/CategorizeInformation.png"
-      imageAlt="Second feature alt text"
+      imageAlt="Categorize Information Into Key Documents"
     />
     <VerticalFeatureRow
-      title="Track Data Source Accuracy "
+      title="Track Data Source Accuracy"
       description="Actively monitors data sources and highlights discrepancies to secure accuracy and reliability of analyses"
       image="/assets/images/TrackDataSource.png"
-      imageAlt="Third feature alt text"
+      imageAlt="Track Data Source Accuracy"
     />
   </Section>
 );
