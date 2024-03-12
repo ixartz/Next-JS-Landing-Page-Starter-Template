@@ -17,7 +17,7 @@ const Hero = () => (
           rel="noopener noreferrer"
           href={MeetingLink}
         >
-          Book a Demo
+          Get Early Access
         </a>
       </NavbarTwoColumns>
     </Section>
@@ -31,18 +31,25 @@ const Hero = () => (
           </>
         }
         description={
-          <div className="text-lg md:text-xl">
-            <p className="mb-8">
-              SynCap AI enables faster, more consistent investment evaluations
-              <br />
-              and company tracking aligned with your strategic thesis.
-            </p>
-            <p>Reclaim 4 hours per deal, every week.</p>
+          <div className="flex flex-col items-center">
+            <div className="text-lg md:text-xl">
+              <p className="mb-8">
+                Syncap AI streamlines deal processes and automates the base
+                layer of tasks, <br /> so you can focus on key decisions and
+                connections.
+              </p>
+              <p>Reclaim 4+ hours every week from</p>
+            </div>
+            <img
+              src="/assets/images/PainPoints.png"
+              alt="Pain Points"
+              className="aspect-ratio mt-8 max-h-[60px] w-[500px]"
+            />
           </div>
         }
         button={
           <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
-            <Button xl>Schedule a Call</Button>
+            <Button xl>Get Early Access</Button>
           </a>
         }
       />
