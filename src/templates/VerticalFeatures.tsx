@@ -21,7 +21,7 @@ const VerticalFeatures = () => (
     />
     <VerticalFeatureRow
       title="Apply with Confidence"
-      description="Kinara compares your final proposal with the original request and ensures all important points are covered so you can submit a strong bid."
+      description="Kinara compares your final proposal with the original request, ensuring all important points are covered so you can submit a strong bid."
       image="/assets/images/review.png"
       imageAlt="review proposal"
     />
