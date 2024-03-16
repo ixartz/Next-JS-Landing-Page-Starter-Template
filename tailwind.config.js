@@ -14,6 +14,10 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      boxShadow: {
+        // make a white shadow gaussian blur
+        'white-shadow': '0 0 0 1px rgba(255, 255, 255, 0.5)',
+      },
       colors: {
         primary: {
           100: '#E6F6FE',
