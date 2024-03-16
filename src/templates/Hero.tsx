@@ -23,12 +23,7 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <HeroOneButton
-        title={
-          <>
-            {'Automate your repetitive tasks for\n'}
-            <span className="font-bold">RFP Applications</span>
-          </>
-        }
+        title={<>{'Respond to RFPs in hours, \n not weeks.'}</>}
         description="Apply to more RFPs in less time."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
