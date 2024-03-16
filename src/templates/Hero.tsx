@@ -9,7 +9,8 @@ import { Logo } from './Logo';
 
 const Hero = () => (
   // bg should be a gradient from dark to light top to bottom
-  <Background color="bg-gradient-to-b from-yellow-100 to-white">
+  <Background color="">
+    {/* bg-gradient-to-b from-yellow-100 to-white */}
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
