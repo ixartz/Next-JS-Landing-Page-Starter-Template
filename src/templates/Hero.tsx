@@ -24,7 +24,7 @@ const Hero = () => (
           </li>
         </NavbarTwoColumns>
       </Section>
-
+      
       <Section yPadding="pt-20 pb-32">
         <HeroOneButton
           title={
@@ -35,7 +35,7 @@ const Hero = () => (
           }
           description="Apply to more RFPs in less time."
           button={
-            <Link href="https://creativedesignsguru.com/category/nextjs/">
+            <Link href="https://calendly.com/rahuldey700/demo-nucleus">
               <Button xl>Request for Demo</Button>
             </Link>
           }

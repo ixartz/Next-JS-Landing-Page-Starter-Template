@@ -10,7 +10,7 @@ const Banner = () => (
       title="We are currently accepting early users for our beta."
       subtitle="Start using Kinara today!"
       button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
+        <Link href="https://calendly.com/rahuldey700/demo-nucleus">
           <Button>Request for Demo</Button>
         </Link>
       }
