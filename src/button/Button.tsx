@@ -1,4 +1,6 @@
 import className from 'classnames';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 type IButtonProps = {
   xl?: boolean;
@@ -6,6 +8,8 @@ type IButtonProps = {
 };
 
 const Button = (props: IButtonProps) => {
+  const [pdr, setPdr] = useState(0);
+
   const btnClass = className({
     btn: true,
     'btn-xl': props.xl,
@@ -14,8 +18,36 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
-      {props.children}
+    <div
+      className={btnClass}
+      onMouseEnter={() => setPdr(10)}
+      onMouseLeave={() => setPdr(0)}
+    >
+      <div className="flex flex-row items-center justify-between">
+        <motion.div
+          initial={{ paddingRight: 0 }}
+          animate={{ paddingRight: pdr }}
+          transition={{ duration: 0.3 }}
+        >
+          {props.children}
+        </motion.div>
+        <div>
+          <svg
+            className="ml-2 size-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </div>
 
       <style jsx>
         {`
@@ -32,7 +64,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-white bg-[#484848];
+            @apply text-white bg-black;
           }
 
           .btn-primary:hover {
