@@ -29,8 +29,8 @@ const Hero = () => (
         <HeroOneButton
           title={
             <>
-              {'Automate your repetitive tasks for\n'}
-              <span className="font-bold">RFP Applications</span>
+              {'Respond to RFPs in hours,\n'}
+              <span className="font-bold">not weeks.</span>
             </>
           }
           description="Apply to more RFPs in less time."
