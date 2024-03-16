@@ -25,7 +25,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="align-start flex w-full flex-col items-start justify-start text-center sm:w-1/2 sm:px-6">
+      <div className="align-start flex w-full flex-col items-start justify-start px-6 py-16 text-center sm:w-1/2 sm:py-0">
         <h3 className="px-4 text-left text-2xl text-gray-900">{props.title}</h3>
         <div className="mt-2 px-4 text-left text-xl leading-9">
           {props.description}

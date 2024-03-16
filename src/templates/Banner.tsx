@@ -7,8 +7,8 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title="We are currently accepting early users for our beta."
+      subtitle="Start using Kinara today!"
       button={
         <Link href="https://creativedesignsguru.com/category/nextjs/">
           <Button>Request for Demo</Button>
