@@ -7,22 +7,23 @@ const VerticalFeatures = () => (
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
   >
     <VerticalFeatureRow
-      title="Your title here"
+      title="Determine Eligibility Instantly"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
+      image="/assets/images/questionnaire.png"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Your title here"
+      title="Generate comprehensive checklist"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
+      image="/assets/images/table.png"
       imageAlt="Second feature alt text"
       reverse
+      zoom
     />
     <VerticalFeatureRow
-      title="Your title here"
+      title="Apply with confidence"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
+      image="/assets/images/review.png"
       imageAlt="Third feature alt text"
     />
   </Section>

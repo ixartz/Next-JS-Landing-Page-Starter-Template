@@ -8,7 +8,8 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  // bg should be a gradient from dark to light top to bottom
+  <Background color="bg-gradient-to-b from-yellow-100 to-white">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
@@ -26,14 +27,14 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Automate your repetitive tasks for\n'}
+            <span className="font-bold">RFP Applications</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="Apply to more RFPs in less time."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+            <Button xl>Request for Demo</Button>
           </Link>
         }
       />

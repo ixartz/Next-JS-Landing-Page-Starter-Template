@@ -7,6 +7,7 @@ type IVerticalFeatureRowProps = {
   image: string;
   imageAlt: string;
   reverse?: boolean;
+  zoom?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -29,8 +30,23 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         <div className="mt-6 text-xl leading-9">{props.description}</div>
       </div>
 
-      <div className="w-full p-6 sm:w-1/2">
-        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+      <div className="w-full overflow-hidden rounded-md p-6 shadow-xl sm:w-1/2">
+        {props.zoom ? (
+          <div className="min-h-[300px] translate-x-32 translate-y-16 scale-150 rounded-md border-[2px]">
+            <img
+              src={`${router.basePath}${props.image}`}
+              alt={props.imageAlt}
+              className="object-cover"
+            />
+          </div>
+        ) : (
+          <div className="min-h-[300px]">
+            <img
+              src={`${router.basePath}${props.image}`}
+              alt={props.imageAlt}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
