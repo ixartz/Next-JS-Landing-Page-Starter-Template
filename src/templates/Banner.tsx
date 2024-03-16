@@ -7,8 +7,8 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="We are currently accepting early users for our beta"
-      subtitle=""
+      title="We are currently accepting early users for our beta."
+      subtitle="Start using Kinara today!"
       button={
         <Link href="https://calendly.com/rahuldey700/demo-nucleus">
           <Button>Request for Demo</Button>

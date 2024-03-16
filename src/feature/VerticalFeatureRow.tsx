@@ -7,7 +7,6 @@ type IVerticalFeatureRowProps = {
   image: string;
   imageAlt: string;
   reverse?: boolean;
-  zoom?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -19,34 +18,22 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     {
       'flex-row-reverse': props.reverse,
     },
+    'p-4 border-[2px] rounded-md shadow-xl sm:h-[400px] flex flex-row justify-between items-center bg-white',
   );
 
   const router = useRouter();
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
+      <div className="align-start flex w-full flex-col items-start justify-start px-6 py-16 text-center sm:w-1/2 sm:py-0">
+        <h3 className="px-4 text-left text-2xl text-gray-900">{props.title}</h3>
+        <div className="mt-2 px-4 text-left text-xl leading-9">
+          {props.description}
+        </div>
       </div>
 
-      <div className="w-full overflow-hidden rounded-md p-6 shadow-xl sm:w-1/2">
-        {props.zoom ? (
-          <div className="min-h-[300px] translate-x-32 translate-y-16 scale-150 rounded-md border-[2px]">
-            <img
-              src={`${router.basePath}${props.image}`}
-              alt={props.imageAlt}
-              className="object-cover"
-            />
-          </div>
-        ) : (
-          <div className="min-h-[300px]">
-            <img
-              src={`${router.basePath}${props.image}`}
-              alt={props.imageAlt}
-            />
-          </div>
-        )}
+      <div className="flex w-full flex-col items-center justify-center rounded-md p-6 sm:h-full sm:w-1/2">
+        <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
       </div>
     </div>
   );
