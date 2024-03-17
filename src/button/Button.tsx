@@ -15,6 +15,7 @@ const Button = (props: IButtonProps) => {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
     'btn-primary': true,
+    'shadow-button': true,
   });
 
   return (

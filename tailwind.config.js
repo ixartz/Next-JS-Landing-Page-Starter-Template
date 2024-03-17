@@ -17,6 +17,7 @@ module.exports = {
       boxShadow: {
         // make a white shadow gaussian blur
         'white-shadow': '0 0 0 1px rgba(255, 255, 255, 0.5)',
+        'button': '0 30px 30px -15px rgba(0, 0, 0, 0.75)',
       },
       colors: {
         primary: {
