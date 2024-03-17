@@ -9,8 +9,8 @@ export function GridCell({ isHovered }: { isHovered: boolean }) {
       <motion.div
       // as soon as it hovers, make the bg color #DDDCDC, and a second later mack to #F6F5F5
       initial={{ backgroundColor: "#F6F5F5" }}
-      animate={{ backgroundColor: isHovered ? ["#F6F5F5", "#DDDCDC", "#F6F5F5"] : "#F6F5F5" }}
-      transition={{ duration: 2 }}
+      animate={{ backgroundColor: isHovered ? ["#F6F5F5", "#DDDCDC", "#F6F5F5", "#F6F5F5"] : "#F6F5F5"}}
+      transition={{ duration: 0.5 }}
       className="h-[100px] w-[50px] rounded-md border-[1.5px] border-gray-300 bg-[#F6F5F5]">
       </motion.div>
     </div>
