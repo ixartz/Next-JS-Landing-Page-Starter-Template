@@ -32,7 +32,7 @@ const Hero = () => (
               <span className="font-bold">not weeks.</span>
             </>
           }
-          description="Apply to more RFPs in less time."
+          description="Designed for small businesses"
           button={
             <Link href="https://calendly.com/rahuldey700/demo-nucleus">
               <Button xl>Request for Demo</Button>
