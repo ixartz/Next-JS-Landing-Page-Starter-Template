@@ -19,7 +19,7 @@ const Hero = () => (
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
             {/* <Link href="/">
-              <Button>Request for Demo</Button>
+              <Button>Request a Demo</Button>
             </Link> */}
           </li>
         </NavbarTwoColumns>
@@ -35,7 +35,7 @@ const Hero = () => (
           description="Designed for small businesses"
           button={
             <Link href="https://calendly.com/rahuldey700/demo-nucleus">
-              <Button xl>Request for Demo</Button>
+              <Button xl>Request a Demo</Button>
             </Link>
           }
         />
