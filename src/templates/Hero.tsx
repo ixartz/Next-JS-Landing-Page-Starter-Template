@@ -18,9 +18,6 @@ const Hero = () => (
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            {/* <Link href="/">
-              <Button>Request a Demo</Button>
-            </Link> */}
           </li>
         </NavbarTwoColumns>
       </Section>
