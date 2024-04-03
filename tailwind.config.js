@@ -33,6 +33,19 @@ module.exports = {
           900: '#263c54',
           950: '#192738',
         },
+        kiyanaw: {
+          50: '#f4f7fb',
+          100: '#e8eef6',
+          200: '#ccdbeb',
+          300: '#9fbeda',
+          400: '#6b9cc5',
+          500: '#4880af',
+          600: '#366593',
+          700: '#305880',
+          800: '#284664',
+          900: '#263c54',
+          950: '#192738',
+        },
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
@@ -51,7 +64,7 @@ module.exports = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui.nextui()],
+  plugins: [require("daisyui"), nextui.nextui()],
   safelist: [
     'bg-red-100',
     'text-red-800',
@@ -62,4 +75,7 @@ module.exports = {
     'bg-sky-100',
     'text-sky-800',
   ],
+  daisyui: {
+    prefix: 'daisy-'
+  }
 };

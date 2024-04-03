@@ -40,6 +40,7 @@
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
+    "daisyui": "^4.9.0",
     "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",

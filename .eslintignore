@@ -1,3 +1,4 @@
 node_modules
 scripts
 out
+tailwind.config.js

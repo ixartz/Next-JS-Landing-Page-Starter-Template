@@ -37,7 +37,7 @@ const SupportButton = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-emerald-500;
+            @apply bg-emerald-700;
           }
         `}
       </style>

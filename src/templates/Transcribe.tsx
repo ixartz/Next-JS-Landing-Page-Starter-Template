@@ -8,12 +8,17 @@ import { TopNav } from '@/layout/TopNav';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
+import { Milestone } from './Milestone';
 import { SupportUs } from './SupportUs';
+import { Timeline } from './Timeline';
 import { UnderDevelopment } from './UnderDevelopment';
 
 const Transcribe = () => (
   <div className="text-gray-600 antialiased">
-    <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Meta
+      title={`${AppConfig.title} - Collaborative Transcription software`}
+      description={AppConfig.description}
+    />
     <TopNav></TopNav>
 
     <UnderDevelopment />
@@ -83,6 +88,51 @@ const Transcribe = () => (
         comingSoon
         reverse
       /> */}
+    </Section>
+
+    <Section
+      title="kiyânaw Transcribe Roadmap"
+      description="Current progress and upcoming features for kiyânaw Transcribe"
+    >
+      <Timeline>
+        <Milestone
+          time="1.0-alpha"
+          title="Internal testing and development"
+          description="Internal online release, spell check support for nêhiyawêwin, issue submission, mp4 video support, database indexing, adjustable playback rate, shared transcriptions."
+          start
+          complete
+        />
+        <Milestone
+          time="1.0-beta"
+          title="Beta release"
+          description="Realtime updates upgrade (Amplify API v2), realtime collaboration, contributor awareness, private transcriptions, disable indexing, itwêwina lookup."
+          right
+          complete
+        />
+        <Milestone
+          time="1.0"
+          title="General availability"
+          description="Publish transciptions, export formats, syllabics support, +1 language spell check, versioning, keyboard shortcuts"
+        />
+        <Milestone
+          time="1.1"
+          title="kiyânaw Theatre"
+          description='kiyânaw Theatre will provide a publicly-available list of published transcriptions that will be viewable in "theatre mode", along with the ability to export subtitles files for other platforms such as YouTube.'
+          right
+        />
+        <Milestone
+          time="1.2"
+          title="Transcription Trainer"
+          description='Training mode uses an existing, finished transcription as the key for training users on transcribing. Rather that highlight words spelled "correctly", the transcription will highlight as the learner correctly matches the key.'
+          end
+        />
+      </Timeline>
+
+      <div className="text-center">
+        <Link target="_blank" href="https://transcribe.kiyanaw.net/">
+          <Button>{`Try it out now →`}</Button>
+        </Link>
+      </div>
     </Section>
 
     <SupportUs />

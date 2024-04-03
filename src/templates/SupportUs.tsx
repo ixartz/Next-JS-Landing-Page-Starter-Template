@@ -5,7 +5,7 @@ import { Coffee } from './Coffee';
 const SupportUs = () => (
   <div className="rounded-md bg-green-100 text-center">
     <Section>
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:p-12 sm:text-left">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:pb-12 sm:text-left">
         <div>
           <h2
             id="support"
