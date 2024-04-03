@@ -32,8 +32,8 @@ const Milestone = (props: IMilestoneProps) => {
           />
         </svg>
       </div>
-      <div className={`daisy-timeline-${alignRight} mb-10`}>
-        <time className="font-mono italic">{props.time}</time>
+      <div className={`daisy-timeline-${alignRight} mb-10 pt-1.5`}>
+        <time className="px-1 font-mono italic">{props.time}</time>
         <div className={`text-lg ${textComplete}`}>{props.title}</div>
         {props.description}
       </div>
