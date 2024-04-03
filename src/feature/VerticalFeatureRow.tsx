@@ -13,6 +13,7 @@ type IVerticalFeatureRowProps = {
   target?: string;
   targetText?: string;
   comingSoon?: boolean;
+  blank?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -27,6 +28,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   );
 
   const router = useRouter();
+  const target = props.blank ? '_blank' : '_self';
 
   const buttonText: string = props.targetText
     ? props.targetText
@@ -38,7 +40,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
         <div className="mt-6 pb-6 text-xl leading-9">{props.description}</div>
         {props.target && (
-          <Link href={{ pathname: props.target }}>
+          <Link target={target} href={{ pathname: props.target }}>
             <Button>{`${buttonText} →`}</Button>
           </Link>
         )}

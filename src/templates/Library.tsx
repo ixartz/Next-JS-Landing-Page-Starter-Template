@@ -8,7 +8,10 @@ import { LibraryDataTable } from './LibraryDataTable';
 
 const Library = () => (
   <div className="text-gray-600 antialiased">
-    <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Meta
+      title={`${AppConfig.title} - Learner Library`}
+      description={AppConfig.description}
+    />
     <TopNav></TopNav>
     <Section title="Learner library">
       <p className="text-center">

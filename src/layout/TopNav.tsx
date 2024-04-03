@@ -8,17 +8,13 @@ const TopNav = () => (
   <Section yPadding="py-6">
     <NavbarTwoColumns logo={<Logo xl />}>
       <li>
-        <Link href="/library">Library</Link>
+        <Link href="/#projects">Projects</Link>
       </li>
       <li>
-        <a target="_blank" href="https://transcribe.kiyanaw.net">
-          Transcribe
-        </a>
+        <Link href="/library">Learner Library</Link>
       </li>
       <li>
-        <a target="_blank" href="https://bloomfield.kiyanaw.net">
-          Bloomfield
-        </a>
+        <Link href="/#support">Support Us</Link>
       </li>
       <li>
         <Link href="/#about">About</Link>

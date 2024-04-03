@@ -15,18 +15,21 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Language learning resources for\n'}
-            <span className="text-primary-500">Indigenous Languages</span>
+            {'Building our\n'}
+            <span className="text-primary-500">Language Bundle</span>
           </>
         }
-        description="We are a grass-roots group of dedicated language learners, and we've compiled some of our projects and resources here in the hopes they might help you learn too."
+        description="As adult language learners, we must take our language learning journey into our own hands. Come with us."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <Button xl>Download Your Free Theme</Button>
           </Link>
         }
       />
-      <img src={'/assets/images/paddling.png'}></img>
+      <img
+        alt="Summer 2023 as we paddle to Stanley Mission"
+        src={'/assets/images/paddling.png'}
+      ></img>
     </Section>
   </Background>
 );

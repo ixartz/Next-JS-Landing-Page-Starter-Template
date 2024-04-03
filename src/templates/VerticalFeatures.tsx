@@ -46,42 +46,53 @@ import { Section } from '../layout/Section';
  */
 
 const VerticalFeatures = () => (
-  <Section
-    title="Language resources"
-    description="Just some stuff we've been working on..."
-  >
-    <VerticalFeatureRow
-      title="Learner library"
-      description="A curated list of language and cultural resources including PDFs, videos and audio, categorized by learning level an application. Also a few hard-to-find items, for safe keeping."
-      image="/assets/images/library.png"
-      imageAlt="Resources for Indigenous language learners"
-      target="/library"
-    />
-    <VerticalFeatureRow
-      title="Transcriptions"
-      description="As learners we find it valuable to spend time transcribing the language. It's not possible (or polite 😂) to 'pause' a fluent speaker while they're speaking, so we work on transcribing recordings to learn new vocab and train our ears. "
-      image="/assets/images/transcription.png"
-      imageAlt="Transcriptions in progress"
-      reverse
-      comingSoon
-    />
-    <VerticalFeatureRow
-      title="Bloomfield online"
-      description="Leonard Bloomfield was a linguist who, in the 1920s and 30s recorded three volumes of texts from several reserves in Saskatchewan, two of which were published. Here we offer two of the publications online, Sacred Stories of the Sweetgrass Cree and Plains Cree Texts (in SRO)."
-      image="/assets/images/bloomfield.png"
-      imageAlt="Bloomfield's texts online"
-      target="https://bloomfield.kiyanaw.net"
-      targetText="Visit the Bloomfield texts"
-    />
-    <VerticalFeatureRow
-      title="Technology projects"
-      description="If you're into technology, and interested in Indigenous language learning, you might find these interesting."
-      image="/assets/images/tech.png"
-      imageAlt="Indigenous language technology"
-      reverse
-      comingSoon
-    />
-  </Section>
+  <>
+    <Section title="Language Projects" id="projects">
+      <VerticalFeatureRow
+        title="kiyânaw App"
+        description="Currently in development, the kiyânaw App allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
+        image="/assets/images/kiyanaw-app.png"
+        imageAlt="kiyânaw Mobile App"
+        reverse
+        target="/mobile-app"
+        targetText="Learn more"
+      />
+      <VerticalFeatureRow
+        title="kiyânaw Database"
+        description="The kiyânaw Database is a searchable repository of inflected words and phrases gathered from transcriptions and elsewhere online."
+        image="/assets/images/kiyanaw-database.png"
+        imageAlt="Searchable index of attested language from transcriptions and other sources."
+        target="/database"
+        targetText="Learn more"
+      />
+      <VerticalFeatureRow
+        title="kiyânaw Transcribe"
+        description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
+        image="/assets/images/kiyanaw-transcribe.png"
+        imageAlt="Online collaborative transcription software"
+        reverse
+        target="/transcribe"
+        targetText="Learn more"
+      />
+      <VerticalFeatureRow
+        title="Learner library"
+        description="A curated list of language and cultural resources including PDFs, videos and audio, categorized by learning level an application. Also a few hard-to-find items, for safe keeping."
+        image="/assets/images/library.png"
+        imageAlt="Resources for Indigenous language learners"
+        target="/library"
+        targetText="Visit the Library"
+      />
+      <VerticalFeatureRow
+        title="Bloomfield online"
+        description="In the 1920s a linguist named Leonard Bloomfield visited several reserves in southern Saskatchewan and recorded three volumes of texts, two of which were published. Here we offer two of the publications online, Sacred Stories of the Sweetgrass Cree and Plains Cree Texts (in SRO)."
+        image="/assets/images/bloomfield.png"
+        imageAlt="Bloomfield's texts online"
+        target="https://bloomfield.kiyanaw.net"
+        targetText="Visit Bloomfield online"
+        reverse
+      />
+    </Section>
+  </>
 );
 
 export { VerticalFeatures };
