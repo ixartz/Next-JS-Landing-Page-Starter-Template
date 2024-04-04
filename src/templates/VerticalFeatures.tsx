@@ -81,6 +81,7 @@ const VerticalFeatures = () => (
         imageAlt="Resources for Indigenous language learners"
         target="/library"
         targetText="Visit the Library"
+        blank
       />
       <VerticalFeatureRow
         title="Bloomfield online"
@@ -89,6 +90,7 @@ const VerticalFeatures = () => (
         imageAlt="Bloomfield's texts online"
         target="https://bloomfield.kiyanaw.net"
         targetText="Visit Bloomfield online"
+        blank
         reverse
       />
     </Section>

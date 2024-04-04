@@ -5,7 +5,9 @@ import { TopNav } from '@/layout/TopNav';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
+import { Milestone } from './Milestone';
 import { SupportUs } from './SupportUs';
+import { Timeline } from './Timeline';
 import { UnderDevelopment } from './UnderDevelopment';
 
 const MobileApp = () => (
@@ -52,8 +54,31 @@ const MobileApp = () => (
         imageAlt="Platform designed for any language or dialect"
       />
     </Section>
-    <Section title="Roadmap" description="Coming soon...">
-      <p></p>
+
+    <Section
+      title="kiyânaw App Roadmap"
+      description="Current progress and upcoming features for kiyânaw App"
+    >
+      <Timeline>
+        <Milestone
+          time="1.0-alpha"
+          title="Prototype"
+          description="Question submission and promotion, search, browse, playlist, favorites."
+          start
+        />
+        <Milestone
+          time="1.0-beta"
+          title="Published beta"
+          description="Public beta release with support for nêhiyawêwin."
+          right
+        />
+        <Milestone
+          time="1.0"
+          title="General availability"
+          description="Public release. Multiple language support."
+          end
+        />
+      </Timeline>
     </Section>
 
     <SupportUs />

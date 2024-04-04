@@ -8,7 +8,9 @@ import { TopNav } from '@/layout/TopNav';
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
+import { Milestone } from './Milestone';
 import { SupportUs } from './SupportUs';
+import { Timeline } from './Timeline';
 import { UnderDevelopment } from './UnderDevelopment';
 
 const Database = () => (
@@ -57,8 +59,38 @@ const Database = () => (
         blank
       />
     </Section>
-    <Section title="Roadmap" description="Coming soon...">
-      <p></p>
+
+    <Section
+      title="kiyânaw Database Roadmap"
+      description="Current progress and upcoming features for kiyânaw Database"
+    >
+      <Timeline>
+        <Milestone
+          time="1.0-beta"
+          title="Test design & functionality"
+          description="High frequency verbs and nouns, search function, itwêwina integration, surface distribution of forms."
+          start
+          complete
+        />
+        <Milestone
+          time="1.0"
+          title="General availability"
+          description="Multi-source integration (Bloomfield, CLN), compound search functionality, english search."
+          right
+        />
+        <Milestone
+          time="1.1"
+          title="Multi-language"
+          description="Additional language support."
+          end
+        />
+      </Timeline>
+
+      <div className="text-center">
+        <Link target="_blank" href="https://transcribe.kiyanaw.net/stats">
+          <Button>{`Try it out now →`}</Button>
+        </Link>
+      </div>
     </Section>
 
     <SupportUs />

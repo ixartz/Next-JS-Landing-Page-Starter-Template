@@ -124,6 +124,12 @@ const Transcribe = () => (
           time="1.2"
           title="Transcription Trainer"
           description='Training mode uses an existing, finished transcription as the key for training users on transcribing. Rather that highlight words spelled "correctly", the transcription will highlight as the learner correctly matches the key.'
+        />
+        <Milestone
+          time="1.3"
+          title="Issue browser"
+          description="Central location for the browsing, searching & filtering of issues across a body of transcriptions."
+          right
           end
         />
       </Timeline>

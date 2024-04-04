@@ -5,7 +5,7 @@ const UnderDevelopment = () => (
     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:p-12 sm:text-left">
       <div>
         <h2 id="about" className="pb-2 text-2xl font-bold text-amber-800">
-          Project under active development
+          Currently under development
         </h2>
         <div className="text-base text-gray-600">
           This project is currently under active development. We are open to
