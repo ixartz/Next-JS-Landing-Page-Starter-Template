@@ -10,8 +10,8 @@ const Logo = () => {
       <Image
         src="/assets/images/syncap_logo.png"
         alt="Logo"
-        width={180}
-        height={74}
+        width={130}
+        height={50}
       />
     </span>
   );

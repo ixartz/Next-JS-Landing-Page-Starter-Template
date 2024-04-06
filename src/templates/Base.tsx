@@ -8,7 +8,7 @@ import { IntegrationAndSecurity } from './IntegrationAndSecurity';
 import { OrganizeInfoFeatures } from './OrganizeInfoFeatures';
 
 const Base = () => (
-  <div className="text-gray-600 antialiased">
+  <div className="text-gray-700 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
     <OrganizeInfoFeatures />

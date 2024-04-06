@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display&family=General+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&display=swap');
+
+// Define font families
+$futura-font-family: 'Futura PT', sans-serif;
+$h-font-family: 'Clash Display', serif;
+$p-font-family: 'General Sans', sans-serif;
+
+// Apply fonts to HTML tags
+h1, h2, h3, h4, h5, h6 {
+  font-family: $h-font-family;
+}
+
+p {
+  font-family: $p-font-family;
+}
+
+div {
+  font-family: $futura-font-family;
+  font-weight: 400;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

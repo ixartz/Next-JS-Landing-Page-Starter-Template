@@ -8,17 +8,24 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-grey-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        <a
-          className="whitespace-nowrap"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={MeetingLink}
-        >
-          Get Early Access
-        </a>
+        <div className="mr-10 flex gap-3">
+          <h2>
+            {' '}
+            <a>Platform</a>
+          </h2>
+          <h2>
+            {' '}
+            <a>Pricing</a>
+          </h2>
+          <h2>
+            {' '}
+            <a>Company</a>
+          </h2>
+        </div>
+        <Button>Member Sign In</Button>
       </NavbarTwoColumns>
     </Section>
 
@@ -26,31 +33,41 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Supercharge Your Deal Team with\n'}
-            <span className="text-primary-500">AI-Powered Workflow</span>
+            {'Supercharge Deal-making with AI-Powered Advisory Platform\n'}
+            {/* <span className="text-primary-500">AI-Powered Workflow</span> */}
           </>
         }
         description={
           <div className="flex flex-col items-center">
             <div className="text-lg md:text-xl">
               <p className="mb-8">
-                Syncap AI streamlines deal processes and automates the base
-                layer of tasks, <br /> so you can focus on key decisions and
-                connections.
+                Syncap helps you get the deal done with the best partner
+                leveraging our industry-leading process management platform and
+                top-notch M&A advisor network
               </p>
               <p>Reclaim 4+ hours every week from</p>
             </div>
-            <img
-              src="/assets/images/PainPoints.png"
-              alt="Pain Points"
-              className="aspect-ratio mt-8 max-h-[60px] w-[500px]"
-            />
+            <div>
+              <img
+                src={'assets/images/figure-hero-1.png'}
+                alt="hero-figure-1"
+              />
+            </div>
           </div>
         }
         button={
-          <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
-            <Button xl>Get Early Access</Button>
-          </a>
+          <Button>
+            <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
+              <div className="flex items-center">
+                Get started
+                <img
+                  src="/icons/learn-more.svg"
+                  alt="Controlled Data Access"
+                  className="aspect-square p-2 "
+                />
+              </div>
+            </a>
+          </Button>
         }
       />
     </Section>

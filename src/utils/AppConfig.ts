@@ -1,7 +1,7 @@
 export const AppConfig = {
   site_name: 'syncap',
   title: 'Syncap AI',
-  description: 'Supercharge Your Deal Team with AI-Powered Workflow',
+  description: 'Supercharge Deal-making with AI-Powered Advisory Platform',
   locale: 'en',
 };
 

@@ -22,6 +22,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-transition-group": "^4.4.5",
+    "sass": "^1.74.1",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
