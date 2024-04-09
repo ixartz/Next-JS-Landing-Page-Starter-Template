@@ -1,10 +1,9 @@
-import { MeetingLink } from '@/utils/AppConfig';
-
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { MeetingLink } from '../utils/AppConfig';
 import { Logo } from './Logo';
 
 const Hero = () => (

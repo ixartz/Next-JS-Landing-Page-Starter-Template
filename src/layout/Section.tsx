@@ -16,9 +16,9 @@ const Section = (props: ISectionProps) => (
     {(props.title || props.description) && (
       <div className="mb-12 text-center">
         {props.title && (
-          <h2 className="text-3xl font-semibold text-gray-900 xl:text-4xl">
+          <div className="text-3xl font-semibold text-gray-900 xl:text-4xl">
             {props.title}
-          </h2>
+          </div>
         )}
         {props.description && (
           <div className="mt-4 text-lg md:px-20 md:text-xl">
