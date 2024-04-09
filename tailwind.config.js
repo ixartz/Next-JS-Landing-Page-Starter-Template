@@ -1,6 +1,13 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
@@ -25,9 +32,11 @@ module.exports = {
           700: '#026592',
           800: '#014C6E',
           900: '#013349',
+          1050: '#003434',
         },
         gray: {
-          100: '#f7fafc',
+          100: '#FFFFFF',
+          101: '#f7fafc',
           200: '#edf2f7',
           300: '#e2e8f0',
           400: '#cbd5e0',
@@ -36,6 +45,7 @@ module.exports = {
           700: '#4a5568',
           800: '#2d3748',
           900: '#1a202c',
+          2000: '#001D1D',
         },
       },
       lineHeight: {

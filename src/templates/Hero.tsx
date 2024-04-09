@@ -13,15 +13,12 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo />}>
         <div className="mr-10 flex gap-3">
           <h2>
-            {' '}
             <a>Platform</a>
           </h2>
           <h2>
-            {' '}
             <a>Pricing</a>
           </h2>
           <h2>
-            {' '}
             <a>Company</a>
           </h2>
         </div>
@@ -33,7 +30,7 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Supercharge Deal-making with AI-Powered Advisory Platform\n'}
+            {'Supercharge Deal-making with\n AI-Powered Advisory Platform'}
             {/* <span className="text-primary-500">AI-Powered Workflow</span> */}
           </>
         }
@@ -43,15 +40,8 @@ const Hero = () => (
               <p className="mb-8">
                 Syncap helps you get the deal done with the best partner
                 leveraging our industry-leading process management platform and
-                top-notch M&A advisor network
+                top-notch M&A bankers network
               </p>
-              <p>Reclaim 4+ hours every week from</p>
-            </div>
-            <div>
-              <img
-                src={'assets/images/figure-hero-1.png'}
-                alt="hero-figure-1"
-              />
             </div>
           </div>
         }
@@ -70,6 +60,7 @@ const Hero = () => (
           </Button>
         }
       />
+      <img src={'assets/images/figure-hero-1.png'} alt="hero-figure-1" />
     </Section>
   </Background>
 );

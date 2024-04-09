@@ -5,9 +5,10 @@ const OrganizeInfoFeatures = () => (
   <Section
     title={
       <>
-        <p>
-          Focus Where It Counts: On Decisions, <br /> Not Data Gathering
-        </p>
+        <h2>
+          Industry-leading Platform Delivering <br /> Best-in-Class Advisory
+          Experience
+        </h2>
       </>
     }
     // description=""
