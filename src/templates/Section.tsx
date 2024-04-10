@@ -1,21 +1,60 @@
+import { CheckIcon } from '@radix-ui/react-icons';
+import clsx from 'clsx';
+import { useState } from 'react';
+
+import { CheckBox, CheckBoxButton } from '@/components/Checkbox';
+
 import { Button } from '../button/Button';
 
 const SelectionGroup = () => {
   const options = ['Sell-side M&A', 'Financing', 'Strategic Advisory'];
 
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
+  const [withReport, setWithReport] = useState(false);
+
+  const handleSelection = (option: any) => {
+    const foundItem = selectedOptions.indexOf(option);
+    const updator = selectedOptions.slice();
+    if (foundItem === -1) {
+      updator.push(option);
+    }
+
+    if (foundItem > -1) updator.splice(foundItem, 1);
+    setSelectedOptions(updator);
+  };
+
   return (
     <div className="mb-4 mt-8 flex flex-wrap gap-2">
       {options.map((option, ind) => {
+        const selected = selectedOptions.includes(option);
         return (
-          <Button
-            variation="multi-select"
-            classname="w-full whitespace-nowrap flex-1 min-w-[250px] p-3"
-            key={option + ind}
-          >
-            <h3 className="invert"> {option}</h3>
-          </Button>
+          <>
+            <CheckBoxButton
+              variation="checkbox"
+              classname={clsx(
+                'w-full min-w-[250px] flex-1 whitespace-nowrap p-3',
+                selected && 'bg-gray-200/20',
+              )}
+              key={option + ind}
+              onSelect={() => {
+                handleSelection(option);
+              }}
+            >
+              <div className={clsx('flex items-center justify-between')}>
+                <h3 className="invert"> {option}</h3>
+                {selected && <CheckIcon color="white" />}
+              </div>
+            </CheckBoxButton>
+          </>
         );
       })}
+      <CheckBox
+        onSelect={() => {
+          setWithReport(!withReport);
+        }}
+        selected={withReport}
+        label="I would like to receive a complimentary preliminary valuation assessment report."
+      />
     </div>
   );
 };
@@ -28,16 +67,12 @@ export const OurServicesSection = () => {
         and with optimized value.
       </h1>
       <SelectionGroup />
-      <div>
-        <input
-          type="checkbox"
-          className="form-checkbox size-5 bg-transparent"
-          title="I would like to receive a complimentary preliminary valuation assessment report."
-        ></input>
+
+      <div className="flex justify-start">
+        <Button variation="solid" classname="">
+          <p>Schedule an Initial Consultation</p>
+        </Button>
       </div>
-      <Button variation="primary" classname="invert">
-        Schedule an Initial Consultation
-      </Button>
     </div>
   );
 };
