@@ -4,10 +4,9 @@ import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
-import { GenerateInfoFeatures } from './GenerateInfoFeatures';
+import { FourMainFeatures } from './FourMainFeatures';
 import { Hero } from './Hero';
 import { IntegrationAndSecurity } from './IntegrationAndSecurity';
-import { OrganizeInfoFeatures } from './OrganizeInfoFeatures';
 import { OurServicesSection } from './Section';
 
 interface Prop {
@@ -17,13 +16,13 @@ interface Prop {
 }
 export const ValuePropBlock = ({ icon, title, description }: Prop) => {
   return (
-    <div className="block rounded-lg border p-4 text-center">
+    <div className="block rounded-lg border p-4 text-center lg:w-1/3">
       <img
         src={icon}
         alt={title}
-        className="mx-auto mb-2 aspect-square w-1/4"
+        className="mx-auto mb-2 aspect-square w-1/4 max-w-[64px]"
       />
-      <h3 className="mb-2 font-bold">{title}</h3>
+      <p className="mb-2 text-xl font-bold">{title}</p>
       <p>{description}</p>
     </div>
   );
@@ -35,10 +34,16 @@ const Base = () => (
     <Hero />
     <OurServicesSection />
     <Section
-      title="Superior Approach =
-Optimized Transaction Outcomes"
+      title={
+        <>
+          <h1>
+            Superior Approach = <br />
+            Optimized Transaction Outcomes
+          </h1>
+        </>
+      }
     >
-      <div className="flex sm:flex-col lg:flex-row lg:gap-4">
+      <div className="flex flex-col gap-4 lg:flex-row">
         <ValuePropBlock
           icon="/assets/images/tailored_process_illustration.png"
           title="Tailored, Advisor-led Process"
@@ -57,9 +62,33 @@ Optimized Transaction Outcomes"
         />
       </div>
     </Section>
-    <OrganizeInfoFeatures />
-    <GenerateInfoFeatures />
+    <FourMainFeatures />
     <IntegrationAndSecurity />
+    <Section
+      title={
+        <>
+          <h1>Your Data, Secure and Sovereign</h1>
+        </>
+      }
+    >
+      <div className="flex flex-col gap-4  lg:flex-row">
+        <ValuePropBlock
+          icon="/assets/images/tailored_process_illustration.png"
+          title="End-to-end Encrypted Workspace"
+          description="Protects your data within a secure, private workplace"
+        />
+        <ValuePropBlock
+          icon="/assets/images/streamlined_platform_illustration.png"
+          title="SOC 2 Compliance"
+          description="Ensures data security to safeguard your company’s interests"
+        />
+        <ValuePropBlock
+          icon="/assets/images/optimized_matching_illustration.png"
+          title="Controlled Access"
+          description="Restricts sensitive information access to qualified and approved prospective buyers/investors only"
+        />
+      </div>
+    </Section>
     <Banner />
     <Footer />
   </div>

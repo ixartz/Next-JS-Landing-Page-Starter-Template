@@ -21,7 +21,7 @@ export function useIsVisible(ref: any) {
 
 type IVerticalFeatureRowProps = {
   title: string;
-  description: string;
+  description: React.ReactNode;
   image: string;
   imageAlt: string;
   reverse?: boolean;
