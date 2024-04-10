@@ -7,11 +7,11 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Ready to power up your investment workflow?"
-      subtitle="Connect with us to get started"
+      title="Transformative Experience Leads to a Higher Altitude"
+      subtitle="Whether you are ready to sell, raise, or looking for answers, we’ll guide you with data and expertise specific to your industry"
       button={
         <a target="_blank" rel="noopener noreferrer" href={MeetingLink}>
-          <Button>Schedule Intro Call</Button>
+          <Button>Schedule an Initial Consultation</Button>
         </a>
       }
     />
