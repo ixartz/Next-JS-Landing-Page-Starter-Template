@@ -14,11 +14,13 @@ $p-font-family: 'General Sans', sans-serif;
 h1, h2, h3, h4, h5, h6 {
   font-family: $h-font-family;
   color: $primary-text-title-color;
+  font-weight: bold;
 }
 
 p {
   font-family: $p-font-family;
-  color: $primary-text-color
+  color: $primary-text-color;
+  font-size:14px;
 }
 
 div {
@@ -26,6 +28,43 @@ div {
   font-weight: 400;
 }
 
+
+// CHECKBOX STYLE
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #CBD5E0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.custom-checkbox:checked {
+  background-color: #4A5568;
+}
+
+/* Styles to hide the default checkbox visually */
+.custom-checkbox::-ms-check,
+.custom-checkbox::-ms-expand {
+  display: none;
+}
+
+.custom-checkbox::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 50% 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.custom-checkbox:checked::before {
+  opacity: 1;
+}
 @tailwind base;
 
 @tailwind components;

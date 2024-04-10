@@ -1,3 +1,12 @@
+import { CaretDownIcon } from '@radix-ui/react-icons';
+import Link from 'next/link';
+
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
+
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
@@ -10,14 +19,38 @@ const Hero = () => (
   <Background color="bg-grey-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        <div className="mr-10 flex gap-3">
-          <h2>
-            <a>Platform</a>
-          </h2>
-          <h2>
+        <div className="mr-10 flex gap-5">
+          <Popover>
+            <PopoverTrigger>
+              <div
+                className="flex cursor-pointer items-center gap-1"
+                // onMouseOver={() => setShow}
+              >
+                <h2>
+                  <a>Platform</a>
+                </h2>
+                <CaretDownIcon />
+              </div>
+            </PopoverTrigger>
+            <PopoverContent className="flex flex-col gap-3 bg-white">
+              <Link href="/platform/advisors">
+                <h1>Adivosrs</h1>
+              </Link>
+              <Link href="/platform/owners">
+                <h1>Business Owners</h1>
+              </Link>
+              <Link href="/platform/buyers-investors">
+                <h1>Buyers & Investors</h1>
+              </Link>
+              <Link href="/platform/intermediaries">
+                <h1>Intermediaries</h1>
+              </Link>
+            </PopoverContent>{' '}
+          </Popover>
+          <h2 className="cursor-pointer ">
             <a>Pricing</a>
           </h2>
-          <h2>
+          <h2 className="cursor-pointer ">
             <a>Company</a>
           </h2>
         </div>
@@ -45,7 +78,7 @@ const Hero = () => (
           </div>
         }
         button={
-          <Button>
+          <Button classname="mx-auto">
             <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
               <div className="flex items-center">
                 Get started
