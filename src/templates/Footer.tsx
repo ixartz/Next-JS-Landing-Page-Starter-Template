@@ -28,7 +28,7 @@ const Footer = () => (
         </div>
         {/* Right */}
         <div className="flex gap-5 whitespace-nowrap">
-          <div className="flex-1">
+          {/* <div className="flex-1">
             <h1 className="mb-4 font-medium">Platform</h1>
             <div className="flex flex-col gap-2">
               <Link href="/platform/owners">
@@ -44,7 +44,7 @@ const Footer = () => (
                 <p>Intermediaries</p>
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="flex-1">
             <h1 className="mb-4 font-medium">Legal</h1>
             <div className="flex flex-col gap-2">
@@ -56,7 +56,7 @@ const Footer = () => (
               </Link>
             </div>
           </div>
-          <div className="flex-1">
+          {/* <div className="flex-1">
             <h1 className="mb-4 font-medium">Company</h1>
             <div className="flex flex-col gap-2">
               <Link href="/about">
@@ -66,7 +66,7 @@ const Footer = () => (
                 <p>Connect</p>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Section>
