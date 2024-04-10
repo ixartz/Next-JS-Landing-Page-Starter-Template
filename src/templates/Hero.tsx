@@ -1,11 +1,4 @@
-import { CaretDownIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
-
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
@@ -19,7 +12,7 @@ const Hero = () => (
   <Background color="bg-grey-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        <div className="mr-10 flex gap-5">
+        {/* <div className="mr-10 flex gap-5">
           <Popover>
             <PopoverTrigger>
               <div
@@ -53,8 +46,13 @@ const Hero = () => (
           <h2 className="cursor-pointer ">
             <a>Company</a>
           </h2>
-        </div>
-        <Button>Member Sign In</Button>
+        </div> */}
+        <Link href={'/'}>
+          <h1>Connect</h1>
+        </Link>
+        <Button variation="primary">
+          <Link href={'/login'}>Member Sign In</Link>
+        </Button>
       </NavbarTwoColumns>
     </Section>
 
