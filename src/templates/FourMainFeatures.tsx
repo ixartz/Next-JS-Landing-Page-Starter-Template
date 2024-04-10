@@ -20,7 +20,7 @@ const FourMainFeatures = () => (
       description={
         <>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Instant Visibility:</strong> &nbsp;Direct insight into
               your deal&apos;s progress, including timelines, buyer
@@ -28,7 +28,7 @@ const FourMainFeatures = () => (
             </span>
           </p>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Elevated Experiences:</strong> &nbsp;Smoothen interaction
               among seller, advisor, and prospective buyers, enhancing deal
@@ -46,14 +46,14 @@ const FourMainFeatures = () => (
       description={
         <>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Extensive Buyer & Investor Network:</strong> &nbsp;Access
               the most relevant, vetted institutional buyers and investors.
             </span>
           </p>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Synergy Identification:</strong> &nbsp;Data analytics
               spotlights the most synergistic partners based on operational
@@ -70,7 +70,7 @@ const FourMainFeatures = () => (
       description={
         <>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Sector-focused Expertise:</strong> &nbsp;Represented by
               M&A experts specialized in your industry for negotiation and
@@ -78,7 +78,7 @@ const FourMainFeatures = () => (
             </span>
           </p>
           <p className="flex items-start">
-            <StarIcon className="mr-2 inline-block" size={40} />
+            <StarIcon className="mr-2 inline-block aspect-square" size={40} />
             <span>
               <strong>Strategic Advisory:</strong> &nbsp;Tailored support in
               transition planning, company presentation, and financial
