@@ -1,10 +1,10 @@
-import { CheckIcon } from '@radix-ui/react-icons';
+import { ArrowTopRightIcon, CheckIcon } from '@radix-ui/react-icons';
 import clsx from 'clsx';
 import { useState } from 'react';
 
 import { CheckBox, CheckBoxButton } from '@/components/Checkbox';
 
-import { Button } from '../button/Button';
+import { Button } from '../components/Button';
 
 const SelectionGroup = () => {
   const options = ['Sell-side M&A', 'Financing', 'Strategic Advisory'];
@@ -71,8 +71,9 @@ export const OurServicesSection = () => {
       <SelectionGroup />
 
       <div className="flex justify-start">
-        <Button variation="solid" classname="">
+        <Button className="invert" variant="primary">
           <p>Schedule an Initial Consultation</p>
+          <ArrowTopRightIcon className="ml-1" />
         </Button>
       </div>
     </div>

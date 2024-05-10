@@ -4,10 +4,21 @@
 $primary-text-title-color: theme('colors.gray.2000');
 $primary-text-color: theme('colors.gray.2000');
 // Define font families
-$futura-font-family: 'Futura PT', sans-serif;
-$h-font-family: 'Clash Display', serif;
-$p-font-family: 'General Sans', sans-serif;
+$futura-font-family: 'Futura PT', 'Helvetica Neue', Arial, sans-serif;
+$h-font-family: 'Clash Display', 'Times New Roman', Times, serif;
+$p-font-family: 'General Sans', 'Arial', sans-serif;
+@layer base {
+  :root {
+    /* For rgb(255 115 179 / <alpha-value>) */
+    --color-primary: 255 115 179;
 
+    /* For hsl(198deg 93% 60% / <alpha-value>) */
+    --color-primary: 198deg 93% 60%;
+
+    /* For rgba(255, 115, 179, <alpha-value>) */
+    --color-primary: 255, 115, 179;
+  }
+}
 // .primary-p{
 //   @apply 
 // }

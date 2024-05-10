@@ -3,9 +3,9 @@ import { ChevronLeftIcon } from '@radix-ui/react-icons';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-import { Button } from '@/button/Button';
 import { Input } from '@/components/Input';
 import { Label } from '@/components/Label';
+import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Login',
@@ -38,13 +38,11 @@ export default function LoginPage() {
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="password">
-              <h1 className="text-left">Email</h1>
+              <h1 className="text-left">Password</h1>
             </Label>
             <Input type="password" placeholder="password" />
           </div>
-          <Button variation="solid" classname="invert">
-            Submit
-          </Button>
+          <Button variant="default">Submit</Button>
         </div>
         {/* <UserAuthForm /> */}
         <input></input>

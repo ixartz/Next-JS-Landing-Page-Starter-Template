@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import { Button } from '@/button/Button';
+import { Button } from './Button';
 
 export const CheckBox = ({ label, selected, onSelect }: any) => {
   return (
@@ -25,11 +25,7 @@ export const CheckBox = ({ label, selected, onSelect }: any) => {
 
 export const CheckBoxButton = ({ classname, children, onSelect }: any) => {
   return (
-    <Button
-      classname={clsx(classname)}
-      variation={'checkbox'}
-      onClick={onSelect}
-    >
+    <Button className={clsx(classname)} variant={'checkbox'} onClick={onSelect}>
       {children}
     </Button>
   );

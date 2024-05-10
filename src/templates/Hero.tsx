@@ -1,7 +1,16 @@
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { ArrowTopRightIcon, CaretDownIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
+import { Button } from '@/components/Button';
+import {
+  TypographyB2,
+  TypographyH3,
+  TypographyH6,
+  TypographyP1,
+} from '@/components/Text';
+
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
@@ -12,46 +21,58 @@ const Hero = () => (
   <Background color="bg-grey-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        {/* <div className="mr-10 flex gap-5">
-          <Popover>
-            <PopoverTrigger>
+        <div className="mr-10 flex gap-5">
+          {' '}
+          <Menu>
+            <MenuButton>
               <div
                 className="flex cursor-pointer items-center gap-1"
                 // onMouseOver={() => setShow}
               >
-                <h2>
-                  <a>Platform</a>
-                </h2>
+                <TypographyH6 text="Platform" />
                 <CaretDownIcon />
               </div>
-            </PopoverTrigger>
-            <PopoverContent className="flex flex-col gap-3 bg-white">
-              <Link href="/platform/advisors">
-                <h1>Adivosrs</h1>
-              </Link>
-              <Link href="/platform/owners">
-                <h1>Business Owners</h1>
-              </Link>
-              <Link href="/platform/buyers-investors">
-                <h1>Buyers & Investors</h1>
-              </Link>
-              <Link href="/platform/intermediaries">
-                <h1>Intermediaries</h1>
-              </Link>
-            </PopoverContent>{' '}
-          </Popover>
-          <h2 className="cursor-pointer ">
+            </MenuButton>
+            <MenuItems
+              anchor="bottom"
+              className="flex flex-col gap-3 border bg-white p-2"
+            >
+              <MenuItem as="div">
+                <Link href="/platform/advisors">
+                  <TypographyH6 text="Advisors" />
+                </Link>
+              </MenuItem>
+              <MenuItem as="div">
+                <Link href="/platform/owners">
+                  <TypographyH6 text="Bussiness Owners" />
+                </Link>
+              </MenuItem>
+              <MenuItem as="div">
+                <Link href="/platform/buyers-investors">
+                  <TypographyH6 text="Buyer & Investors" />
+                </Link>
+              </MenuItem>
+              <MenuItem as="div">
+                <Link href="/platform/intermediaries">
+                  <TypographyH6 text="Intermediaries" />
+                </Link>{' '}
+              </MenuItem>
+            </MenuItems>{' '}
+          </Menu>{' '}
+          {/* <h2 className="cursor-pointer ">
             <a>Pricing</a>
-          </h2>
-          <h2 className="cursor-pointer ">
-            <a>Company</a>
-          </h2>
-        </div> */}
-        <Link href={'/'}>
-          <h1>Connect</h1>
+          </h2> */}
+          <Link href="/platform/intermediaries">
+            <TypographyH6 text="Company" />
+          </Link>
+        </div>
+        <Link href="/platform/intermediaries">
+          <TypographyH6 text="Connect" />
         </Link>
-        <Button variation="primary">
-          <Link href={'/login'}>Member Sign In</Link>
+        <Button variant="solid" className="invert">
+          <Link href={'/login'}>
+            <TypographyB2 text="Member Sign In" />
+          </Link>
         </Button>
       </NavbarTwoColumns>
     </Section>
@@ -60,31 +81,26 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'Supercharge Deal-making with\n AI-Powered Advisory Platform'}
+            <TypographyH3
+              text={`Supercharge Deal-making with\n AI-Powered Advisory Platform`}
+            />
             {/* <span className="text-primary-500">AI-Powered Workflow</span> */}
           </>
         }
         description={
-          <div className="flex flex-col items-center">
-            <div className="text-lg md:text-xl">
-              <p className="mb-8">
-                Syncap helps you get the deal done with the best partner
+          <TypographyP1
+            className="text-black text-opacity-50"
+            text={`Syncap helps you get the deal done with the best partner
                 leveraging our industry-leading process management platform and
-                top-notch M&A bankers network
-              </p>
-            </div>
-          </div>
+                top-notch M&A bankers network`}
+          />
         }
         button={
-          <Button classname="mx-auto">
+          <Button className="mx-auto">
             <a href={MeetingLink} target="_blank" rel="noopener noreferrer">
               <div className="flex items-center">
-                Get started
-                <img
-                  src="/icons/learn-more.svg"
-                  alt="Controlled Data Access"
-                  className="aspect-square p-2 "
-                />
+                <TypographyB2 text="Get started" />
+                <ArrowTopRightIcon className="ml-2 size-5" />
               </div>
             </a>
           </Button>

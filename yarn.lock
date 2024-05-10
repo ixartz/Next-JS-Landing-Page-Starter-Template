@@ -345,10 +345,29 @@
   dependencies:
     "@floating-ui/dom" "^1.6.1"
 
+"@floating-ui/react@^0.26.13":
+  version "0.26.13"
+  resolved "https://registry.npmjs.org/@floating-ui/react/-/react-0.26.13.tgz"
+  integrity sha512-kBa9wntpugzrZ8t/4yWelvSmEKZdeTXTJzrxqyrLmcU/n1SM4nvse8yQh2e1b37rJGvtu0EplV9+IkBrCJ1vkw==
+  dependencies:
+    "@floating-ui/react-dom" "^2.0.0"
+    "@floating-ui/utils" "^0.2.0"
+    tabbable "^6.0.0"
+
 "@floating-ui/utils@^0.2.0", "@floating-ui/utils@^0.2.1":
   version "0.2.1"
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.1.tgz"
   integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
+
+"@headlessui/react@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/@headlessui/react/-/react-2.0.3.tgz"
+  integrity sha512-Xd1h0YZgfhxZ7W1w4TvK0/TZ1c4qaX4liYVUkAXqW1HCLcXSqnMeYAUGJS/BBroBAUL9HErjyFcRpCWRQZ/0lA==
+  dependencies:
+    "@floating-ui/react" "^0.26.13"
+    "@react-aria/focus" "^3.16.2"
+    "@react-aria/interactions" "^3.21.1"
+    "@tanstack/react-virtual" "3.5.0"
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
@@ -416,10 +435,10 @@
   dependencies:
     webpack-bundle-analyzer "4.10.1"
 
-"@next/env@14.1.0":
-  version "14.1.0"
-  resolved "https://registry.npmjs.org/@next/env/-/env-14.1.0.tgz"
-  integrity sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==
+"@next/env@14.2.3":
+  version "14.2.3"
+  resolved "https://registry.npmjs.org/@next/env/-/env-14.2.3.tgz"
+  integrity sha512-W7fd7IbkfmeeY2gXrzJYDx8D2lWKbVoTIj1o1ScPHNzvp30s1AuoEFSdr39bC5sjxJaxTtq3OTCZboNp0lNWHA==
 
 "@next/eslint-plugin-next@14.1.0":
   version "14.1.0"
@@ -428,10 +447,10 @@
   dependencies:
     glob "10.3.10"
 
-"@next/swc-darwin-arm64@14.1.0":
-  version "14.1.0"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.1.0.tgz"
-  integrity sha512-nUDn7TOGcIeyQni6lZHfzNoo9S0euXnu0jhsbMOmMJUBfgsnESdjN97kM7cBqQxZa8L/bM9om/S5/1dzCrW6wQ==
+"@next/swc-darwin-arm64@14.2.3":
+  version "14.2.3"
+  resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.3.tgz"
+  integrity sha512-3pEYo/RaGqPP0YzwnlmPN2puaF2WMLM3apt5jLW2fFdXD9+pqcoTzRk+iZsf8ta7+quAe4Q6Ms0nR0SFGFdS1A==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -737,7 +756,7 @@
     "@radix-ui/react-use-callback-ref" "1.0.1"
     "@radix-ui/react-use-controllable-state" "1.0.1"
 
-"@radix-ui/react-slot@1.0.2":
+"@radix-ui/react-slot@^1.0.2", "@radix-ui/react-slot@1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.0.2.tgz"
   integrity sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==
@@ -813,15 +832,84 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
+"@react-aria/focus@^3.16.2":
+  version "3.17.0"
+  resolved "https://registry.npmjs.org/@react-aria/focus/-/focus-3.17.0.tgz"
+  integrity sha512-aRzBw1WTUkcIV3xFrqPA6aB8ZVt3XyGpTaSHAypU0Pgoy2wRq9YeJYpbunsKj9CJmskuffvTqXwAjTcaQish1Q==
+  dependencies:
+    "@react-aria/interactions" "^3.21.2"
+    "@react-aria/utils" "^3.24.0"
+    "@react-types/shared" "^3.23.0"
+    "@swc/helpers" "^0.5.0"
+    clsx "^2.0.0"
+
+"@react-aria/interactions@^3.21.1", "@react-aria/interactions@^3.21.2":
+  version "3.21.2"
+  resolved "https://registry.npmjs.org/@react-aria/interactions/-/interactions-3.21.2.tgz"
+  integrity sha512-Ju706DtoEmI/2vsfu9DCEIjDqsRBVLm/wmt2fr0xKbBca7PtmK8daajxFWz+eTq+EJakvYfLr7gWgLau9HyWXg==
+  dependencies:
+    "@react-aria/ssr" "^3.9.3"
+    "@react-aria/utils" "^3.24.0"
+    "@react-types/shared" "^3.23.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/ssr@^3.9.3":
+  version "3.9.3"
+  resolved "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.9.3.tgz"
+  integrity sha512-5bUZ93dmvHFcmfUcEN7qzYe8yQQ8JY+nHN6m9/iSDCQ/QmCiE0kWXYwhurjw5ch6I8WokQzx66xKIMHBAa4NNA==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@react-aria/utils@^3.24.0":
+  version "3.24.0"
+  resolved "https://registry.npmjs.org/@react-aria/utils/-/utils-3.24.0.tgz"
+  integrity sha512-JAxkPhK5fCvFVNY2YG3TW3m1nTzwRcbz7iyTSkUzLFat4N4LZ7Kzh7NMHsgeE/oMOxd8zLY+XsUxMu/E/2GujA==
+  dependencies:
+    "@react-aria/ssr" "^3.9.3"
+    "@react-stately/utils" "^3.10.0"
+    "@react-types/shared" "^3.23.0"
+    "@swc/helpers" "^0.5.0"
+    clsx "^2.0.0"
+
+"@react-stately/utils@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.npmjs.org/@react-stately/utils/-/utils-3.10.0.tgz"
+  integrity sha512-nji2i9fTYg65ZWx/3r11zR1F2tGya+mBubRCbMTwHyRnsSLFZaeq/W6lmrOyIy1uMJKBNKLJpqfmpT4x7rw6pg==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@react-types/shared@^3.23.0":
+  version "3.23.0"
+  resolved "https://registry.npmjs.org/@react-types/shared/-/shared-3.23.0.tgz"
+  integrity sha512-GQm/iPiii3ikcaMNR4WdVkJ4w0mKtV3mLqeSfSqzdqbPr6vONkqXbh3RhPlPmAJs1b4QHnexd/wZQP3U9DHOwQ==
+
 "@rushstack/eslint-patch@^1.3.3":
   version "1.5.1"
 
-"@swc/helpers@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz"
-  integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
+"@swc/counter@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz"
+  integrity sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==
+
+"@swc/helpers@^0.5.0", "@swc/helpers@0.5.5":
+  version "0.5.5"
+  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.5.tgz"
+  integrity sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==
   dependencies:
+    "@swc/counter" "^0.1.3"
     tslib "^2.4.0"
+
+"@tanstack/react-virtual@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/@tanstack/react-virtual/-/react-virtual-3.5.0.tgz"
+  integrity sha512-rtvo7KwuIvqK9zb0VZ5IL7fiJAEnG+0EiFZz8FUOs+2mhGqdGmjKIaT1XU7Zq0eFqL0jonLlhbayJI/J2SA/Bw==
+  dependencies:
+    "@tanstack/virtual-core" "3.5.0"
+
+"@tanstack/virtual-core@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.5.0.tgz"
+  integrity sha512-KnPRCkQTyqhanNC0K63GBG3wA8I+D1fQuVnAvcBF8f13akOKeQp1gSbu6f77zCxhEk727iV5oQnbHLYzHrECLg==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1450,7 +1538,7 @@ clone@^1.0.2:
   resolved "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
 
-clsx@^2.1.0:
+clsx@^2.0.0, clsx@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/clsx/-/clsx-2.1.0.tgz"
   integrity sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==
@@ -3353,27 +3441,27 @@ next-seo@^6.4.0:
   integrity sha512-XQFxkOL2hw0YE+P100HbI3EAvcludlHPxuzMgaIjKb7kPK0CvjGvLFjd9hszZFEDc5oiQkGFA8+cuWcnip7eYA==
 
 next@^14.1.0, "next@^8.1.1-canary.54 || >=9.0.0":
-  version "14.1.0"
-  resolved "https://registry.npmjs.org/next/-/next-14.1.0.tgz"
-  integrity sha512-wlzrsbfeSU48YQBjZhDzOwhWhGsy+uQycR8bHAOt1LY1bn3zZEcDyHQOEoN3aWzQ8LHCAJ1nqrWCc9XF2+O45Q==
+  version "14.2.3"
+  resolved "https://registry.npmjs.org/next/-/next-14.2.3.tgz"
+  integrity sha512-dowFkFTR8v79NPJO4QsBUtxv0g9BrS/phluVpMAt2ku7H+cbcBJlopXjkWlwxrk/xGqMemr7JkGPGemPrLLX7A==
   dependencies:
-    "@next/env" "14.1.0"
-    "@swc/helpers" "0.5.2"
+    "@next/env" "14.2.3"
+    "@swc/helpers" "0.5.5"
     busboy "1.6.0"
     caniuse-lite "^1.0.30001579"
     graceful-fs "^4.2.11"
     postcss "8.4.31"
     styled-jsx "5.1.1"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "14.1.0"
-    "@next/swc-darwin-x64" "14.1.0"
-    "@next/swc-linux-arm64-gnu" "14.1.0"
-    "@next/swc-linux-arm64-musl" "14.1.0"
-    "@next/swc-linux-x64-gnu" "14.1.0"
-    "@next/swc-linux-x64-musl" "14.1.0"
-    "@next/swc-win32-arm64-msvc" "14.1.0"
-    "@next/swc-win32-ia32-msvc" "14.1.0"
-    "@next/swc-win32-x64-msvc" "14.1.0"
+    "@next/swc-darwin-arm64" "14.2.3"
+    "@next/swc-darwin-x64" "14.2.3"
+    "@next/swc-linux-arm64-gnu" "14.2.3"
+    "@next/swc-linux-arm64-musl" "14.2.3"
+    "@next/swc-linux-x64-gnu" "14.2.3"
+    "@next/swc-linux-x64-musl" "14.2.3"
+    "@next/swc-win32-arm64-msvc" "14.2.3"
+    "@next/swc-win32-ia32-msvc" "14.2.3"
+    "@next/swc-win32-x64-msvc" "14.2.3"
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -4007,7 +4095,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^16.8 || ^17.0 || ^18.0", react-dom@^18.2.0, react-dom@>=16.0.0, react-dom@>=16.6.0, react-dom@>=16.8.0:
+"react-dom@^16.8 || ^17.0 || ^18.0", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", react-dom@^18, react-dom@^18.2.0, react-dom@>=16.0.0, react-dom@>=16.6.0, react-dom@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -4058,7 +4146,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.x || ^17.x || ^18.x", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16.0.0, react@>=16.6.0, react@>=16.8.0:
+"react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", "react@^16.x || ^17.x || ^18.x", react@^18, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16.0.0, react@>=16.6.0, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -4653,6 +4741,11 @@ synckit@^0.8.6:
   dependencies:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
+
+tabbable@^6.0.0:
+  version "6.2.0"
+  resolved "https://registry.npmjs.org/tabbable/-/tabbable-6.2.0.tgz"
+  integrity sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==
 
 tailwind-merge@^2.2.2:
   version "2.2.2"
