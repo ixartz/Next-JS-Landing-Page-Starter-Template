@@ -7,8 +7,11 @@ import { CheckBox, CheckBoxButton } from '@/components/Checkbox';
 import { Button } from '../components/Button';
 
 const SelectionGroup = () => {
-  const options = ['Sell-side M&A', 'Financing', 'Strategic Advisory'];
-
+  const options = [
+    'Sellling a Business',
+    'Buying a Business',
+    'Raising Capital',
+  ];
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [withReport, setWithReport] = useState(false);
 
@@ -25,7 +28,7 @@ const SelectionGroup = () => {
 
   return (
     <div className="mb-4 mt-8 flex flex-col gap-2">
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 lg:flex-nowrap">
         {options.map((option, ind) => {
           const selected = selectedOptions.includes(option);
           return (
@@ -63,18 +66,22 @@ const SelectionGroup = () => {
 
 export const OurServicesSection = () => {
   return (
-    <div className="bg-primary-1050 p-8">
-      <h1 className="invert">
-        Learn how Syncap can help you achieve your strategic objectives faster
-        and with optimized value.
-      </h1>
-      <SelectionGroup />
-
-      <div className="flex justify-start">
-        <Button className="invert" variant="primary">
-          <p>Schedule an Initial Consultation</p>
-          <ArrowTopRightIcon className="ml-1" />
-        </Button>
+    <div className="mx-0 w-full bg-primary-1050">
+      <div className="mx-auto w-full max-w-screen-lg p-8">
+        <h2 className="text-lg font-medium text-gray-100">
+          Learn how Syncap can help you achieve your strategic objectives <br />{' '}
+          with speed, control, and optimized value.
+        </h2>
+        <SelectionGroup />
+        <div className="flex justify-start">
+          <Button
+            className="flex items-center whitespace-nowrap"
+            variant="secondary"
+          >
+            <p className="font-medium">Schedule an Initial Consultation</p>
+            <ArrowTopRightIcon className="ml-1" />
+          </Button>
+        </div>
       </div>
     </div>
   );

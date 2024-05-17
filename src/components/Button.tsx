@@ -5,22 +5,30 @@ type IButtonProps = {
   children: any;
   variant?: 'primary' | 'secondary' | 'checkbox' | any;
   onClick?: any;
+  textColor?: string;
 };
 
 const Button = (props: IButtonProps) => {
-  const { className, variant = 'primary', onClick } = props;
+  const {
+    className,
+    variant = 'primary',
+    onClick,
+    textColor = 'text-primary-1050',
+  } = props;
   return (
     <button
       onClick={onClick}
       className={clsx(
-        'w-fit cursor-pointer',
+        'w-fit cursor-pointer rounded-sm px-4 py-3',
         className,
-        variant === 'primary' ? 'rounded-sm border border-black px-4 py-3' : '',
-        variant === 'outline' ? 'border-gray rounded-sm border px-4 py-3' : '',
+        textColor,
+        variant === 'primary' ? 'border border-black' : '',
+        variant === 'secondary' ? 'bg-primary-200' : '',
+        variant === 'outline' ? 'border-gray border' : '',
         variant === 'checkbox'
-          ? 'hover:border-invert cursor-pointer rounded-sm border'
+          ? 'hover:border-invert cursor-pointer border'
           : '',
-        variant === 'solid' ? 'rounded-sm bg-primary-200 px-4 py-3' : '',
+        variant === 'solid' ? 'bg-primary-1050' : '',
       )}
     >
       {props.children}

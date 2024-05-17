@@ -10,6 +10,8 @@
     "clean": "rimraf .next .swc out",
     "lint": "next lint",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "eslint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "check-types": "tsc --noEmit --pretty",
     "prepare": "husky install"
   },

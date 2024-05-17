@@ -1,4 +1,4 @@
-import { MeetingLink } from '@/utils/AppConfig';
+import { ArrowTopRightIcon } from '@radix-ui/react-icons';
 
 import { Button } from '../components/Button';
 import { CTABanner } from '../cta/CTABanner';
@@ -16,10 +16,12 @@ const Banner = () => (
       }
       subtitle="Whether you are ready to sell, raise, or looking for answers, we’ll guide you with data and expertise specific to your industry"
       button={
-        <Button variant="primary">
-          <a target="_blank" rel="noopener noreferrer" href={MeetingLink}>
-            Schedule an Initial Consultation
-          </a>
+        <Button
+          className="flex items-center whitespace-nowrap"
+          variant="primary"
+        >
+          <p className="font-medium">Schedule an Initial Consultation</p>
+          <ArrowTopRightIcon className="ml-1" />
         </Button>
       }
       image="/assets/images/bannerCTA.png"

@@ -6,14 +6,15 @@ type ISectionProps = {
   yPadding?: string;
   bgColor?: string;
   children: ReactNode;
+  noPadding?: boolean;
 };
 
 const Section = (props: ISectionProps) => (
   <div className={`${props.bgColor ? `bg-${props.bgColor}` : ''}`}>
     <div
-      className={`mx-auto flex max-w-screen-lg flex-col items-center px-8 ${
-        props.yPadding ? props.yPadding : 'py-16'
-      }`}
+      className={`mx-auto flex max-w-screen-lg flex-col items-center ${
+        props.noPadding ? '' : 'px-8'
+      } ${props.yPadding ? props.yPadding : 'py-16'}`}
     >
       {(props.title || props.description) && (
         <div className="mb-12 text-center">

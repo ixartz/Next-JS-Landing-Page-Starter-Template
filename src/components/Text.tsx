@@ -9,7 +9,7 @@ export function TypographyH3(props: TyppgraphyProps) {
     <h1
       className={clsx(
         props.className,
-        'scroll-m-20 text-5xl font-medium leading-tight tracking-tight',
+        'scroll-m-20 text-2xl font-medium leading-tight tracking-tight md:text-3xl lg:text-4xl xl:text-5xl',
       )}
     >
       {props.text}
