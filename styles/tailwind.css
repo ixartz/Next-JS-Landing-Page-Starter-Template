@@ -1,0 +1,68 @@
+/* purgecss start ignore */
+
+@tailwind base;
+@tailwind components;
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+body {
+  @apply bg-white-500;
+}
+p {
+  @apply text-black-500;
+}
+.animation-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  @apply w-0 bg-orange-500 left-1/2 block bottom-0 absolute;
+}
+.animation-active:after {
+  @apply left-0 w-full;
+}
+.animation-hover:hover:after {
+  @apply left-0 w-full;
+}
+
+li.custom-list:before {
+  content: "\2022"; /* bullet point, for screen readers */
+  text-indent: -9999999px; /* move the bullet point out of sight */
+
+  width: 0.4em;
+  height: 1em;
+  background-repeat: no-repeat;
+
+  background-size: 0.4em 0.7em;
+  background-position: 0 0.3em;
+  font-size: 300%;
+  top: -0.35em;
+  @apply absolute block;
+}
+li.circle-check:before {
+  background-image: url("/assets/Icon/checklist.svg");
+  left: -0.7em;
+  top: -0.4em;
+}
+li.check:before {
+  left: -0.5em;
+  background-image: url("/assets/Icon/jam_check.svg");
+  top: -0.5em;
+  font-size: 400%;
+}
+/* Slideshow */
+.slick-dots li {
+  @apply inline-block;
+}
+.slick-dots span {
+  @apply bg-gray-500;
+}
+.slick-dots .slick-active span {
+  @apply bg-orange-500 rounded-l-full rounded-r-full w-12;
+}
+
+/* purgecss end ignore */
+@tailwind utilities;
+/* purgecss start ignore */
+/* purgecss end ignore */

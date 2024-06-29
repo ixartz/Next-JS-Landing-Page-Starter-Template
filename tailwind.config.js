@@ -1,46 +1,51 @@
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./pages/*.js",
+    "./pages/**/*.js",
+    "./components/*.js",
+    "./components/**/*.js",
+  ],
   theme: {
-    fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
+    boxShadow: {
+      sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      DEFAULT:
+        "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      orange: "0px 20px 20px -15px rgba(245,56,56,0.81) ",
+      "orange-md": "0px 20px 40px -15px rgba(245,56,56,0.81) ",
+      none: "none",
     },
+    colors: {
+      transparent: "transparent",
+      black: {
+        500: "#4F5665",
+        600: "#0B132A",
+      },
+      orange: {
+        100: "#FFECEC",
+        500: "#F53855",
+      },
+      green: {
+        500: "#2FAB73",
+      },
+      white: {
+        300: "#F8F8F8",
+        500: "#fff",
+      },
+      gray: {
+        100: "#EEEFF2",
+        400: "#AFB5C0",
+        500: "#DDDDDD",
+      },
+    },
+    extend: {},
+  },
+  variants: {
     extend: {
-      colors: {
-        primary: {
-          100: '#E6F6FE',
-          200: '#C0EAFC',
-          300: '#9ADDFB',
-          400: '#4FC3F7',
-          500: '#03A9F4',
-          600: '#0398DC',
-          700: '#026592',
-          800: '#014C6E',
-          900: '#013349',
-        },
-        gray: {
-          100: '#f7fafc',
-          200: '#edf2f7',
-          300: '#e2e8f0',
-          400: '#cbd5e0',
-          500: '#a0aec0',
-          600: '#718096',
-          700: '#4a5568',
-          800: '#2d3748',
-          900: '#1a202c',
-        },
-      },
-      lineHeight: {
-        hero: '4.5rem',
-      },
+      boxShadow: ["active", "hover"],
     },
   },
   plugins: [],
