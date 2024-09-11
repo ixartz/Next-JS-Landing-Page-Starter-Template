@@ -4,7 +4,7 @@ import { Section } from '@/layout/Section';
 
 const Sponsors = () => (
   <Section
-    title="Sponsors"
+    title="Valet Trash Services"
     description="Our sponsors' exceptional support has made this project possible."
   >
     <table className="mx-auto border-collapse">

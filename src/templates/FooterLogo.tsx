@@ -4,16 +4,14 @@ type ILogoProps = {
   xl?: boolean;
 };
 
-const Logo = (props: ILogoProps) => {
+const FooterLogo = (props: ILogoProps) => {
   const size = props.xl ? '44' : '32';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
 
   return (
-    <span
-      className={`inline-flex items-center text-secondary-100 ${fontStyle}`}
-    >
+    <span className={`inline-flex items-center text-primary-100 ${fontStyle}`}>
       <img
         src="/assets/images/PWLogo.png"
         alt="Logo"
@@ -27,4 +25,4 @@ const Logo = (props: ILogoProps) => {
   );
 };
 
-export { Logo };
+export { FooterLogo };

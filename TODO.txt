@@ -1,0 +1,28 @@
+TODO:
+
+Technical:
+- nav bar scroll to website section
+    - definitely a library for this
+
+- hook up domain to hosting service
+- TESTING!!!!!
+
+
+FINISHED:
+- fix .env USER && PASS not passing through to nodemailer
+    - currently HARDCODED (NOT GOOD AT ALL!!!)
+- fix name not passing through correctly
+    - currently displays (undefine undefined)
+- footer -> Logo Font Color -> Tied to navbar logo color...
+    - tidy up and gather links
+
+
+
+
+----------------------------------------------------------------------------
+TODO:
+
+Client Side:
+- send video
+- gather new pics
+

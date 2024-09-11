@@ -8,12 +8,12 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-primary-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
+            About Us
           </Link>
         </li>
         <li>
@@ -26,14 +26,16 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Experience 5-Star Waste Management with\n'}
+            <span className="text-secondary-100">
+              Platinum Waste Concierge Collectors
+            </span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="Let us handle your trash, while you focus more on living"
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+            <Button xl>Get Free Quote</Button>
           </Link>
         }
       />
