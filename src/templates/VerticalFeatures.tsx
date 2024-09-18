@@ -6,6 +6,7 @@ import { Section } from '../layout/Section';
 const VerticalFeatures = () => (
   <Background color="bg-offwhite-100">
     <Section
+      id="about-us"
       title="Valet Trash Services"
       description="At Platinum Waste Concierge Collectors, we address challenges with our premier valet trash services. Here's how we can add value to your property:"
     >

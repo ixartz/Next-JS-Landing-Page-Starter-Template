@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
@@ -12,12 +12,24 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <ScrollLink
+            to="about-us"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer"
+          >
             About Us
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={2000}
+            className="cursor-pointer"
+          >
+            Contact
+          </ScrollLink>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -34,9 +46,9 @@ const Hero = () => (
         }
         description="Let us handle your trash, while you focus more on living"
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Get Free Quote</Button>
-          </Link>
+          <Button scrollTo="contact" duration="2000" xl>
+            Get Free Quote
+          </Button>
         }
       />
     </Section>

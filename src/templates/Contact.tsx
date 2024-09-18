@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
 
   return (
     <Background color="bg-primary-100">
-      <Section>
+      <Section id="contact">
         <form
           className="container rounded-lg bg-gray-900 px-10 py-8 text-white shadow-md"
           onSubmit={handleSubmit}
