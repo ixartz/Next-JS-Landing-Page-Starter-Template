@@ -5,8 +5,8 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Effortless waste management starts here!."
-      subtitle="Get your Free Quote."
+      title="Effortless waste management starts here"
+      subtitle="Get your Free Quote"
       button={
         <Button scrollTo="contact" duration="850">
           Get Started

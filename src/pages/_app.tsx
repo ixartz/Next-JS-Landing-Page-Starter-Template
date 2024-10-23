@@ -1,4 +1,5 @@
 import '../styles/global.css';
+import '@fontsource/roboto-serif'; // Roboto Serif font
 
 import type { AppProps } from 'next/app';
 

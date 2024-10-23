@@ -19,7 +19,7 @@ const Logo = (props: ILogoProps) => {
         alt="Logo"
         width={size}
         height={size}
-        className="mr-1"
+        className="mr-3"
       />
 
       {AppConfig.site_name}

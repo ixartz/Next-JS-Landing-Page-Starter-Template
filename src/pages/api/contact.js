@@ -1,7 +1,17 @@
 import nodemailer from 'nodemailer';
 
 export default async function ContactAPI(req, res) {
-  const { name, email, message } = req.body;
+  const {
+    communityName,
+    communityPhone,
+    communityAddress,
+    numberOfUnits,
+    propertyMgmtCompanyName,
+    propertyMgrName,
+    propertyMgrEmail,
+    expectedStartDate,
+    additionalComments,
+  } = req.body;
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -18,12 +28,18 @@ export default async function ContactAPI(req, res) {
     await transporter.sendMail({
       from: process.env.CONTACT_EMAIL,
       to: 'kusame25@gmail.com',
-      replyTo: email,
-      subject: `Contact form submission from ${name}`,
+      replyTo: propertyMgrEmail,
+      subject: `Contact form submission from ${propertyMgrName}`,
       html: `
-      <p>Name: ${name}</p>
-      <p>Email: ${email}</p>
-      <p>Message: ${message}</p>
+      <p>Community Name: ${communityName}</p>
+      <p>Community Phone: ${communityPhone}</p>
+      <p>Community Address: ${communityAddress}</p>
+      <p>Number of Units: ${numberOfUnits}</p>
+      <p>Property Management Company Name: ${propertyMgmtCompanyName}</p>
+      <p>Property Manager Name: ${propertyMgrName}</p>
+      <p>Property Manager Email: ${propertyMgrEmail}</p>
+      <p>Expected State Date: ${expectedStartDate}</p>
+      <p>Additional comments: ${additionalComments}</p>
       `,
     });
 

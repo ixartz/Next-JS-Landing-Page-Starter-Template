@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      fontFamily: {
+        'roboto-serif': ['Roboto Serif', 'serif'], // Add your font here
+      },
       colors: {
         primary: {
           100: '#14244c',
@@ -39,6 +42,10 @@ module.exports = {
         },
         offwhite: {
           100: '#ebe6e3',
+        },
+        testBlue: {
+          100: '#77b1d4',
+          200: '#517891',
         },
       },
       lineHeight: {

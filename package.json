@@ -14,6 +14,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@fontsource/cardo": "^5.1.0",
+    "@fontsource/roboto-serif": "^5.1.1",
     "classnames": "^2.5.1",
     "next": "^14.1.0",
     "next-seo": "^6.4.0",

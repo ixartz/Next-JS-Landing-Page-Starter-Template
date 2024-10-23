@@ -1,8 +1,7 @@
 TODO:
 
 Technical:
-- nav bar scroll to website section
-    - definitely a library for this
+
 
 - hook up domain to hosting service
 - TESTING!!!!!
@@ -15,6 +14,9 @@ FINISHED:
     - currently displays (undefine undefined)
 - footer -> Logo Font Color -> Tied to navbar logo color...
     - tidy up and gather links
+- nav bar scroll to website section
+    - definitely a library for this
+
 
 
 

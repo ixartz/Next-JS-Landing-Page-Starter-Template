@@ -8,8 +8,12 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-primary-100">
-    <Section yPadding="py-6">
+  <Background
+    color="bg-primary-100"
+    videoSrc="/assets/images/PWCC_web.mp4"
+    height="h-[75hv]"
+  >
+    <Section id="hero" yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <ScrollLink
@@ -34,21 +38,20 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-96 mt-16 pb-32">
       <HeroOneButton
         title={
           <>
-            {'Experience 5-Star Waste Management with\n'}
-            <span className="text-secondary-100">
-              Platinum Waste Concierge Collectors
-            </span>
+            <span className="text-secondary-100"></span>
           </>
         }
-        description="Let us handle your trash, while you focus more on living"
+        description="Discover Premium Waste Management with Platinum Waste Concierge Collectors"
         button={
-          <Button scrollTo="contact" duration="2000" xl>
-            Get Free Quote
-          </Button>
+          <div>
+            <Button scrollTo="contact" duration="2000" xl>
+              Get Free Quote
+            </Button>
+          </div>
         }
       />
     </Section>
