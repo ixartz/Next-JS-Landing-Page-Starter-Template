@@ -19,7 +19,8 @@ const Background = (props: IBackgroundProps) => {
             autoPlay
             muted
             loop
-            className="absolute inset-0 size-full object-cover"
+            playsInline
+            className="pointer-events-none absolute inset-0 size-full object-cover"
           >
             <source src={props.videoSrc} type="video/mp4" />
             Your browser does not support the video tag.
