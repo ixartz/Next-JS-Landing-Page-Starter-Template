@@ -50,6 +50,7 @@ const contents = [
   { label: 'nêhiyawêwin', value: 'crk' },
   { label: 'nîhithawîwin', value: 'cwd' },
   { label: 'ininìmowin', value: 'csw' },
+  { label: 'ililīmowin', value: 'crm' },
 ];
 
 const LibraryDataTable = () => {

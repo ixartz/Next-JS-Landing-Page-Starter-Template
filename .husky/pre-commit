@@ -1,5 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Disable concurent to run `check-types` after ESLint in lint-staged
+# Pull library data first
+npm run pull-library
+
+# Add the updated library data to the commit
+git add src/data/library-data.json
+
+# Run existing checks
 cd "$(dirname "$0")/.." && npx lint-staged -v --concurrent false

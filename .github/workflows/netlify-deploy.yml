@@ -1,33 +1,33 @@
-name: "Hit Netlify webhook"
+# name: "Hit Netlify webhook"
  
-on:
-  push:
-    branches:
-      - stable
+# on:
+#   push:
+#     branches:
+#       - stable
  
-jobs:
-  run-updater:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js 14
-      uses: actions/setup-node@v3
-      with:
-        node-version: 14
-    - name: Install axios
-      working-directory: scripts
-      run: npm install axios
-    - name: Pull Library data
-      working-directory: scripts
-      run: node pull-library.js > ../src/data/library-data.json
-      env:
-        NOTIONKEY: ${{ secrets.NOTIONKEY }}
-    - uses: EndBug/add-and-commit@v9
-      with:
-        add: 'src/data/library-data.json'
-        author_name: Aaron Fay
-        author_email: aaron.j.fay@gmail.com
-        message: 'Update library from Notion'
-    - name: Netlify production webhook
-      run: |
-        curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"
+# jobs:
+#   run-updater:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Use Node.js 14
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: 14
+#     - name: Install axios
+#       working-directory: scripts
+#       run: npm install axios
+#     - name: Pull Library data
+#       working-directory: scripts
+#       run: node pull-library.js > ../src/data/library-data.json
+#       env:
+#         NOTIONKEY: ${{ secrets.NOTIONKEY }}
+#     - uses: EndBug/add-and-commit@v9
+#       with:
+#         add: 'src/data/library-data.json'
+#         author_name: Aaron Fay
+#         author_email: aaron.j.fay@gmail.com
+#         message: 'Update library from Notion'
+#     - name: Netlify production webhook
+#       run: |
+#         curl -X GET "https://api.netlify.com/build_hooks/64e6c40706ab903436f114e3"

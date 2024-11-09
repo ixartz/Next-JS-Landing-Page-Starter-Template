@@ -2,3 +2,4 @@ node_modules
 scripts
 out
 tailwind.config.js
+src/data/library-data.json

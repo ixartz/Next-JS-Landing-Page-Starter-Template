@@ -14,7 +14,8 @@
     "lint": "next lint",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pull-library": "node scripts/pull-library.js > src/data/library-data.json"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -22,6 +23,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
     "@nextui-org/react": "^2.1.5",
+    "axios": "^1.7.7",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.1",
     "next": "^14.2.17",
@@ -31,7 +33,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
-    "styled-jsx-plugin-postcss": "^4.0.1"
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.4",
