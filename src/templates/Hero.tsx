@@ -1,37 +1,41 @@
-import Link from 'next/link';
-
 import { TopNav } from '@/layout/TopNav';
 
 import { Background } from '../background/Background';
-import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
-    <TopNav></TopNav>
+  <div>
+    <Background color="bg-gray-100">
+      <TopNav />
+    </Background>
 
-    <Section yPadding="pt-20 pb-32">
-      <HeroOneButton
-        title={
-          <>
-            {'Building our\n'}
-            <span className="text-primary-500">Language Bundle</span>
-          </>
-        }
-        description="As adult language learners, we must take our language learning journey into our own hands. Come with us."
-        button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
-          </Link>
-        }
-      />
-      <img
-        alt="Summer 2023 as we paddle to Stanley Mission"
-        src={'/assets/images/paddling.png'}
-      ></img>
-    </Section>
-  </Background>
+    <div className="relative">
+      <div className="absolute inset-0">
+        <img
+          alt="Summer 2023 as we paddle to Stanley Mission"
+          src="/assets/images/paddling.png"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gray-900/50" />
+      </div>
+      <div className="relative flex min-h-[600px] items-center">
+        <Section yPadding="py-20">
+          <HeroOneButton
+            title={
+              <>
+                <span className="drop-shadow-sm">{'Building our\n'}</span>
+                <span className="text-[#6DA0CA] drop-shadow-sm">
+                  Language Bundle
+                </span>
+              </>
+            }
+            description="As adult language learners, we often need to take our language learning journey into our own hands. Come with us."
+          />
+        </Section>
+      </div>
+    </div>
+  </div>
 );
 
 export { Hero };

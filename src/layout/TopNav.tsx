@@ -13,9 +13,9 @@ const TopNav = () => (
       <li>
         <Link href="/library">Learner Library</Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/#support">Support Us</Link>
-      </li>
+      </li> */}
       <li>
         <Link href="/#about">About</Link>
       </li>
