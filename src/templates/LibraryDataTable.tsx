@@ -284,8 +284,8 @@ const LibraryDataTable = () => {
           description: inSearch,
         }}
       />
-      <div className="mx-auto w-full px-3 text-slate-700">
-        <div className="m-auto w-10/12 space-y-2 py-3">
+      <div className="w-full text-slate-700">
+        <div className="mx-auto max-w-7xl space-y-2 p-3 md:w-10/12">
           <div className="flex gap-2">
             <Input
               placeholder="Search..."
