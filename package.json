@@ -25,7 +25,7 @@
     "@nextui-org/react": "^2.1.5",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.1",
-    "next": "^13.4.12",
+    "next": "^14.2.17",
     "next-seo": "^6.1.0",
     "next-usequerystate": "^1.7.3",
     "nextjs-google-analytics": "^2.3.3",
@@ -35,7 +35,7 @@
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^13.4.12",
+    "@next/bundle-analyzer": "^14.0.4",
     "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
@@ -47,7 +47,7 @@
     "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
-    "eslint-config-next": "^13.4.12",
+    "eslint-config-next": "^14.0.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
