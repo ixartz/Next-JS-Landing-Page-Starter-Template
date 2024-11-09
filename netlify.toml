@@ -1,5 +1,5 @@
 [build]
-  publish = "out"
+  publish = ".next"
   command = "npm run build-prod"
 
 [build.environment]
