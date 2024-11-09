@@ -9,7 +9,8 @@
     "tags": ["sro", "writing", "bite-size", "phrases"],
     "category": "Lessons",
     "source": "https://www.algonquianlanguages.ca/learning/moose-and-swampy-downloads/?lang=en",
-    "type": "doc"
+    "type": "doc",
+    "created": "2024-11-09T18:20:00.000Z"
   },
   {
     "title": "OldCree.com",
@@ -21,7 +22,8 @@
     "tags": ["sro", "linguistics", "morphology", "culture"],
     "category": "Academic",
     "source": "https://oldcree.com/",
-    "type": "website"
+    "type": "website",
+    "created": "2024-11-09T18:18:00.000Z"
   },
   {
     "title": "APTN Lumi",
@@ -40,7 +42,8 @@
     ],
     "category": "Kids",
     "source": "https://aptnlumi.ca/#/",
-    "type": "video"
+    "type": "video",
+    "created": "2024-11-09T18:09:00.000Z"
   },
   {
     "title": "Indiginews Weekly Cree Lessons",
@@ -52,7 +55,8 @@
     "tags": ["sro", "writing", "bite-size", "culture", "syllabics"],
     "category": "Lessons",
     "source": "https://indiginews.com/weekly-cree-lessons",
-    "type": "website"
+    "type": "website",
+    "created": "2024-11-09T18:03:00.000Z"
   },
   {
     "title": "The Gift of Language and Culture channel",
@@ -72,7 +76,8 @@
     ],
     "category": "Kids",
     "source": "https://www.youtube.com/@TGLCP/videos",
-    "type": "video"
+    "type": "video",
+    "created": "2024-11-09T17:56:00.000Z"
   },
   {
     "title": "Kepin’s Cree Language Blog",
@@ -92,7 +97,8 @@
     ],
     "category": "Academic",
     "source": "https://creelanguage.wordpress.com/",
-    "type": "website"
+    "type": "website",
+    "created": "2024-11-09T17:40:00.000Z"
   },
   {
     "title": "Untitled",
@@ -104,7 +110,8 @@
     "tags": [],
     "category": "Uncategorized",
     "source": "",
-    "type": "Unknown"
+    "type": "Unknown",
+    "created": "2024-11-09T17:40:00.000Z"
   },
   {
     "title": "ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) keyboard",
@@ -116,7 +123,8 @@
     "tags": ["sro", "syllabics", "technology"],
     "category": "Reference",
     "source": "https://keyman.com/keyboards/nrc_crk_cans",
-    "type": "app"
+    "type": "app",
+    "created": "2024-04-02T20:53:00.000Z"
   },
   {
     "title": "syllabics.app",
@@ -128,7 +136,8 @@
     "tags": ["sro", "writing", "syllabics", "technology"],
     "category": "Reference",
     "source": "https://syllabics.app",
-    "type": "app"
+    "type": "app",
+    "created": "2024-04-02T20:52:00.000Z"
   },
   {
     "title": "52 Weeks of Cree Lessons",
@@ -140,7 +149,8 @@
     "tags": ["sro", "writing", "bite-size", "paid", "phrases"],
     "category": "Immersion",
     "source": "https://repeataftermecree.com/",
-    "type": "video"
+    "type": "video",
+    "created": "2024-04-02T20:47:00.000Z"
   },
   {
     "title": "Repeat After Me Cree",
@@ -152,7 +162,8 @@
     "tags": ["sro", "writing", "bite-size", "phrases"],
     "category": "Immersion",
     "source": "https://www.facebook.com/profile.php?id=100036659486472",
-    "type": "video"
+    "type": "video",
+    "created": "2024-04-02T19:57:00.000Z"
   },
   {
     "title": "MBC On-demand",
@@ -164,7 +175,8 @@
     "tags": ["stories", "bite-size", "elders", "culture"],
     "category": "Immersion",
     "source": "https://omny.fm/shows/mbc-extra",
-    "type": "audio"
+    "type": "audio",
+    "created": "2024-04-02T19:46:00.000Z"
   },
   {
     "title": "Indian Names for Alberta Communities",
@@ -176,7 +188,8 @@
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
     "source": "https://kiyanaw.net/assets/docs/indian-names-for-alberta-communities-hugh-a-dempsey.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-10-27T21:40:00.000Z"
   },
   {
     "title": "Indian Sign Language",
@@ -188,7 +201,8 @@
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
     "source": "https://kiyanaw.net/assets/docs/indian-sign-language-william-tomkins.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-10-27T21:38:00.000Z"
   },
   {
     "title": "Tatooing Practices of the Cree Indians",
@@ -200,7 +214,8 @@
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
     "source": "https://kiyanaw.net/assets/docs/tattooing-practices-of-the-cree-indians-d-w-light.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-10-27T21:36:00.000Z"
   },
   {
     "title": "Elderspeak",
@@ -212,7 +227,8 @@
     "tags": ["sro", "writing", "stories", "bite-size", "elders", "culture"],
     "category": "Immersion",
     "source": "https://web.archive.org/web/20120605201021/http://www.horizonzero.ca/elderspeak/stories.html",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-06T16:25:00.000Z"
   },
   {
     "title": "giellalt / lang-crk (GitHub)",
@@ -224,7 +240,8 @@
     "tags": ["technology", "morphology", "linguistics", "grammar"],
     "category": "Academic",
     "source": "https://github.com/giellalt/lang-crk",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-06T16:23:00.000Z"
   },
   {
     "title": "Maskwacîs Cree app",
@@ -236,7 +253,8 @@
     "tags": ["sro", "writing", "songs", "games", "fun", "bite-size", "culture"],
     "category": "Kids",
     "source": "https://apps.apple.com/ca/app/maskwacis-cree/id804404251",
-    "type": "app"
+    "type": "app",
+    "created": "2023-09-01T21:19:00.000Z"
   },
   {
     "title": "Cree Language Map",
@@ -248,7 +266,8 @@
     "tags": ["bite-size", "interactive", "technology"],
     "category": "Reference",
     "source": "https://www.google.com/maps/d/u/0/viewer?ll=53.061803855586774%2C-102.7663138786541&z=5&mid=1KQcuBlf6nALH6J1MC_DI0q-sG7A",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-01T21:17:00.000Z"
   },
   {
     "title": "Plains Cree Dictionary",
@@ -260,7 +279,8 @@
     "tags": ["sro", "writing", "bite-size", "technology"],
     "category": "Reference",
     "source": "https://dictionary.plainscree.atlas-ling.ca/#/browse",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-01T21:16:00.000Z"
   },
   {
     "title": "Online Cree Dictionary",
@@ -272,7 +292,8 @@
     "tags": ["writing", "sro", "bite-size", "technology"],
     "category": "Reference",
     "source": "http://www.creedictionary.com/",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-01T21:14:00.000Z"
   },
   {
     "title": "itwêwina (Plains Cree Dictionary)",
@@ -291,7 +312,8 @@
     ],
     "category": "Reference",
     "source": "https://itwewina.altlab.app/",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-01T21:11:00.000Z"
   },
   {
     "title": "Plains Cree Texts",
@@ -303,7 +325,8 @@
     "tags": ["writing", "stories", "mixed-language", "culture"],
     "category": "Immersion",
     "source": "https://archive.org/details/rosettaproject_crk_vertxt-2",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-09-01T21:09:00.000Z"
   },
   {
     "title": "Learning from the computational modelling of Plains\nCree verbs",
@@ -322,7 +345,8 @@
     ],
     "category": "Academic",
     "source": "https://altlab.ualberta.ca/wp-content/uploads/2019/01/Harrigan_Schmirler_Arppe_Antonsen_Trosterud_Wolvengrey_2017fc.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-09-01T21:06:00.000Z"
   },
   {
     "title": "Wîcîhsok",
@@ -344,7 +368,8 @@
     ],
     "category": "Lessons",
     "source": "https://www.facebook.com/groups/210890544394154",
-    "type": "website"
+    "type": "website",
+    "created": "2023-09-01T15:32:00.000Z"
   },
   {
     "title": "A Dictionary of the Cree Language (1865)",
@@ -356,7 +381,8 @@
     "tags": ["writing"],
     "category": "Reference",
     "source": "https://archive.org/details/adictionarycree00watkgoog/mode/2up",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-29T18:26:00.000Z"
   },
   {
     "title": "White Bear Plains Cree Conversational Manual",
@@ -368,7 +394,8 @@
     "tags": ["sro", "writing", "bite-size", "phrases"],
     "category": "Lessons",
     "source": "https://atlas-ling.ca/pdf/CONVERSATION_White_Bear_Plains_Cree.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-29T16:21:00.000Z"
   },
   {
     "title": "Beardy's & Okemasis Plains Cree Conversational Manual",
@@ -380,7 +407,8 @@
     "tags": ["sro", "writing", "bite-size", "phrases"],
     "category": "Lessons",
     "source": "https://atlas-ling.ca/pdf/Beardys-Plains CreeConversation.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-29T16:05:00.000Z"
   },
   {
     "title": "Not Wordle - based on the work from Hannah Park and Aiden Pine",
@@ -392,7 +420,8 @@
     "tags": ["sro", "writing", "games", "fun", "bite-size", "interactive"],
     "category": "Immersion",
     "source": "https://wordle.kiyanaw.net/",
-    "type": "game"
+    "type": "game",
+    "created": "2023-08-27T22:00:00.000Z"
   },
   {
     "title": "A Cree view of Education",
@@ -404,7 +433,8 @@
     "tags": ["sro", "writing", "mixed-language", "phrases", "culture"],
     "category": "Reference",
     "source": "https://kiyanaw.net/assets/docs/solomon-ratt-a-cree-view-of-education.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-27T17:42:00.000Z"
   },
   {
     "title": "How to say it in Cree",
@@ -416,7 +446,8 @@
     "tags": ["phrases", "bite-size", "grammar", "writing", "sro"],
     "category": "Reference",
     "source": "https://kiyanaw.net/assets/docs/solomon-ratt-how-to-say-it-in-cree.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-27T17:30:00.000Z"
   },
   {
     "title": "Nehiyo",
@@ -428,7 +459,8 @@
     "tags": ["songs", "fun", "bite-size"],
     "category": "Immersion",
     "source": "https://music.apple.com/ca/album/nehiyo/694518832",
-    "type": "music"
+    "type": "music",
+    "created": "2023-08-27T15:47:00.000Z"
   },
   {
     "title": "Cree Language Videos and Lessons",
@@ -440,7 +472,8 @@
     "tags": ["phrases", "bite-size", "fun"],
     "category": "Lessons",
     "source": "http://ourelderstories.com/cree-language/",
-    "type": "audio"
+    "type": "audio",
+    "created": "2023-08-27T06:47:00.000Z"
   },
   {
     "title": "Tom’s Ramsey Story",
@@ -452,7 +485,8 @@
     "tags": ["stories", "bite-size", "phrases", "elders"],
     "category": "Immersion",
     "source": "http://ourelderstories.com/video/tom-ramseys-story/",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-27T06:38:00.000Z"
   },
   {
     "title": "maskosis okî",
@@ -464,7 +498,8 @@
     "tags": ["sro", "stories", "fun", "bite-size"],
     "category": "Kids",
     "source": "https://littlecreebooks.com/wp-content/uploads/2013/02/Little-Bears-Day-maskosis-okîsikâm-press-quality.pdf",
-    "type": "book"
+    "type": "book",
+    "created": "2023-08-26T22:09:00.000Z"
   },
   {
     "title": "100 Days of Cree",
@@ -476,7 +511,8 @@
     "tags": ["sro", "writing", "morphology", "stories", "bite-size", "paid"],
     "category": "Reference",
     "source": "https://uofrpress.ca/Books/9/100-Days-of-Cree",
-    "type": "book"
+    "type": "book",
+    "created": "2023-08-26T21:38:00.000Z"
   },
   {
     "title": "Brian McDonald album",
@@ -488,7 +524,8 @@
     "tags": ["phrases", "mixed-language", "fun", "songs"],
     "category": "Kids",
     "source": "https://music.youtube.com/playlist?list=OLAK5uy_mxRw04UG8A-Tp-bNXQTGjM1tHdTKsMWDc",
-    "type": "music"
+    "type": "music",
+    "created": "2023-08-26T19:01:00.000Z"
   },
   {
     "title": "First Nations Storytelling playlist",
@@ -500,7 +537,8 @@
     "tags": ["elders", "stories", "culture"],
     "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=mxOxtvgruKw&list=PLvNy80ksTu8pAfbQhHhL91hDwiG4UmDhp&index=1",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:56:00.000Z"
   },
   {
     "title": "Small Number Counts to 100 - in Cree",
@@ -512,7 +550,8 @@
     "tags": ["stories"],
     "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=kthi--SH2Nk",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:51:00.000Z"
   },
   {
     "title": "History of the Cree Language (part 2)",
@@ -524,7 +563,8 @@
     "tags": ["phrases", "mixed-language", "syllabics", "writing"],
     "category": "Lessons",
     "source": "https://www.youtube.com/watch?v=PuHofizOjiY",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:45:00.000Z"
   },
   {
     "title": "History of the Cree Language (part 1)",
@@ -536,7 +576,8 @@
     "tags": ["syllabics", "writing", "stories", "mixed-language", "phrases"],
     "category": "Lessons",
     "source": "https://www.youtube.com/watch?v=CpvuED_hJTM",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:43:00.000Z"
   },
   {
     "title": "Wahkohtowin: Cree Natural Law",
@@ -548,7 +589,8 @@
     "tags": ["mixed-language", "stories", "elders", "culture"],
     "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=NTXMrn2BZB0",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:41:00.000Z"
   },
   {
     "title": "pê-nêhiyawêk: Come Speak Cree with Darren Okemaysim",
@@ -560,7 +602,8 @@
     "tags": ["tpr", "games", "fun", "bite-size", "phrases", "mixed-language"],
     "category": "Lessons",
     "source": "https://www.youtube.com/watch?v=nAKJVdDu7Gk&list=PLw5TnoMvyeOjJpZf9mvS5K8I2AGLQeUtf",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:35:00.000Z"
   },
   {
     "title": "Cree Phrases",
@@ -572,7 +615,8 @@
     "tags": ["sro", "writing", "phrases", "bite-size"],
     "category": "Lessons",
     "source": "https://www.youtube.com/@creephrases6204/videos",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-26T18:31:00.000Z"
   },
   {
     "title": "Cree Chatter Hour with Fawn & Dallas",
@@ -584,7 +628,8 @@
     "tags": ["fun", "bite-size", "mixed-language", "phrases"],
     "category": "Commentary",
     "source": "https://cfweradio.ca/the-cree-chatter-hour/",
-    "type": "podcast"
+    "type": "podcast",
+    "created": "2023-08-26T18:29:00.000Z"
   },
   {
     "title": "W.T. GoodSpirit (Wayne Jackson) on CFWE",
@@ -596,7 +641,8 @@
     "tags": ["mixed-language", "bite-size"],
     "category": "Commentary",
     "source": "https://soundcloud.com/convocree/sets/wt-goodspirit-wayne-jackson",
-    "type": "podcast"
+    "type": "podcast",
+    "created": "2023-08-26T18:22:00.000Z"
   },
   {
     "title": "Reuben Quinn on CFWE's Conversational Cree",
@@ -608,7 +654,8 @@
     "tags": ["stories", "bite-size", "mixed-language", "phrases"],
     "category": "Commentary",
     "source": "https://soundcloud.com/convocree/sets/reuben-quinn-on-cfwes-conversational-cree",
-    "type": "podcast"
+    "type": "podcast",
+    "created": "2023-08-26T18:20:00.000Z"
   },
   {
     "title": "University nuxełhot’įne thaaɁehots’į nistameyimâkanak Blue Quills's Podcast",
@@ -620,7 +667,8 @@
     "tags": ["sro", "stories", "phrases"],
     "category": "Immersion",
     "source": "https://www.podomatic.com/podcasts/nehiyaw30",
-    "type": "podcast"
+    "type": "podcast",
+    "created": "2023-08-26T18:18:00.000Z"
   },
   {
     "title": "Unsettling Your Language Podcast",
@@ -632,7 +680,8 @@
     "tags": ["phrases"],
     "category": "Lessons",
     "source": "https://soundcloud.com/aaronfay/sets/chelsea-vowel-cree-podcast",
-    "type": "podcast"
+    "type": "podcast",
+    "created": "2023-08-26T18:16:00.000Z"
   },
   {
     "title": "mâci-nêhiyawêwin / Beginning Cree (online version)",
@@ -644,7 +693,8 @@
     "tags": ["sro", "writing", "grammar"],
     "category": "Lessons",
     "source": "https://creeliteracy.org/wp-content/uploads/2012/12/cree-text-2013-edition.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-26T17:53:00.000Z"
   },
   {
     "title": "mâci-nêhiyawêwin / Beginning Cree",
@@ -656,7 +706,8 @@
     "tags": ["sro", "writing", "grammar", "paid"],
     "category": "Lessons",
     "source": "https://www.amazon.ca/Beginning-Cree-Solomon-Ratt/dp/0889774358",
-    "type": "book"
+    "type": "book",
+    "created": "2023-08-26T17:51:00.000Z"
   },
   {
     "title": "learncree.ca",
@@ -668,7 +719,8 @@
     "tags": ["paid", "writing", "stories", "games", "fun"],
     "category": "Kids",
     "source": "http://www.learncree.ca/catalogue",
-    "type": "book"
+    "type": "book",
+    "created": "2023-08-26T17:31:00.000Z"
   },
   {
     "title": "learncree.ca",
@@ -680,7 +732,8 @@
     "tags": [],
     "category": "Kids",
     "source": "http://www.learncree.ca/audio",
-    "type": "music"
+    "type": "music",
+    "created": "2023-08-26T17:29:00.000Z"
   },
   {
     "title": "learncree.ca",
@@ -692,7 +745,8 @@
     "tags": ["bite-size", "fun", "games", "interactive"],
     "category": "Kids",
     "source": "http://www.learncree.ca/activities",
-    "type": "game"
+    "type": "game",
+    "created": "2023-08-26T16:58:00.000Z"
   },
   {
     "title": "Learn Cree with Me",
@@ -704,7 +758,8 @@
     "tags": ["sro", "stories", "songs", "fun", "bite-size", "phrases"],
     "category": "Lessons",
     "source": "https://www.facebook.com/groups/280657821548",
-    "type": "website"
+    "type": "website",
+    "created": "2023-08-26T16:55:00.000Z"
   },
   {
     "title": "Nêhiyawêwin (Cree) Word/Phrase of the Day",
@@ -716,7 +771,8 @@
     "tags": ["sro", "bite-size"],
     "category": "Lessons",
     "source": "https://www.facebook.com/groups/18414147673",
-    "type": "website"
+    "type": "website",
+    "created": "2023-08-26T16:51:00.000Z"
   },
   {
     "title": "Cree Simon Says",
@@ -728,7 +784,8 @@
     "tags": ["games", "fun", "phrases"],
     "category": "Lessons",
     "source": "https://www.facebook.com/groups/380099328844547/",
-    "type": "website"
+    "type": "website",
+    "created": "2023-08-26T16:43:00.000Z"
   },
   {
     "title": "Learn Cree with Andrea",
@@ -740,7 +797,8 @@
     "tags": ["stories", "songs", "bite-size", "phrases"],
     "category": "Lessons",
     "source": "https://www.youtube.com/@learncreewithandrea/videos",
-    "type": "website"
+    "type": "website",
+    "created": "2023-08-26T16:26:00.000Z"
   },
   {
     "title": "Cree: Language of the Plains",
@@ -752,7 +810,8 @@
     "tags": ["sro", "grammar", "paid"],
     "category": "Lessons",
     "source": "https://www.amazon.ca/Cree-Language-Plains-nehiyawewin-paskwawi-pikiskwewin/dp/0889777675/",
-    "type": "book"
+    "type": "book",
+    "created": "2023-08-26T02:39:00.000Z"
   },
   {
     "title": "Cree: Language of the Plains workbook",
@@ -764,7 +823,8 @@
     "tags": ["sro", "writing"],
     "category": "Lessons",
     "source": "https://ourspace.uregina.ca/server/api/core/bitstreams/37895771-8e0d-4c43-bf3c-76c713c5cb70/content",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-26T02:34:00.000Z"
   },
   {
     "title": "Cree: Language of the Plains audio sessions",
@@ -776,7 +836,8 @@
     "tags": [],
     "category": "Lessons",
     "source": "https://soundcloud.com/sean-prpick/sets/cree-language-of-the-plains",
-    "type": "audio"
+    "type": "audio",
+    "created": "2023-08-26T02:31:00.000Z"
   },
   {
     "title": "Cree: Language of the Plains",
@@ -788,7 +849,8 @@
     "tags": ["sro", "writing", "grammar"],
     "category": "Lessons",
     "source": "https://ourspace.uregina.ca/server/api/core/bitstreams/e6c7d081-f286-42a4-896c-2b91fc27c47b/content",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-26T02:27:00.000Z"
   },
   {
     "title": "Cree Literacy Network",
@@ -800,7 +862,8 @@
     "tags": ["stories", "writing", "poetry", "bite-size"],
     "category": "Lessons",
     "source": "https://creeliteracy.org/",
-    "type": "website"
+    "type": "website",
+    "created": "2023-08-25T23:14:00.000Z"
   },
   {
     "title": "Marjorie White ê-kî-pê-nêhiyawêmototâkoyâhk kâkikê",
@@ -812,7 +875,8 @@
     "tags": ["stories"],
     "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=mS8mQGJGOZc",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-25T23:11:00.000Z"
   },
   {
     "title": "Long & Short vowel sounds in nêhiyawêwin",
@@ -824,7 +888,8 @@
     "tags": ["syllabics", "sro"],
     "category": "Lessons",
     "source": "https://www.youtube.com/watch?v=3USlkd-5y-Y",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-25T23:10:00.000Z"
   },
   {
     "title": "Language & Connections to the Land - Wayne Jackson",
@@ -836,7 +901,8 @@
     "tags": ["stories"],
     "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=uIr_cRsVho8",
-    "type": "video"
+    "type": "video",
+    "created": "2023-08-25T23:09:00.000Z"
   },
   {
     "title": "How to Spell it in Cree",
@@ -848,7 +914,8 @@
     "tags": ["sro", "writing"],
     "category": "Lessons",
     "source": "https://resources.atlas-ling.ca/media/How_To_Spell_It_In_Cree-Standard_Orthography-Plains-Cree.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-25T21:25:00.000Z"
   },
   {
     "title": "Plains Cree: A Grammatical Study",
@@ -860,6 +927,7 @@
     "tags": ["linguistics", "morphology", "grammar"],
     "category": "Academic",
     "source": "https://csclub.uwaterloo.ca/~rfburger/wolfart-plains-cree-grammar-1973.pdf",
-    "type": "doc"
+    "type": "doc",
+    "created": "2023-08-25T21:25:00.000Z"
   }
 ]

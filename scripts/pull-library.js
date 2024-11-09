@@ -13,6 +13,41 @@ const client = axios.create({
   }
 });
 
+/* Notion item reference
+
+{
+  object: 'page',
+  id: '1395c08e-fb73-80c4-9734-fcc0e55ed7fc',
+  created_time: '2024-11-09T18:03:00.000Z',
+  last_edited_time: '2024-11-09T18:07:00.000Z',
+  created_by: { object: 'user', id: '7c1c8b1a-2c21-46a2-8ef9-d01ac157409d' },
+  last_edited_by: { object: 'user', id: '7c1c8b1a-2c21-46a2-8ef9-d01ac157409d' },
+  cover: null,
+  icon: null,
+  parent: {
+    type: 'database_id',
+    database_id: 'd3b32e83-16a9-434e-9c43-6620e66d18e8'
+  },
+  archived: false,
+  in_trash: false,
+  properties: {
+    description: { id: 'I%7CHD', type: 'rich_text', rich_text: [Array] },
+    source: { id: 'JhaE', type: 'rich_text', rich_text: [Array] },
+    category: { id: 'ZCs%3C', type: 'select', select: [Object] },
+    tags: { id: 'es%5Ey', type: 'multi_select', multi_select: [Array] },
+    language: { id: 'fZPo', type: 'select', select: [Object] },
+    author: { id: 'j__N', type: 'rich_text', rich_text: [Array] },
+    content: { id: 'mVgj', type: 'multi_select', multi_select: [Array] },
+    level: { id: 's%3C%5Br', type: 'select', select: [Object] },
+    type: { id: '~%5Bw%3C', type: 'select', select: [Object] },
+    title: { id: 'title', type: 'title', title: [Array] }
+  },
+  url: 'https://www.notion.so/Indiginews-Weekly-Cree-Lessons-1395c08efb7380c49734fcc0e55ed7fc',
+  public_url: 'https://bony-carp-8ee.notion.site/Indiginews-Weekly-Cree-Lessons-1395c08efb7380c49734fcc0e55ed7fc'
+}
+  
+ */
+
 const unwrap = function (item) {
   try {
     const out = {}
@@ -28,6 +63,7 @@ const unwrap = function (item) {
     out.category = item.properties.category?.select?.name || 'Uncategorized'
     out.source = item.properties.source?.rich_text?.[0]?.plain_text || ''
     out.type = item.properties.type?.select?.name || 'Unknown'
+    out.created = item.created_time
     
     return out
   } catch (error) {
