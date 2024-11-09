@@ -1,3 +1,5 @@
+'use server';
+
 import { Section } from '@/layout/Section';
 import { TopNav } from '@/layout/TopNav';
 

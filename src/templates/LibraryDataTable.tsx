@@ -1,6 +1,12 @@
 import {
+  Button,
   Input,
   Link,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
   Select,
   SelectItem,
   Table,
@@ -9,9 +15,12 @@ import {
   TableColumn,
   TableHeader,
   TableRow,
+  useDisclosure,
 } from '@nextui-org/react';
+import { format } from 'date-fns';
 import { NextSeo } from 'next-seo';
 
+import { categories, contents, levels, types } from '@/data/library-constants';
 import { useQueryState } from '@/lib/useQueryState';
 
 import data from '../data/library-data.json';
@@ -19,46 +28,14 @@ import { LibraryContentLanguage } from './LibraryContentLanguage';
 import { LibraryIcon } from './LibraryIcon';
 import { Tag } from './Tags';
 
-const types = [
-  { label: 'Video', value: 'video' },
-  { label: 'Audio', value: 'audio' },
-  { label: 'Podcast', value: 'podcast' },
-  { label: 'Docs', value: 'doc' },
-  { label: 'Website', value: 'website' },
-  { label: 'App', value: 'app' },
-  { label: 'Book', value: 'book' },
-  { label: 'Game', value: 'game' },
-  { label: 'Music', value: 'music' },
-];
-const categories = [
-  { label: 'Lessons', value: 'Lessons' },
-  { label: 'Academic', value: 'Academic' },
-  { label: 'Immersion', value: 'Immersion' },
-  { label: 'Kids', value: 'Kids' },
-  { label: 'Reference', value: 'Reference' },
-  { label: 'Commentary', value: 'Commentary' },
-];
-
-const levels = [
-  { label: 'Beginner', value: 'Beginner' },
-  { label: 'Intermediate', value: 'Intermediate' },
-  { label: 'Advanced', value: 'Advanced' },
-];
-
-const contents = [
-  { label: 'English', value: 'eng' },
-  { label: 'nêhiyawêwin', value: 'crk' },
-  { label: 'nîhithawîwin', value: 'cwd' },
-  { label: 'ininìmowin', value: 'csw' },
-  { label: 'ililīmowin', value: 'crm' },
-];
-
 const LibraryDataTable = () => {
   const [search, setSearch] = useQueryState('search');
   const [type, setType] = useQueryState('type');
   const [category, setCategory] = useQueryState('category');
   const [level, setLevel] = useQueryState('level');
   const [content, setContent] = useQueryState('content');
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleSearchChange = (event: any) => {
     const { value } = event.target;
@@ -122,18 +99,28 @@ const LibraryDataTable = () => {
 
     return (
       <div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <p className="text-sm">
             <a href={item.source} target="_blank">
               <span className="font-bold">{item.title}</span> | {item.author}
             </a>
           </p>
           <p className="text-sm text-default-500">{item.description}</p>
+          <div className="flex flex-wrap gap-2">
+            {youtube && <Tag color="red" text="YOUTUBE" />}
+            {facebook && <Tag color="sky" text="FACEBOOK" />}
+            {paid && <Tag color="green" text="$" />}
+            {pdf && <Tag color="pink" text="PDF" />}
+
+            <Tag color="default" text={item.category} />
+            <Tag color="warning" text={item.level} />
+            <LibraryContentLanguage language={item.content} />
+            <Tag
+              color="secondary"
+              text={`Added ${format(new Date(item.created), 'MMM d, yyyy')}`}
+            />
+          </div>
         </div>
-        {youtube && <Tag color="red" text="YOUTUBE"></Tag>}
-        {facebook && <Tag color="sky" text="FACEBOOK"></Tag>}
-        {paid && <Tag color="green" text="$"></Tag>}
-        {pdf && <Tag color="pink" text="PDF"></Tag>}
       </div>
     );
   };
@@ -161,6 +148,81 @@ const LibraryDataTable = () => {
     site_name: 'kiyânaw - all of us',
   };
 
+  // Helper function to create selectedKeys array
+  const getSelectedKeys = (value: string | null) => {
+    return value ? [value] : [];
+  };
+
+  const renderFilters = () => (
+    <>
+      <Select
+        label="Resource type"
+        size="sm"
+        color={type ? 'secondary' : 'default'}
+        className="mb-4 w-full"
+        selectedKeys={getSelectedKeys(type)}
+        onChange={handleTypeChange}
+      >
+        {types.map((type) => (
+          <SelectItem key={type.value} value={type.value}>
+            {type.label}
+          </SelectItem>
+        ))}
+      </Select>
+
+      <Select
+        label="Category"
+        size="sm"
+        color={category ? 'secondary' : 'default'}
+        className="mb-4 w-full"
+        selectedKeys={getSelectedKeys(category)}
+        onChange={handleCategoryChange}
+      >
+        {categories.map((category) => (
+          <SelectItem key={category.value} value={category.value}>
+            {category.label}
+          </SelectItem>
+        ))}
+      </Select>
+
+      <Select
+        label="Level"
+        size="sm"
+        color={level ? 'secondary' : 'default'}
+        className="mb-4 w-full"
+        selectedKeys={getSelectedKeys(level)}
+        onChange={handleLevelChange}
+      >
+        {levels.map((level) => (
+          <SelectItem key={level.value} value={level.value}>
+            {level.label}
+          </SelectItem>
+        ))}
+      </Select>
+
+      <Select
+        label="Content Language"
+        size="sm"
+        color={content ? 'secondary' : 'default'}
+        className="mb-4 w-full"
+        selectedKeys={getSelectedKeys(content)}
+        onChange={handleContentChange}
+      >
+        {contents.map((content) => (
+          <SelectItem key={content.value} value={content.value}>
+            {content.label}
+          </SelectItem>
+        ))}
+      </Select>
+    </>
+  );
+
+  // Get count of active filters including search
+  const activeFilterCount = [type, category, level, content].filter(
+    Boolean,
+  ).length;
+  const hasActiveFilters = activeFilterCount > 0 || search;
+
   return (
     <>
       <NextSeo
@@ -170,111 +232,93 @@ const LibraryDataTable = () => {
           title: meta.title,
           description: inSearch,
         }}
-      ></NextSeo>
+      />
       <div className="mx-auto w-full px-3 text-slate-700">
-        <div className="m-auto w-10/12 py-3">
-          <Input
-            placeholder="Search..."
-            color={search ? 'secondary' : 'default'}
-            size="lg"
-            value={search || ''}
-            onChange={handleSearchChange}
-          />
-        </div>
-        <div className="m-auto flex w-10/12 flex-wrap py-3 ">
-          <Select
-            label="Resource type"
-            size="sm"
-            color={type ? 'secondary' : 'default'}
-            className="mr-2 mt-2 max-w-xs"
-            selectedKeys={[`${type}`]}
-            onChange={handleTypeChange}
-          >
-            {types.map((type) => (
-              <SelectItem key={type.value} value={type.value}>
-                {type.label}
-              </SelectItem>
-            ))}
-          </Select>
+        <div className="m-auto w-10/12 space-y-2 py-3">
+          <div className="flex gap-2">
+            <Input
+              placeholder="Search..."
+              color={search ? 'secondary' : 'default'}
+              size="lg"
+              value={search || ''}
+              onChange={handleSearchChange}
+              className="grow"
+            />
+            <Button
+              onPress={onOpen}
+              color={activeFilterCount > 0 ? 'secondary' : 'default'}
+              variant={activeFilterCount > 0 ? 'solid' : 'light'}
+              className="min-w-[120px]"
+            >
+              Filters {activeFilterCount > 0 && `(${activeFilterCount})`}
+            </Button>
+          </div>
 
-          <Select
-            label="Category"
-            size="sm"
-            color={category ? 'secondary' : 'default'}
-            className="mr-2 mt-2 max-w-xs"
-            selectedKeys={[`${category}`]}
-            onChange={handleCategoryChange}
-          >
-            {categories.map((category) => (
-              <SelectItem key={category.value} value={category.value}>
-                {category.label}
-              </SelectItem>
-            ))}
-          </Select>
-
-          <Select
-            label="Level"
-            size="sm"
-            color={level ? 'secondary' : 'default'}
-            className="mr-2 mt-2 max-w-xs"
-            selectedKeys={[`${level}`]}
-            onChange={handleLevelChange}
-          >
-            {levels.map((level) => (
-              <SelectItem key={level.value} value={level.value}>
-                {level.label}
-              </SelectItem>
-            ))}
-          </Select>
-
-          <Select
-            label="Content Language"
-            size="sm"
-            color={content ? 'secondary' : 'default'}
-            className="mr-2 mt-2 max-w-xs"
-            selectedKeys={[`${content}`]}
-            onChange={handleContentChange}
-          >
-            {contents.map((content) => (
-              <SelectItem key={content.value} value={content.value}>
-                {content.label}
-              </SelectItem>
-            ))}
-          </Select>
-
-          <Link size="sm" href="/library">
-            Clear
-          </Link>
+          {hasActiveFilters && (
+            <div className="flex">
+              <Button
+                as={Link}
+                href="/library"
+                size="sm"
+                variant="flat"
+                color="danger"
+                className="font-medium"
+              >
+                Clear all filters
+              </Button>
+            </div>
+          )}
         </div>
 
-        <Table aria-label="Language resources">
+        {/* Filters modal - now used for both mobile and desktop */}
+        <Modal isOpen={isOpen} onClose={onClose} placement="center" size="lg">
+          <ModalContent>
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1">
+                  Filters
+                </ModalHeader>
+                <ModalBody>{renderFilters()}</ModalBody>
+                <ModalFooter>
+                  {hasActiveFilters && (
+                    <Button
+                      as={Link}
+                      href="/library"
+                      size="sm"
+                      variant="flat"
+                      color="danger"
+                      className="mr-3 font-medium"
+                    >
+                      Clear all filters
+                    </Button>
+                  )}
+                  <Button color="primary" onPress={onClose}>
+                    Done
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
+
+        <Table
+          aria-label="Language resources"
+          classNames={{
+            td: 'py-4',
+            tr: 'border-b border-default-200',
+          }}
+        >
           <TableHeader>
             <TableColumn>Type</TableColumn>
             <TableColumn>Title</TableColumn>
-            <TableColumn>Content</TableColumn>
-            {/* <TableColumn>Tags</TableColumn> */}
-            <TableColumn>Category</TableColumn>
-            <TableColumn>Level</TableColumn>
           </TableHeader>
           <TableBody>
-            {filteredData.map((item: any, index: any) => (
+            {filteredData.map((item: any, index: number) => (
               <TableRow key={index}>
                 <TableCell>
-                  <LibraryIcon type={item.type}></LibraryIcon>
+                  <LibraryIcon type={item.type} />
                 </TableCell>
                 <TableCell>{renderDescription(item)}</TableCell>
-                <TableCell>
-                  <LibraryContentLanguage
-                    language={item.content}
-                  ></LibraryContentLanguage>
-                </TableCell>
-                {/* <TableCell>
-                  <div className="w-2/12">
-                    <Tags tags={item.tags}></Tags>
-                  </div>
-                </TableCell> */}
-                <TableCell>{item.category}</TableCell>
-                <TableCell>{item.level}</TableCell>
               </TableRow>
             ))}
           </TableBody>
