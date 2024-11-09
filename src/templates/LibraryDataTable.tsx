@@ -68,10 +68,25 @@ const LibraryDataTable = () => {
     const categoryValue = category || '';
     const levelValue = level || '';
     const contentValue = content || '';
+
+    // Split search terms and filter out empty strings
+    const searchTerms = searchValue
+      .toLowerCase()
+      .split(' ')
+      .filter((term) => term.length > 0);
+
+    // Check if all search terms are included in the item's searchable text
+    const matchesSearch =
+      searchTerms.length === 0 ||
+      searchTerms.every(
+        (term) =>
+          item.title.toLowerCase().includes(term) ||
+          item.author.toLowerCase().includes(term) ||
+          item.description.toLowerCase().includes(term),
+      );
+
     return (
-      (item.title.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.author.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.description.toLowerCase().includes(searchValue.toLowerCase())) &&
+      matchesSearch &&
       (typeValue ? item.type === typeValue : true) &&
       (categoryValue ? item.category === categoryValue : true) &&
       (levelValue ? item.level === levelValue : true) &&
