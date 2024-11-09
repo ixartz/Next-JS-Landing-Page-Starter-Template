@@ -1,5 +1,18 @@
 [
   {
+    "title": "A Happy Life by Morning Star Or Joe Small (1975)",
+    "description": "From Rocky Boy’s Montana Chippewa-Cree Research. Shared by Wes Fineday",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Joe Small",
+    "content": ["crk"],
+    "tags": ["writing", "stories", "syllabics", "mixed-language", "culture"],
+    "category": "Reference",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/A+Happy+Life+by+Joe+Small%2C+Jr+1975_241109_083536.pdf",
+    "type": "doc",
+    "created": "2024-11-09T23:31:00.000Z"
+  },
+  {
     "title": "Moose and Swampy Cree Conversation Resources",
     "description": "Conversation Manual of the Moose and Swampy Cree languages.",
     "language": "ininìmowin",
@@ -101,19 +114,6 @@
     "created": "2024-11-09T17:40:00.000Z"
   },
   {
-    "title": "Untitled",
-    "description": "No description",
-    "language": "Unknown",
-    "level": "Unspecified",
-    "author": "Unknown",
-    "content": [],
-    "tags": [],
-    "category": "Uncategorized",
-    "source": "",
-    "type": "Unknown",
-    "created": "2024-11-09T17:40:00.000Z"
-  },
-  {
     "title": "ᓀᐦᐃᔭᐍᐏᐣ (Cree Syllabics) keyboard",
     "description": "SRO-inspired keyboard for the Keyman app",
     "language": "nêhiyawêwin",
@@ -187,7 +187,7 @@
     "content": ["eng", "crk"],
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
-    "source": "https://kiyanaw.net/assets/docs/indian-names-for-alberta-communities-hugh-a-dempsey.pdf",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/indian-names-for-alberta-communities-hugh-a-dempsey.pdf",
     "type": "doc",
     "created": "2023-10-27T21:40:00.000Z"
   },
@@ -200,20 +200,20 @@
     "content": ["eng"],
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
-    "source": "https://kiyanaw.net/assets/docs/indian-sign-language-william-tomkins.pdf",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/indian-sign-language-william-tomkins.pdf",
     "type": "doc",
     "created": "2023-10-27T21:38:00.000Z"
   },
   {
     "title": "Tatooing Practices of the Cree Indians",
-    "description": "Glenbox Alberta Institute Occasional paper no. 6 from 1972",
+    "description": "Glenbow Alberta Institute Occasional paper no. 6 from 1972",
     "language": "nêhiyawêwin",
     "level": "Beginner",
     "author": "D.W. Light",
     "content": ["eng"],
     "tags": ["culture", "mixed-language"],
     "category": "Reference",
-    "source": "https://kiyanaw.net/assets/docs/tattooing-practices-of-the-cree-indians-d-w-light.pdf",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/tattooing-practices-of-the-cree-indians-d-w-light.pdf",
     "type": "doc",
     "created": "2023-10-27T21:36:00.000Z"
   },
@@ -432,7 +432,7 @@
     "content": ["eng", "crk"],
     "tags": ["sro", "writing", "mixed-language", "phrases", "culture"],
     "category": "Reference",
-    "source": "https://kiyanaw.net/assets/docs/solomon-ratt-a-cree-view-of-education.pdf",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/solomon-ratt-a-cree-view-of-education.pdf",
     "type": "doc",
     "created": "2023-08-27T17:42:00.000Z"
   },
@@ -445,7 +445,7 @@
     "content": ["eng", "crk"],
     "tags": ["phrases", "bite-size", "grammar", "writing", "sro"],
     "category": "Reference",
-    "source": "https://kiyanaw.net/assets/docs/solomon-ratt-how-to-say-it-in-cree.pdf",
+    "source": "https://kiyanaw-learner-library-media-bucket.s3.us-east-1.amazonaws.com/solomon-ratt-how-to-say-it-in-cree.pdf",
     "type": "doc",
     "created": "2023-08-27T17:30:00.000Z"
   },
