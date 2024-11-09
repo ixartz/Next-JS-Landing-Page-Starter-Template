@@ -85,9 +85,26 @@ const LibraryDataTable = () => {
           item.description.toLowerCase().includes(term),
       );
 
+    // Special handling for audio, book, and app types
+    const getMatchingTypes = (typeValue: string) => {
+      switch (typeValue) {
+        case 'audio':
+          return ['audio', 'podcast', 'music'];
+        case 'book':
+          return ['book', 'doc', 'website'];
+        case 'app':
+          return ['app', 'game'];
+        default:
+          return [typeValue];
+      }
+    };
+
+    const matchesType =
+      !typeValue || getMatchingTypes(typeValue).includes(item.type);
+
     return (
       matchesSearch &&
-      (typeValue ? item.type === typeValue : true) &&
+      matchesType &&
       (categoryValue ? item.category === categoryValue : true) &&
       (levelValue ? item.level === levelValue : true) &&
       (contentValue ? item.content.includes(contentValue) : true)
@@ -238,6 +255,25 @@ const LibraryDataTable = () => {
   ).length;
   const hasActiveFilters = activeFilterCount > 0 || search;
 
+  const quickFilters = [
+    {
+      label: 'Watch',
+      value: 'video',
+      icon: <LibraryIcon type="video" size={16} />,
+    },
+    {
+      label: 'Listen',
+      value: 'audio',
+      icon: <LibraryIcon type="audio" size={16} />,
+    },
+    {
+      label: 'Read',
+      value: 'book',
+      icon: <LibraryIcon type="book" size={16} />,
+    },
+    { label: 'Apps', value: 'app', icon: <LibraryIcon type="app" size={16} /> },
+  ];
+
   return (
     <>
       <NextSeo
@@ -269,8 +305,22 @@ const LibraryDataTable = () => {
             </Button>
           </div>
 
-          {hasActiveFilters && (
-            <div className="flex">
+          <div className="flex flex-wrap items-center gap-2">
+            {quickFilters.map((filter) => (
+              <Button
+                key={filter.value}
+                size="sm"
+                variant={type === filter.value ? 'solid' : 'light'}
+                color={type === filter.value ? 'secondary' : 'default'}
+                onClick={() =>
+                  setType(type === filter.value ? null : filter.value)
+                }
+                startContent={filter.icon}
+              >
+                {filter.label}
+              </Button>
+            ))}
+            {hasActiveFilters && (
               <Button
                 as={Link}
                 href="/library"
@@ -281,63 +331,63 @@ const LibraryDataTable = () => {
               >
                 Clear all filters
               </Button>
-            </div>
-          )}
-        </div>
-
-        {/* Filters modal - now used for both mobile and desktop */}
-        <Modal isOpen={isOpen} onClose={onClose} placement="center" size="lg">
-          <ModalContent>
-            {(onClose) => (
-              <>
-                <ModalHeader className="flex flex-col gap-1">
-                  Filters
-                </ModalHeader>
-                <ModalBody>{renderFilters()}</ModalBody>
-                <ModalFooter>
-                  {hasActiveFilters && (
-                    <Button
-                      as={Link}
-                      href="/library"
-                      size="sm"
-                      variant="flat"
-                      color="danger"
-                      className="mr-3 font-medium"
-                    >
-                      Clear all filters
-                    </Button>
-                  )}
-                  <Button color="primary" onPress={onClose}>
-                    Done
-                  </Button>
-                </ModalFooter>
-              </>
             )}
-          </ModalContent>
-        </Modal>
+          </div>
 
-        <Table
-          aria-label="Language resources"
-          classNames={{
-            td: 'py-4',
-            tr: 'border-b border-default-200',
-          }}
-        >
-          <TableHeader>
-            <TableColumn>Type</TableColumn>
-            <TableColumn>Title</TableColumn>
-          </TableHeader>
-          <TableBody>
-            {filteredData.map((item: any, index: number) => (
-              <TableRow key={index}>
-                <TableCell>
-                  <LibraryIcon type={item.type} />
-                </TableCell>
-                <TableCell>{renderDescription(item)}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+          {/* Filters modal - now used for both mobile and desktop */}
+          <Modal isOpen={isOpen} onClose={onClose} placement="center" size="lg">
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalHeader className="flex flex-col gap-1">
+                    Filters
+                  </ModalHeader>
+                  <ModalBody>{renderFilters()}</ModalBody>
+                  <ModalFooter>
+                    {hasActiveFilters && (
+                      <Button
+                        as={Link}
+                        href="/library"
+                        size="sm"
+                        variant="flat"
+                        color="danger"
+                        className="mr-3 font-medium"
+                      >
+                        Clear all filters
+                      </Button>
+                    )}
+                    <Button color="primary" onPress={onClose}>
+                      Done
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
+
+          <Table
+            aria-label="Language resources"
+            classNames={{
+              td: 'py-4',
+              tr: 'border-b border-default-200',
+            }}
+          >
+            <TableHeader>
+              <TableColumn>Type</TableColumn>
+              <TableColumn>Title</TableColumn>
+            </TableHeader>
+            <TableBody>
+              {filteredData.map((item: any, index: number) => (
+                <TableRow key={index}>
+                  <TableCell>
+                    <LibraryIcon type={item.type} />
+                  </TableCell>
+                  <TableCell>{renderDescription(item)}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
       </div>
     </>
   );

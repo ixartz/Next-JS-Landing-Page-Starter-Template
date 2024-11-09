@@ -1,17 +1,18 @@
 type ILibraryIconProps = {
   type: string;
+  size?: number;
 };
 
-const LibraryIcon = (props: ILibraryIconProps) => (
+const LibraryIcon = ({ type, size = 24 }: ILibraryIconProps) => (
   <>
-    {props.type === 'video' && (
+    {type === 'video' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -19,14 +20,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'podcast' && (
+    {type === 'podcast' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -35,14 +36,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'doc' && (
+    {type === 'doc' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -51,14 +52,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'website' && (
+    {type === 'website' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -67,14 +68,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'app' && (
+    {type === 'app' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -83,14 +84,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'book' && (
+    {type === 'book' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -99,14 +100,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'audio' && (
+    {type === 'audio' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -115,14 +116,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'game' && (
+    {type === 'game' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
@@ -131,14 +132,14 @@ const LibraryIcon = (props: ILibraryIconProps) => (
         />
       </svg>
     )}
-    {props.type === 'music' && (
+    {type === 'music' && (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-6 w-6"
+        className={`h-${size / 4} w-${size / 4}`}
       >
         <path
           strokeLinecap="round"
