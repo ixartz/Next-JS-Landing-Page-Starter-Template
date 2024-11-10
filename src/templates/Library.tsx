@@ -20,6 +20,15 @@ const Library = () => (
         A (non-exhaustive) collection of resources for language learners,
         largely focused around the Cree language.
       </p>
+      <p className="text-center">
+        <a
+          href="https://bony-carp-8ee.notion.site/1395c08efb7380a8a755db790933a656"
+          target="_blank"
+          className="text-primary-600 hover:text-primary-900"
+        >
+          <strong>Did we miss something? Submit it here!</strong>
+        </a>
+      </p>
     </Section>
     <LibraryDataTable></LibraryDataTable>
     <Footer />
