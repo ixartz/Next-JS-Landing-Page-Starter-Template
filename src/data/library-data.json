@@ -1,5 +1,31 @@
 [
   {
+    "title": "Solsquatch Speaks",
+    "description": "This podcast series helps parents and teachers understand the importance and value of Cree Ways of Knowing.",
+    "language": "nîhithawîwin",
+    "level": "Intermediate",
+    "author": "Solomon Ratt",
+    "content": ["cwd"],
+    "tags": ["stories", "fun", "bite-size", "culture", "phrases"],
+    "category": "Reference",
+    "source": "https://www.pikiskwewin.ca/solsquatch-speaks",
+    "type": "podcast",
+    "created": "2025-01-09T18:07:00.000Z"
+  },
+  {
+    "title": "Pêyakoskân Podcast",
+    "description": "The Peyakôskân Podcast Initiative brings together high school students and post-secondary students from diverse cultures and backgrounds to learn the art of podcasting, collaboration and the power of storytelling to address complex social issues such as Truth & Reconciliation language revitalization, and discrimination.",
+    "language": "âkayâsîmowin",
+    "level": "Beginner",
+    "author": "Russell Willier & Cara Jones",
+    "content": ["eng"],
+    "tags": ["stories", "fun", "bite-size"],
+    "category": "Commentary",
+    "source": "https://www.peyakoskanpodcast.com/",
+    "type": "podcast",
+    "created": "2025-01-09T18:01:00.000Z"
+  },
+  {
     "title": "A Happy Life by Morning Star Or Joe Small (1975)",
     "description": "From Rocky Boy’s Montana Chippewa-Cree Research. Shared by Wes Fineday",
     "language": "nêhiyawêwin",
