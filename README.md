@@ -13,6 +13,24 @@ Clone this project and use it to create your own [Next.js](https://nextjs.org) p
 <table width="100%">
   <tr height="187px">
     <td align="center" width="33%">
+      <a href="https://go.clerk.com/zGlzydF">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/6fb61971-3bf1-4580-98a0-10bd3f1040a2">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
+          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
+        </picture>
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/coderabbit-logo-dark.svg?raw=true">
+          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/coderabbit-logo-light.svg?raw=true">
+          <img alt="CodeRabbit" src="public/assets/images/coderabbit-logo-light.svg?raw=true">
+        </picture>
+      </a>
+    </td>
+    <td align="center" width="33%">
       <a href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/sentry-white.png?raw=true">
@@ -28,34 +46,15 @@ Clone this project and use it to create your own [Next.js](https://nextjs.org) p
         </picture>
       </a>
     </td>
-    <td align="center" width="33%">
-      <a href="https://betterstack.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/better-stack-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/better-stack-dark.png?raw=true">
-          <img alt="Better Stack" src="public/assets/images/better-stack-dark.png?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" style=width="33%">
-      <a href="https://nextlessjs.com">
-        <img src="public/assets/images/nextlessjs.png?raw=true" alt="React SaaS Boilerplate Next.js" />
-      </a>
-    </td>
   </tr>
   <tr height="187px">
     <td align="center" width="33%">
-      <a href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate">
+      <a href="https://launch.arcjet.com/Q6eLbRE">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/a3cd2a25-377b-4c0d-a3d3-bce121df2c94">
-          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/3459074d-c3e2-46c5-8be4-b836cb7989ea">
-          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/3459074d-c3e2-46c5-8be4-b836cb7989ea">
+          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/arcjet-dark.svg?raw=true">
+          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/arcjet-light.svg?raw=true">
+          <img alt="Arcjet" src="public/assets/images/arcjet-light.svg?raw=true">
         </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://turso.tech/?utm_source=nextjsstarterbp">
-        <img src="public/assets/images/turso.png?raw=true" alt="SQLite Developer Experience">
       </a>
     </td>
     <td align="center" width="33%">
@@ -65,6 +64,11 @@ Clone this project and use it to create your own [Next.js](https://nextjs.org) p
           <source media="(prefers-color-scheme: light)" srcset="public/assets/images/crowdin-dark.png?raw=true">
           <img alt="Crowdin" src="public/assets/images/crowdin-dark.png?raw=true">
         </picture>
+      </a>
+    </td>
+    <td align="center" style=width="33%">
+      <a href="https://nextjs-boilerplate.com/pro-saas-starter-kit">
+        <img src="public/assets/images/nextjs-boilerplate-saas.png?raw=true" alt="Next.js SaaS Boilerplate with React" />
       </a>
     </td>
   </tr>
@@ -236,6 +240,24 @@ See [LICENSE](LICENSE) for more information.
 <table width="100%">
   <tr height="187px">
     <td align="center" width="33%">
+      <a href="https://go.clerk.com/zGlzydF">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/6fb61971-3bf1-4580-98a0-10bd3f1040a2">
+          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
+          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
+        </picture>
+      </a>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/coderabbit-logo-dark.svg?raw=true">
+          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/coderabbit-logo-light.svg?raw=true">
+          <img alt="CodeRabbit" src="public/assets/images/coderabbit-logo-light.svg?raw=true">
+        </picture>
+      </a>
+    </td>
+    <td align="center" width="33%">
       <a href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/sentry-white.png?raw=true">
@@ -251,34 +273,15 @@ See [LICENSE](LICENSE) for more information.
         </picture>
       </a>
     </td>
-    <td align="center" width="33%">
-      <a href="https://betterstack.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/better-stack-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/better-stack-dark.png?raw=true">
-          <img alt="Better Stack" src="public/assets/images/better-stack-dark.png?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" style=width="33%">
-      <a href="https://nextlessjs.com">
-        <img src="public/assets/images/nextlessjs.png?raw=true" alt="React SaaS Boilerplate Next.js" />
-      </a>
-    </td>
   </tr>
   <tr height="187px">
     <td align="center" width="33%">
-      <a href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate">
+      <a href="https://launch.arcjet.com/Q6eLbRE">
         <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/a3cd2a25-377b-4c0d-a3d3-bce121df2c94">
-          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/3459074d-c3e2-46c5-8be4-b836cb7989ea">
-          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/Next-js-Boilerplate/assets/1328388/3459074d-c3e2-46c5-8be4-b836cb7989ea">
+          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/arcjet-dark.svg?raw=true">
+          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/arcjet-light.svg?raw=true">
+          <img alt="Arcjet" src="public/assets/images/arcjet-light.svg?raw=true">
         </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://turso.tech/?utm_source=nextjsstarterbp">
-        <img src="public/assets/images/turso.png?raw=true" alt="SQLite Developer Experience">
       </a>
     </td>
     <td align="center" width="33%">
@@ -288,6 +291,11 @@ See [LICENSE](LICENSE) for more information.
           <source media="(prefers-color-scheme: light)" srcset="public/assets/images/crowdin-dark.png?raw=true">
           <img alt="Crowdin" src="public/assets/images/crowdin-dark.png?raw=true">
         </picture>
+      </a>
+    </td>
+    <td align="center" style=width="33%">
+      <a href="https://nextjs-boilerplate.com/pro-saas-starter-kit">
+        <img src="public/assets/images/nextjs-boilerplate-saas.png?raw=true" alt="Next.js SaaS Boilerplate with React" />
       </a>
     </td>
   </tr>
