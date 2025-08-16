@@ -1,13 +1,66 @@
 [
   {
+    "title": "Frog Lake Library",
+    "description": "No description",
+    "language": "Unknown",
+    "level": "Unspecified",
+    "author": "Frog Lake FN",
+    "content": [],
+    "tags": [],
+    "category": "Uncategorized",
+    "source": "https://www.youtube.com/watch?v=5Fvoj6WltN8",
+    "type": "Unknown",
+    "created": "2025-08-03T23:42:00.000Z"
+  },
+  {
+    "title": "Cree Names of Cree Speaking Communities Map",
+    "description": "Google Map of Cree-speaking communities",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Arden Ogg",
+    "content": ["crk"],
+    "tags": ["fun", "bite-size", "interactive", "technology"],
+    "category": "Reference",
+    "source": "https://www.google.com/maps/d/u/0/viewer?mid=1KQcuBlf6nALH6J1MC_DI0q-sG7A&ll=54.2287455488534%2C-110.8540231255842&z=8",
+    "type": "website",
+    "created": "2025-04-11T01:19:00.000Z"
+  },
+  {
+    "title": "Coffee N’ Cree with Rellik & Guests",
+    "description": "Radio show at The Raven in Edmonton with guests exploring various words and phrases in the language as well as aspects of nêhiyaw culture.",
+    "language": "nêhiyawêwin",
+    "level": "Beginner",
+    "author": "Bill Rellik - 98.3 The Raven",
+    "content": ["crk"],
+    "tags": [
+      "stories",
+      "fun",
+      "bite-size",
+      "mixed-language",
+      "phrases",
+      "culture"
+    ],
+    "category": "Lessons",
+    "source": "https://ravenradio.ca/2024/11/14/coffee-n-cree-with-rellik-guests/",
+    "type": "podcast",
+    "created": "2025-01-18T21:30:00.000Z"
+  },
+  {
     "title": "Solsquatch Speaks",
     "description": "This podcast series helps parents and teachers understand the importance and value of Cree Ways of Knowing.",
     "language": "nîhithawîwin",
     "level": "Intermediate",
     "author": "Solomon Ratt",
     "content": ["cwd"],
-    "tags": ["stories", "fun", "bite-size", "culture", "phrases"],
-    "category": "Reference",
+    "tags": [
+      "stories",
+      "fun",
+      "bite-size",
+      "culture",
+      "phrases",
+      "mixed-language"
+    ],
+    "category": "Immersion",
     "source": "https://www.pikiskwewin.ca/solsquatch-speaks",
     "type": "podcast",
     "created": "2025-01-09T18:07:00.000Z"
@@ -281,19 +334,6 @@
     "source": "https://apps.apple.com/ca/app/maskwacis-cree/id804404251",
     "type": "app",
     "created": "2023-09-01T21:19:00.000Z"
-  },
-  {
-    "title": "Cree Language Map",
-    "description": "Google map with pins showing where various dialects of the language is spoken.",
-    "language": "nêhiyawêwin",
-    "level": "Beginner",
-    "author": "Unknown",
-    "content": ["eng"],
-    "tags": ["bite-size", "interactive", "technology"],
-    "category": "Reference",
-    "source": "https://www.google.com/maps/d/u/0/viewer?ll=53.061803855586774%2C-102.7663138786541&z=5&mid=1KQcuBlf6nALH6J1MC_DI0q-sG7A",
-    "type": "website",
-    "created": "2023-09-01T21:17:00.000Z"
   },
   {
     "title": "Plains Cree Dictionary",

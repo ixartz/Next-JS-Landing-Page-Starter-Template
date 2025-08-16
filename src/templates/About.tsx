@@ -21,7 +21,13 @@ const About = () => (
       title="tânisi?"
       description={description}
       subDescription={subDescription}
-      image={<img className="rounded-xl" src="/assets/images/aaron.jpg"></img>}
+      image={
+        <img
+          className="rounded-xl"
+          src="/assets/images/aaron.jpg"
+          alt="Aaron Fay"
+        ></img>
+      }
     />
   </Section>
 );

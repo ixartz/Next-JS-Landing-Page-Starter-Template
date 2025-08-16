@@ -49,12 +49,12 @@ const VerticalFeatures = () => (
   <>
     <Section title="Language Projects" id="projects">
       <VerticalFeatureRow
-        title="kiyânaw App"
-        description="Currently in development, the kiyânaw App allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
-        image="/assets/images/kiyanaw-app.png"
-        imageAlt="kiyânaw Mobile App"
+        title="kiyânaw Transcribe"
+        description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
+        image="/assets/images/kiyanaw-transcribe.png"
+        imageAlt="Online collaborative transcription software"
         reverse
-        target="/mobile-app"
+        target="/transcribe"
         targetText="Learn more"
       />
       <VerticalFeatureRow
@@ -66,12 +66,12 @@ const VerticalFeatures = () => (
         targetText="Learn more"
       />
       <VerticalFeatureRow
-        title="kiyânaw Transcribe"
-        description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
-        image="/assets/images/kiyanaw-transcribe.png"
-        imageAlt="Online collaborative transcription software"
+        title="kiyânaw App"
+        description="Currently in development, the kiyânaw App allows any learner to ask language questions and capture phrases & audio for any language or dialect with only their phone, helping build our language bundle for future generations."
+        image="/assets/images/kiyanaw-app.png"
+        imageAlt="kiyânaw Mobile App"
         reverse
-        target="/transcribe"
+        target="/mobile-app"
         targetText="Learn more"
       />
       <VerticalFeatureRow

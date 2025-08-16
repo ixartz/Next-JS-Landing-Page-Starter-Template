@@ -17,6 +17,7 @@ const Logo = (props: ILogoProps) => {
         height={size}
         style={{ ['paddingRight' as any]: 10 }}
         src="/apple-touch-icon.png"
+        alt="kiyânaw logo"
       ></img>
 
       {AppConfig.site_name}

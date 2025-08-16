@@ -64,7 +64,7 @@ module.exports = {
     },
   },
   darkMode: 'class',
-  plugins: [require("daisyui"), nextui.nextui()],
+  plugins: [require("daisyui"), require('@tailwindcss/typography'), nextui.nextui()],
   safelist: [
     'bg-red-100',
     'text-red-800',

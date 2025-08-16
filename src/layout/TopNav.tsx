@@ -38,6 +38,12 @@ const TopNav = () => {
               Learner Library
             </Link>
             <Link
+              href="/blog"
+              className="text-base font-medium text-primary-600 hover:text-primary-900"
+            >
+              Blog
+            </Link>
+            <Link
               href="/#about"
               className="text-base font-medium text-primary-600 hover:text-primary-900"
             >
@@ -98,6 +104,13 @@ const TopNav = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Learner Library
+          </Link>
+          <Link
+            href="/blog"
+            className="block rounded-md px-3 py-2 text-base font-medium text-primary-600 hover:bg-gray-50 hover:text-primary-900"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
           </Link>
           <Link
             href="/#about"
