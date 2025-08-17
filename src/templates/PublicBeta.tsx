@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { Button } from '@/button/Button';
+
 const PublicBeta = () => (
   <div className="w-full bg-blue-50">
     <div className="mx-auto max-w-screen-lg px-3 py-8">
@@ -19,6 +21,11 @@ const PublicBeta = () => (
             contact us
           </Link>
           .
+        </div>
+        <div className="text-center">
+          <Link target="_blank" href="https://bundle.kiyanaw.net/">
+            <Button>{`Try it out now →`}</Button>
+          </Link>
         </div>
       </div>
     </div>

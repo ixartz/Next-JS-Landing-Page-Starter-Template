@@ -25,7 +25,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     'mt-24',
     'flex',
     'flex-wrap',
-    'items-start',
+    'items-center',
     {
       'flex-row-reverse': props.reverse,
     },
@@ -54,8 +54,8 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="w-full text-left sm:w-1/2 sm:px-6">
-        <div className="flex items-center gap-3">
+      <div className="w-full text-center sm:w-1/2 sm:px-6">
+        <div className="flex items-center justify-center gap-3">
           <h3 className="text-3xl font-semibold text-gray-900">
             {props.title}
           </h3>
@@ -74,7 +74,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         {props.comingSoon && <Button>Coming soon...</Button>}
       </div>
 
-      <div className="w-full px-6 sm:w-1/2">
+      <div className="w-full sm:w-1/2">
         <img
           className="rounded-xl"
           src={`${router.basePath}${props.image}`}

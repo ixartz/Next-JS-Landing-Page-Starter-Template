@@ -68,7 +68,10 @@ const VideoHero = ({
                   PUBLIC BETA
                 </div>
               </div>
-              <div className="mt-6 text-xl text-white">{subtitle}</div>
+              <div
+                className="mt-6 text-xl text-white"
+                dangerouslySetInnerHTML={{ __html: subtitle }}
+              ></div>
               {ctaText && ctaLink && (
                 <div className="mt-8">
                   <a
