@@ -1,15 +1,28 @@
 [
   {
+    "title": "A Grammar of the Cree Language",
+    "description": "A grammar of the Cree language: With which is combined an analysis of the Chippeway [sic] dialect",
+    "language": "nêhiyawêwin",
+    "level": "Intermediate",
+    "author": "Joseph Howse",
+    "content": ["crk"],
+    "tags": ["writing", "grammar", "mixed-language"],
+    "category": "Reference",
+    "source": "https://archive.org/details/P000216/page/n5/mode/2up",
+    "type": "doc",
+    "created": "2025-08-17T19:27:00.000Z"
+  },
+  {
     "title": "Frog Lake Library",
-    "description": "No description",
-    "language": "Unknown",
-    "level": "Unspecified",
+    "description": "Collection of Elder videos from Frog Lake FN in nêhiyawêwin",
+    "language": "nêhiyawêwin",
+    "level": "Intermediate",
     "author": "Frog Lake FN",
-    "content": [],
-    "tags": [],
-    "category": "Uncategorized",
+    "content": ["crk"],
+    "tags": ["elders", "stories", "culture"],
+    "category": "Immersion",
     "source": "https://www.youtube.com/watch?v=5Fvoj6WltN8",
-    "type": "Unknown",
+    "type": "video",
     "created": "2025-08-03T23:42:00.000Z"
   },
   {

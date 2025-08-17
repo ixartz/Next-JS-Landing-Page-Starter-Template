@@ -10,18 +10,20 @@ interface HomeHighlightsProps {
 
 const HomeHighlights = ({ latestBlog }: HomeHighlightsProps) => {
   return (
-    <div className="bg-primary-100 pb-8">
-      <Section yPadding="py-12 pb-16">
+    <div className="bg-primary-100">
+      <Section yPadding="py-8">
         <div className="mx-auto max-w-screen-lg px-3">
-          <h2 className="mb-6 text-center text-3xl font-bold text-gray-900">
-            What&apos;s New
-          </h2>
-
-          <div className="grid gap-12 pb-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             <div>
+              <h3 className="mb-3 text-lg font-semibold text-gray-700">
+                From the Blog
+              </h3>
               <BlogLatest latestPost={latestBlog || null} />
             </div>
             <div>
+              <h3 className="mb-3 text-lg font-semibold text-gray-700">
+                New in the Learner Library
+              </h3>
               <LibraryLatest />
             </div>
           </div>

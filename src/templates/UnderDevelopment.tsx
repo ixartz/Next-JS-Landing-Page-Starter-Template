@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 const UnderDevelopment = () => (
-  <div className="rounded-md bg-amber-50 p-1 text-center">
-    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between sm:p-12 sm:text-left">
-      <div>
+  <div className="w-full bg-amber-50">
+    <div className="mx-auto max-w-screen-lg px-3 py-8">
+      <div className="text-left">
         <h2 id="about" className="pb-2 text-2xl font-bold text-amber-800">
           Currently under development
         </h2>

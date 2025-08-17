@@ -47,7 +47,7 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <>
-    <Section title="Language Projects" id="projects">
+    <Section title="Our Projects" id="projects">
       <VerticalFeatureRow
         title="kiyânaw Transcribe"
         description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
@@ -56,6 +56,7 @@ const VerticalFeatures = () => (
         reverse
         target="/transcribe"
         targetText="Learn more"
+        badge={{ text: 'PUBLIC BETA', color: 'green' }}
       />
       <VerticalFeatureRow
         title="kiyânaw Database"

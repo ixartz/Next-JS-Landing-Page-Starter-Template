@@ -1,7 +1,6 @@
 import { TopNav } from '@/layout/TopNav';
 
 import { Background } from '../background/Background';
-import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const Hero = () => (
@@ -21,17 +20,30 @@ const Hero = () => (
       </div>
       <div className="relative flex min-h-[600px] items-center">
         <Section yPadding="py-20">
-          <HeroOneButton
-            title={
-              <>
-                <span className="drop-shadow-sm">{'Building our\n'}</span>
-                <span className="text-[#6DA0CA] drop-shadow-sm">
-                  Language Bundle
-                </span>
-              </>
-            }
-            description="As adult language learners, we often need to take our language learning journey into our own hands. Come with us."
-          />
+          <header className="text-center">
+            <h1 className="whitespace-pre-line text-6xl font-bold leading-hero text-white drop-shadow-sm">
+              Revitalizing Indigenous Languages —{'\n'}
+              <span className="text-[#6DA0CA]"> Together.</span>
+            </h1>
+            <div className="mt-4 text-xl text-white drop-shadow-sm">
+              Free tools and resources to help learners & communities.
+            </div>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="https://transcribe.kiyanaw.net/"
+                target="_blank"
+                className="inline-block rounded-md bg-kiyanaw-500 px-6 py-4 text-xl font-extrabold text-white hover:bg-kiyanaw-600"
+              >
+                Start Transcribing
+              </a>
+              <a
+                href="#projects"
+                className="inline-block rounded-md border-2 border-white px-6 py-4 text-xl font-extrabold text-white hover:bg-white hover:text-gray-900"
+              >
+                Explore Projects
+              </a>
+            </div>
+          </header>
         </Section>
       </div>
     </div>

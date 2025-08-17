@@ -26,20 +26,16 @@ const LibraryLatest = () => {
 
   if (!latestItem) {
     return (
-      <div className="flex h-full flex-col rounded-lg bg-white p-8 shadow-lg">
-        <div className="grow">
-          <h3 className="mb-3 text-2xl font-bold text-gray-900">
-            Learner Library
-          </h3>
-          <p className="text-base text-gray-600">
-            Discover resources for Indigenous language learning including
-            videos, audio, books, and interactive tools.
-          </p>
-        </div>
-        <div className="mt-4 text-right">
+      <div className="rounded-lg bg-white p-6 shadow-md">
+        <h4 className="mb-2 font-bold text-gray-900">Library Growing</h4>
+        <p className="mb-4 text-sm text-gray-600">
+          Resources for Indigenous language learning including videos, audio,
+          books, and tools.
+        </p>
+        <div className="text-right">
           <Link
             href="/library"
-            className="font-medium text-primary-600 transition-colors hover:text-primary-700"
+            className="text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
           >
             Explore Library →
           </Link>
@@ -49,50 +45,47 @@ const LibraryLatest = () => {
   }
 
   return (
-    <div className="h-full">
-      <div className="mb-4">
-        <h2 className="mb-2 text-lg font-semibold text-gray-900">
-          Latest Library Addition
-        </h2>
-      </div>
-
+    <div className="rounded-lg bg-white p-6 shadow-md transition-shadow hover:shadow-lg">
       <Link
         href={latestItem.source}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex h-full flex-col rounded-lg bg-white p-8 shadow-lg transition-shadow hover:shadow-xl"
+        className="block hover:opacity-80"
       >
-        <div className="grow">
-          <div className="mb-3 flex items-start gap-3">
-            <div className="mt-1 shrink-0">
+        <div className="mb-3 flex items-start gap-3">
+          <div className="shrink-0 rounded-lg bg-primary-50 p-2">
+            <div className="scale-150">
               <LibraryIcon type={latestItem.type} />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900">
-              {latestItem.title}
-            </h3>
           </div>
-
-          <p className="mb-4 line-clamp-3 text-base text-gray-600">
-            {latestItem.description}
-          </p>
-
-          <div className="flex items-center justify-between text-sm text-gray-500">
-            <span className="font-medium">{latestItem.language}</span>
-            <span>
-              Added {format(new Date(latestItem.created), 'MMM d, yyyy')}
-            </span>
+          <div className="min-w-0 flex-1">
+            <div className="mb-1 flex items-center gap-2">
+              <span className="inline-flex items-center rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-800">
+                {latestItem.language}
+              </span>
+              <span className="text-xs text-gray-500">
+                Added {format(new Date(latestItem.created), 'MMM d, yyyy')}
+              </span>
+            </div>
+            <h4 className="mb-2 line-clamp-2 text-lg font-bold text-gray-900">
+              {latestItem.title}
+            </h4>
           </div>
         </div>
 
-        <div className="mt-4 flex items-center font-medium text-primary-600">
+        <p className="mb-3 line-clamp-2 text-sm text-gray-600">
+          {latestItem.description || 'No description'}
+        </p>
+
+        <div className="text-sm font-medium text-primary-600">
           View Resource →
         </div>
       </Link>
 
-      <div className="mt-4 text-right">
+      <div className="mt-4 border-t pt-3 text-right">
         <Link
           href="/library"
-          className="font-medium text-primary-600 transition-colors hover:text-primary-700"
+          className="text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
         >
           Browse All Resources →
         </Link>

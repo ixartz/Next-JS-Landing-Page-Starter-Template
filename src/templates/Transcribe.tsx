@@ -3,15 +3,15 @@ import Link from 'next/link';
 import { Button } from '@/button/Button';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
-import { TopNav } from '@/layout/TopNav';
 
 import { Meta } from '../layout/Meta';
 import { AppConfig } from '../utils/AppConfig';
 import { Footer } from './Footer';
 import { Milestone } from './Milestone';
+import { PublicBeta } from './PublicBeta';
 import { SupportUs } from './SupportUs';
 import { Timeline } from './Timeline';
-import { UnderDevelopment } from './UnderDevelopment';
+import { VideoHero } from './VideoHero';
 
 const Transcribe = () => (
   <div className="text-gray-600 antialiased">
@@ -19,14 +19,19 @@ const Transcribe = () => (
       title={`${AppConfig.title} - Collaborative Transcription software`}
       description={AppConfig.description}
     />
-    <TopNav></TopNav>
-
-    <UnderDevelopment />
-
-    <Section
+    <VideoHero
       title="kiyânaw Transcribe"
-      description="Free online collaborative transcription software."
-    >
+      subtitle="Free online collaborative transcription software designed for Indigenous languages."
+      videoSrc="/assets/videos/transcribe-bg-video.mp4"
+      screenshotSrc="/assets/images/kiyanaw-transcribe-header.png"
+      screenshotAlt="kiyânaw Transcribe interface screenshot"
+      ctaText="Try it now →"
+      ctaLink="https://transcribe.kiyanaw.net/"
+    />
+
+    <PublicBeta />
+
+    <Section>
       <div className="text-center">
         <Link target="_blank" href="https://transcribe.kiyanaw.net/">
           <Button>{`Try it out now →`}</Button>
