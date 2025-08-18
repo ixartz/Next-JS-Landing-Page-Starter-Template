@@ -5,14 +5,16 @@ type ISectionProps = {
   description?: string;
   yPadding?: string;
   id?: string;
+  // Optional class to override the default max width for this section
+  maxWidthClass?: string;
   children: ReactNode;
 };
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`mx-auto max-w-screen-lg px-3 ${
-      props.yPadding ? props.yPadding : 'py-16'
-    }`}
+    className={`mx-auto ${
+      props.maxWidthClass ? props.maxWidthClass : 'max-w-screen-lg'
+    } px-3 ${props.yPadding ? props.yPadding : 'py-16'}`}
   >
     {(props.title || props.description) && (
       <div className="mb-12 text-center">

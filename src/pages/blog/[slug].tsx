@@ -72,6 +72,10 @@ const BlogPost = ({ post, relatedPosts }: BlogPostProps) => {
             )}
           </header>
 
+          <div className="mb-8 mt-4">
+            <hr />
+          </div>
+
           {/* Article Content */}
           <article className="prose-primary prose prose-lg mx-auto max-w-none">
             <MDXRemote {...mdxSource} />
