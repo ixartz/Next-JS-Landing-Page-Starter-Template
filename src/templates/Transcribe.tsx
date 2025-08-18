@@ -108,7 +108,7 @@ const Transcribe = () => (
         <Milestone
           time="1.0-beta"
           title="Beta release"
-          description="Realtime updates upgrade (Amplify API v2), realtime collaboration, contributor awareness, private transcriptions, disable indexing, itwêwina lookup."
+          description="Realtime updates upgrade (Amplify API v2), realtime collaboration, contributor awareness, private transcriptions, disable indexing, N. Michif support (experimental)."
           right
           complete
         />

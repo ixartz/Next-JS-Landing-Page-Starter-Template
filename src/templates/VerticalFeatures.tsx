@@ -51,7 +51,7 @@ const VerticalFeatures = () => (
       <VerticalFeatureRow
         title="kiyânaw Transcribe"
         description="Transcription is a powerful tool in our language-learning toolkit. kiyânaw Transcribe is free-forever online transcription software with powerful features."
-        image="/assets/images/kiyanaw-transcribe.png"
+        image="/assets/images/transcribe-video.png"
         imageAlt="Online collaborative transcription software"
         reverse
         target="/transcribe"

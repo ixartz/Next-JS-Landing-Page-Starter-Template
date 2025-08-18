@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import { Button } from '@/button/Button';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
@@ -25,9 +23,7 @@ const Database = () => (
       description="kiyânaw Database provides learner-driven deep context exploration within real-world language. By indexing content from transcriptions and other published materials, learners are able to search for words, partial words, or phrases that support their current learning context. Initially being development for nêhiyawêwin (Plains Cree Y-dialect), kiyânaw Database holds the vision of being able to support learners of any Indigenous language."
     >
       <div className="text-center">
-        <Link target="_blank" href="https://transcribe.kiyanaw.net/stats">
-          <Button>{`Explore kiyânaw Database now →`}</Button>
-        </Link>
+        <Button disabled>{`Coming Soon...`}</Button>
       </div>
 
       <VerticalFeatureRow
@@ -35,7 +31,6 @@ const Database = () => (
         description="When analysis (spell-checking) is available for a language, advanced indexing becomes possible, allowing us to keep a list of high-frequency words. Studying these lists can help to speed the advance our comprehension and fluency."
         image="/assets/images/database-high-frequency.png"
         imageAlt="High frequency words"
-        target="https://transcribe.kiyanaw.net/stats"
         targetText="Try it now"
         blank
       />
@@ -45,7 +40,6 @@ const Database = () => (
         image="/assets/images/database-distribution.png"
         imageAlt="Search and explore in-context"
         reverse
-        target="https://transcribe.kiyanaw.net/stats/lemma/itw%C3%AAw"
         targetText="Example distribution for itwêw"
         blank
       />
@@ -54,7 +48,6 @@ const Database = () => (
         description="Being able to find words, partial words, or phrases adjacent to the materials we're currently studying as learners is extremely powerful. kiyânaw Database allows for powerful partial and advanced search to support the learner's journey."
         image="/assets/images/database-search.png"
         imageAlt="Powerful search features"
-        target="https://transcribe.kiyanaw.net/stats"
         targetText="Try it"
         blank
       />
@@ -85,12 +78,6 @@ const Database = () => (
           end
         />
       </Timeline>
-
-      <div className="text-center">
-        <Link target="_blank" href="https://transcribe.kiyanaw.net/stats">
-          <Button>{`Try it out now →`}</Button>
-        </Link>
-      </div>
     </Section>
 
     <SupportUs />

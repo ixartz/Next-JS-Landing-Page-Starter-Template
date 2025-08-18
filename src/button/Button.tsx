@@ -3,6 +3,7 @@ import className from 'classnames';
 type IButtonProps = {
   xl?: boolean;
   children: string;
+  disabled?: boolean;
 };
 
 const Button = (props: IButtonProps) => {
@@ -10,7 +11,8 @@ const Button = (props: IButtonProps) => {
     btn: true,
     'btn-xl': props.xl,
     'btn-base': !props.xl,
-    'btn-primary': true,
+    'btn-primary': !props.disabled,
+    'btn-disabled': props.disabled,
   });
 
   return (
@@ -37,6 +39,10 @@ const Button = (props: IButtonProps) => {
 
           .btn-primary:hover {
             @apply bg-kiyanaw-600;
+          }
+
+          .btn-disabled {
+            @apply text-gray-400 bg-gray-600 cursor-not-allowed;
           }
         `}
       </style>
