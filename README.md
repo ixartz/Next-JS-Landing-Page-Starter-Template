@@ -135,7 +135,7 @@ Find more components in our [premium NextJS themes](https://creativedesignsguru.
 
 ### Getting started
 
-Run the following command on your local environment:
+Run the following command on your local environment (for example, in [Warp](https://go.warp.dev/nextjs-bp)):
 
 ```
 git clone --depth=1 https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template.git my-project-name
@@ -143,7 +143,7 @@ cd my-project-name
 npm install
 ```
 
-Then, you can run locally in development mode with live reload:
+Then, you can run locally in development mode with live reload (for example, in [Warp](https://go.warp.dev/nextjs-bp)):
 
 ```
 npm run dev
